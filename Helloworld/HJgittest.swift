@@ -6,3 +6,5 @@
 //
 
 import Foundation
+
+Let a = 1
