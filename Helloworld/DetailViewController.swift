@@ -10,6 +10,7 @@ import UIKit
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var decsLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
     var selectedMovie: Movie!
     
     override func viewDidLoad() {
@@ -19,6 +20,7 @@ class DetailViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        titleLabel.text = selectedMovie.title
         decsLabel.text = selectedMovie.desc
     }
     
