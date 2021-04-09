@@ -13,7 +13,7 @@ struct Movie {
 }
 
 var movies: [Movie] = [
-    Movie(title: "samplemovie1", desc: "sample description1"),
-    Movie(title: "samplemovie2", desc: "sample description2"),
+    Movie(title: "LaLa Land", desc: "sample description1"),
+    Movie(title: "DDDD", desc: "sample description2"),
     Movie(title: "samplemovie3", desc: "sample description3")
 ]
