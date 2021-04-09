@@ -17,6 +17,7 @@
 		20EAF82A261EF1A9008A8A05 /* HelloworldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF829261EF1A9008A8A05 /* HelloworldUITests.swift */; };
 		20EAF83B261EFDBB008A8A05 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF83A261EFDBB008A8A05 /* Movie.swift */; };
 		20EAF840261F0206008A8A05 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF83F261F0206008A8A05 /* DetailViewController.swift */; };
+		EA44E94326203E4000781B8F /* HJgittest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA44E94226203E4000781B8F /* HJgittest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		20EAF82B261EF1A9008A8A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20EAF83A261EFDBB008A8A05 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		20EAF83F261F0206008A8A05 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EA44E94226203E4000781B8F /* HJgittest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HJgittest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				20EAF815261EF1A9008A8A05 /* Info.plist */,
 				20EAF83A261EFDBB008A8A05 /* Movie.swift */,
 				20EAF83F261F0206008A8A05 /* DetailViewController.swift */,
+				EA44E94226203E4000781B8F /* HJgittest.swift */,
 			);
 			path = Helloworld;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			files = (
 				20EAF80C261EF1A5008A8A05 /* ViewController.swift in Sources */,
 				20EAF808261EF1A5008A8A05 /* AppDelegate.swift in Sources */,
+				EA44E94326203E4000781B8F /* HJgittest.swift in Sources */,
 				20EAF840261F0206008A8A05 /* DetailViewController.swift in Sources */,
 				20EAF83B261EFDBB008A8A05 /* Movie.swift in Sources */,
 				20EAF80A261EF1A5008A8A05 /* SceneDelegate.swift in Sources */,
