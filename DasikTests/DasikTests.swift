@@ -6,9 +6,9 @@
 //
 
 import XCTest
-@testable import Helloworld
+@testable import Dasik
 
-class HelloworldTests: XCTestCase {
+class DasikTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -16,6 +16,7 @@ class HelloworldTests: XCTestCase {
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+
     }
 
     func testExample() throws {

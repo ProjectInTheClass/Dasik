@@ -13,11 +13,10 @@
 		20EAF80F261EF1A5008A8A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EAF80D261EF1A5008A8A05 /* Main.storyboard */; };
 		20EAF811261EF1A9008A8A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EAF810261EF1A9008A8A05 /* Assets.xcassets */; };
 		20EAF814261EF1A9008A8A05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EAF812261EF1A9008A8A05 /* LaunchScreen.storyboard */; };
-		20EAF81F261EF1A9008A8A05 /* HelloworldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF81E261EF1A9008A8A05 /* HelloworldTests.swift */; };
-		20EAF82A261EF1A9008A8A05 /* HelloworldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF829261EF1A9008A8A05 /* HelloworldUITests.swift */; };
+		20EAF81F261EF1A9008A8A05 /* DasikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF81E261EF1A9008A8A05 /* DasikTests.swift */; };
+		20EAF82A261EF1A9008A8A05 /* DasikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF829261EF1A9008A8A05 /* DasikUITests.swift */; };
 		20EAF83B261EFDBB008A8A05 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF83A261EFDBB008A8A05 /* Movie.swift */; };
 		20EAF840261F0206008A8A05 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF83F261F0206008A8A05 /* DetailViewController.swift */; };
-		20EAF8692626CE60008A8A05 /* forloopexample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF8682626CE60008A8A05 /* forloopexample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20EAF804261EF1A5008A8A05 /* Helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helloworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20EAF804261EF1A5008A8A05 /* Dasik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dasik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EAF807261EF1A5008A8A05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20EAF809261EF1A5008A8A05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		20EAF80B261EF1A5008A8A05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,16 +45,14 @@
 		20EAF810261EF1A9008A8A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20EAF813261EF1A9008A8A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20EAF815261EF1A9008A8A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20EAF81A261EF1A9008A8A05 /* HelloworldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloworldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		20EAF81E261EF1A9008A8A05 /* HelloworldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloworldTests.swift; sourceTree = "<group>"; };
+		20EAF81A261EF1A9008A8A05 /* DasikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DasikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20EAF81E261EF1A9008A8A05 /* DasikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DasikTests.swift; sourceTree = "<group>"; };
 		20EAF820261EF1A9008A8A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20EAF825261EF1A9008A8A05 /* HelloworldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloworldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		20EAF829261EF1A9008A8A05 /* HelloworldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloworldUITests.swift; sourceTree = "<group>"; };
+		20EAF825261EF1A9008A8A05 /* DasikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DasikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20EAF829261EF1A9008A8A05 /* DasikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DasikUITests.swift; sourceTree = "<group>"; };
 		20EAF82B261EF1A9008A8A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20EAF83A261EFDBB008A8A05 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		20EAF83F261F0206008A8A05 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		20EAF8682626CE60008A8A05 /* forloopexample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forloopexample.swift; sourceTree = "<group>"; };
-		20EAF86D2626DA55008A8A05 /* Dasikplayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dasikplayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,10 +83,9 @@
 		20EAF7FB261EF1A5008A8A05 = {
 			isa = PBXGroup;
 			children = (
-				20EAF86D2626DA55008A8A05 /* Dasikplayground.playground */,
-				20EAF806261EF1A5008A8A05 /* Helloworld */,
-				20EAF81D261EF1A9008A8A05 /* HelloworldTests */,
-				20EAF828261EF1A9008A8A05 /* HelloworldUITests */,
+				20EAF806261EF1A5008A8A05 /* Dasik */,
+				20EAF81D261EF1A9008A8A05 /* DasikTests */,
+				20EAF828261EF1A9008A8A05 /* DasikUITests */,
 				20EAF805261EF1A5008A8A05 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,14 +93,14 @@
 		20EAF805261EF1A5008A8A05 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				20EAF804261EF1A5008A8A05 /* Helloworld.app */,
-				20EAF81A261EF1A9008A8A05 /* HelloworldTests.xctest */,
-				20EAF825261EF1A9008A8A05 /* HelloworldUITests.xctest */,
+				20EAF804261EF1A5008A8A05 /* Dasik.app */,
+				20EAF81A261EF1A9008A8A05 /* DasikTests.xctest */,
+				20EAF825261EF1A9008A8A05 /* DasikUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		20EAF806261EF1A5008A8A05 /* Helloworld */ = {
+		20EAF806261EF1A5008A8A05 /* Dasik */ = {
 			isa = PBXGroup;
 			children = (
 				20EAF807261EF1A5008A8A05 /* AppDelegate.swift */,
@@ -116,35 +112,34 @@
 				20EAF815261EF1A9008A8A05 /* Info.plist */,
 				20EAF83A261EFDBB008A8A05 /* Movie.swift */,
 				20EAF83F261F0206008A8A05 /* DetailViewController.swift */,
-				20EAF8682626CE60008A8A05 /* forloopexample.swift */,
 			);
-			path = Helloworld;
+			path = Dasik;
 			sourceTree = "<group>";
 		};
-		20EAF81D261EF1A9008A8A05 /* HelloworldTests */ = {
+		20EAF81D261EF1A9008A8A05 /* DasikTests */ = {
 			isa = PBXGroup;
 			children = (
-				20EAF81E261EF1A9008A8A05 /* HelloworldTests.swift */,
+				20EAF81E261EF1A9008A8A05 /* DasikTests.swift */,
 				20EAF820261EF1A9008A8A05 /* Info.plist */,
 			);
-			path = HelloworldTests;
+			path = DasikTests;
 			sourceTree = "<group>";
 		};
-		20EAF828261EF1A9008A8A05 /* HelloworldUITests */ = {
+		20EAF828261EF1A9008A8A05 /* DasikUITests */ = {
 			isa = PBXGroup;
 			children = (
-				20EAF829261EF1A9008A8A05 /* HelloworldUITests.swift */,
+				20EAF829261EF1A9008A8A05 /* DasikUITests.swift */,
 				20EAF82B261EF1A9008A8A05 /* Info.plist */,
 			);
-			path = HelloworldUITests;
+			path = DasikUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		20EAF803261EF1A5008A8A05 /* Helloworld */ = {
+		20EAF803261EF1A5008A8A05 /* Dasik */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20EAF82E261EF1A9008A8A05 /* Build configuration list for PBXNativeTarget "Helloworld" */;
+			buildConfigurationList = 20EAF82E261EF1A9008A8A05 /* Build configuration list for PBXNativeTarget "Dasik" */;
 			buildPhases = (
 				20EAF800261EF1A5008A8A05 /* Sources */,
 				20EAF801261EF1A5008A8A05 /* Frameworks */,
@@ -154,14 +149,14 @@
 			);
 			dependencies = (
 			);
-			name = Helloworld;
+			name = Dasik;
 			productName = Helloworld;
-			productReference = 20EAF804261EF1A5008A8A05 /* Helloworld.app */;
+			productReference = 20EAF804261EF1A5008A8A05 /* Dasik.app */;
 			productType = "com.apple.product-type.application";
 		};
-		20EAF819261EF1A9008A8A05 /* HelloworldTests */ = {
+		20EAF819261EF1A9008A8A05 /* DasikTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20EAF831261EF1A9008A8A05 /* Build configuration list for PBXNativeTarget "HelloworldTests" */;
+			buildConfigurationList = 20EAF831261EF1A9008A8A05 /* Build configuration list for PBXNativeTarget "DasikTests" */;
 			buildPhases = (
 				20EAF816261EF1A9008A8A05 /* Sources */,
 				20EAF817261EF1A9008A8A05 /* Frameworks */,
@@ -172,14 +167,14 @@
 			dependencies = (
 				20EAF81C261EF1A9008A8A05 /* PBXTargetDependency */,
 			);
-			name = HelloworldTests;
+			name = DasikTests;
 			productName = HelloworldTests;
-			productReference = 20EAF81A261EF1A9008A8A05 /* HelloworldTests.xctest */;
+			productReference = 20EAF81A261EF1A9008A8A05 /* DasikTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		20EAF824261EF1A9008A8A05 /* HelloworldUITests */ = {
+		20EAF824261EF1A9008A8A05 /* DasikUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20EAF834261EF1A9008A8A05 /* Build configuration list for PBXNativeTarget "HelloworldUITests" */;
+			buildConfigurationList = 20EAF834261EF1A9008A8A05 /* Build configuration list for PBXNativeTarget "DasikUITests" */;
 			buildPhases = (
 				20EAF821261EF1A9008A8A05 /* Sources */,
 				20EAF822261EF1A9008A8A05 /* Frameworks */,
@@ -190,9 +185,9 @@
 			dependencies = (
 				20EAF827261EF1A9008A8A05 /* PBXTargetDependency */,
 			);
-			name = HelloworldUITests;
+			name = DasikUITests;
 			productName = HelloworldUITests;
-			productReference = 20EAF825261EF1A9008A8A05 /* HelloworldUITests.xctest */;
+			productReference = 20EAF825261EF1A9008A8A05 /* DasikUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -217,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 20EAF7FF261EF1A5008A8A05 /* Build configuration list for PBXProject "Helloworld" */;
+			buildConfigurationList = 20EAF7FF261EF1A5008A8A05 /* Build configuration list for PBXProject "Dasik" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -230,9 +225,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				20EAF803261EF1A5008A8A05 /* Helloworld */,
-				20EAF819261EF1A9008A8A05 /* HelloworldTests */,
-				20EAF824261EF1A9008A8A05 /* HelloworldUITests */,
+				20EAF803261EF1A5008A8A05 /* Dasik */,
+				20EAF819261EF1A9008A8A05 /* DasikTests */,
+				20EAF824261EF1A9008A8A05 /* DasikUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,7 +266,6 @@
 			files = (
 				20EAF80C261EF1A5008A8A05 /* ViewController.swift in Sources */,
 				20EAF808261EF1A5008A8A05 /* AppDelegate.swift in Sources */,
-				20EAF8692626CE60008A8A05 /* forloopexample.swift in Sources */,
 				20EAF840261F0206008A8A05 /* DetailViewController.swift in Sources */,
 				20EAF83B261EFDBB008A8A05 /* Movie.swift in Sources */,
 				20EAF80A261EF1A5008A8A05 /* SceneDelegate.swift in Sources */,
@@ -282,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20EAF81F261EF1A9008A8A05 /* HelloworldTests.swift in Sources */,
+				20EAF81F261EF1A9008A8A05 /* DasikTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20EAF82A261EF1A9008A8A05 /* HelloworldUITests.swift in Sources */,
+				20EAF82A261EF1A9008A8A05 /* DasikUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,12 +293,12 @@
 /* Begin PBXTargetDependency section */
 		20EAF81C261EF1A9008A8A05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 20EAF803261EF1A5008A8A05 /* Helloworld */;
+			target = 20EAF803261EF1A5008A8A05 /* Dasik */;
 			targetProxy = 20EAF81B261EF1A9008A8A05 /* PBXContainerItemProxy */;
 		};
 		20EAF827261EF1A9008A8A05 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 20EAF803261EF1A5008A8A05 /* Helloworld */;
+			target = 20EAF803261EF1A5008A8A05 /* Dasik */;
 			targetProxy = 20EAF826261EF1A9008A8A05 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -451,12 +445,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Helloworld/Info.plist;
+				INFOPLIST_FILE = Dasik/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dasik.Helloworld;
+				PRODUCT_BUNDLE_IDENTIFIER = dasik.Dasik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -469,12 +463,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Helloworld/Info.plist;
+				INFOPLIST_FILE = Dasik/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dasik.Helloworld;
+				PRODUCT_BUNDLE_IDENTIFIER = dasik.Dasik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -487,18 +481,18 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HelloworldTests/Info.plist;
+				INFOPLIST_FILE = DasikTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dasik.HelloworldTests;
+				PRODUCT_BUNDLE_IDENTIFIER = dasik.DasikTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Helloworld.app/Helloworld";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dasik.app/Dasik";
 			};
 			name = Debug;
 		};
@@ -508,18 +502,18 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HelloworldTests/Info.plist;
+				INFOPLIST_FILE = DasikTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dasik.HelloworldTests;
+				PRODUCT_BUNDLE_IDENTIFIER = dasik.DasikTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Helloworld.app/Helloworld";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dasik.app/Dasik";
 			};
 			name = Release;
 		};
@@ -528,17 +522,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HelloworldUITests/Info.plist;
+				INFOPLIST_FILE = DasikUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dasik.HelloworldUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = dasik.DasikUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Helloworld;
+				TEST_TARGET_NAME = Dasik;
 			};
 			name = Debug;
 		};
@@ -547,24 +541,24 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = HelloworldUITests/Info.plist;
+				INFOPLIST_FILE = DasikUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dasik.HelloworldUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = dasik.DasikUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Helloworld;
+				TEST_TARGET_NAME = Dasik;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		20EAF7FF261EF1A5008A8A05 /* Build configuration list for PBXProject "Helloworld" */ = {
+		20EAF7FF261EF1A5008A8A05 /* Build configuration list for PBXProject "Dasik" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20EAF82C261EF1A9008A8A05 /* Debug */,
@@ -573,7 +567,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20EAF82E261EF1A9008A8A05 /* Build configuration list for PBXNativeTarget "Helloworld" */ = {
+		20EAF82E261EF1A9008A8A05 /* Build configuration list for PBXNativeTarget "Dasik" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20EAF82F261EF1A9008A8A05 /* Debug */,
@@ -582,7 +576,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20EAF831261EF1A9008A8A05 /* Build configuration list for PBXNativeTarget "HelloworldTests" */ = {
+		20EAF831261EF1A9008A8A05 /* Build configuration list for PBXNativeTarget "DasikTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20EAF832261EF1A9008A8A05 /* Debug */,
@@ -591,7 +585,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		20EAF834261EF1A9008A8A05 /* Build configuration list for PBXNativeTarget "HelloworldUITests" */ = {
+		20EAF834261EF1A9008A8A05 /* Build configuration list for PBXNativeTarget "DasikUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				20EAF835261EF1A9008A8A05 /* Debug */,
