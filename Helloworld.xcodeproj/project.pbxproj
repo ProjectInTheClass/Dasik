@@ -17,6 +17,7 @@
 		20EAF82A261EF1A9008A8A05 /* HelloworldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF829261EF1A9008A8A05 /* HelloworldUITests.swift */; };
 		20EAF83B261EFDBB008A8A05 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF83A261EFDBB008A8A05 /* Movie.swift */; };
 		20EAF840261F0206008A8A05 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF83F261F0206008A8A05 /* DetailViewController.swift */; };
+		20EAF8692626CE60008A8A05 /* forloopexample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF8682626CE60008A8A05 /* forloopexample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		20EAF82B261EF1A9008A8A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20EAF83A261EFDBB008A8A05 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		20EAF83F261F0206008A8A05 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		20EAF8682626CE60008A8A05 /* forloopexample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forloopexample.swift; sourceTree = "<group>"; };
+		20EAF86D2626DA55008A8A05 /* Dasikplayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Dasikplayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 		20EAF7FB261EF1A5008A8A05 = {
 			isa = PBXGroup;
 			children = (
+				20EAF86D2626DA55008A8A05 /* Dasikplayground.playground */,
 				20EAF806261EF1A5008A8A05 /* Helloworld */,
 				20EAF81D261EF1A9008A8A05 /* HelloworldTests */,
 				20EAF828261EF1A9008A8A05 /* HelloworldUITests */,
@@ -112,6 +116,7 @@
 				20EAF815261EF1A9008A8A05 /* Info.plist */,
 				20EAF83A261EFDBB008A8A05 /* Movie.swift */,
 				20EAF83F261F0206008A8A05 /* DetailViewController.swift */,
+				20EAF8682626CE60008A8A05 /* forloopexample.swift */,
 			);
 			path = Helloworld;
 			sourceTree = "<group>";
@@ -266,6 +271,7 @@
 			files = (
 				20EAF80C261EF1A5008A8A05 /* ViewController.swift in Sources */,
 				20EAF808261EF1A5008A8A05 /* AppDelegate.swift in Sources */,
+				20EAF8692626CE60008A8A05 /* forloopexample.swift in Sources */,
 				20EAF840261F0206008A8A05 /* DetailViewController.swift in Sources */,
 				20EAF83B261EFDBB008A8A05 /* Movie.swift in Sources */,
 				20EAF80A261EF1A5008A8A05 /* SceneDelegate.swift in Sources */,
