@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let detailVC = segue.destination as? DetailViewController {
-            detailVC.selectedMovie = movies[1]
+            detailVC.selectedMovie = movies[2]
         }
     }
 
