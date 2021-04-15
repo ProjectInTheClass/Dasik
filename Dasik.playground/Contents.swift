@@ -18,8 +18,8 @@ func findNumberofDivisor(){
 
 //2.1부터 100까지 숫자 더하기
 func add1through100() {
-    print("1부터 100까지 더해봅시다.")
-    let numbers = Array(1...100)
+    print("1부터 50까지 더해봅시다.")
+    let numbers = Array(1...50)
     var sum = 0;
     for number in numbers {
         print(String(sum) + " + " + String(number) + " = " + String(sum + number))
@@ -43,7 +43,7 @@ func printstar(){
     }
 }
 
-//배열 오름차순으로 정렬하기
+//4.배열 오름차순으로 정렬하기
 func sortarray(){
     print("배열을 정렬해봅시다.")
     var numbers: Array<Int> = [5, 3, 2, 17, 32, 21, 9, 10, 72, 98, 7, 1000, 100, 10000, 69]
@@ -70,10 +70,10 @@ func sortarray(){
     }
 }
 
-//2부터 100사이의 소수 찾기
+//5.2부터 100사이의 소수 찾기
 func findPrime(){
-    print("2부터 100사이의 소수를 찾아봅시다.")
-    let numbers = Array(2...100)
+    print("2부터 20사이의 소수를 찾아봅시다.")
+    let numbers = Array(2...20)
     
     for number in numbers{
         var numberofDivisor = 0
