@@ -9,6 +9,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    @IBOutlet weak var LOSTARK: UILabel!
     @IBOutlet weak var decsLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     var selectedMovie: Movie!
@@ -22,6 +23,7 @@ class DetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         titleLabel.text = selectedMovie.title
         decsLabel.text = selectedMovie.desc
+        LOSTARK.text = selectedMovie.desc
     }
     
 
