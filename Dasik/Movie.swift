@@ -15,5 +15,6 @@ struct Movie {
 var movies: [Movie] = [
     Movie(title: "LaLa Land", desc: "sample description1"),
     Movie(title: "DDDD", desc: "sample description2"),
-    Movie(title: "samplemovie3", desc: "sample description3")
+    Movie(title: "samplemovie3", desc: "sample description3"),
+    Movie(title: "LOST ARK", desc: "The good game")
 ]
