@@ -31,6 +31,7 @@ func add1through100() {
 //3.피라미드 모양으로 별찍기
 func printstar(){
     var line = 10
+    /*
     print(String(line) + "줄 짜리 피라미드 별을 찍어봅시다.")
     for i in 1...line {
         for j in i...line {
@@ -41,7 +42,24 @@ func printstar(){
         }
         print()
     }
+    */
+    let lines = (1...line)
+    
+    (1...line).map{ i in
+        (i...line).map { j in
+            print(" ",terminator:"")
+        }
+        (1...(i*2)-1).map { k in
+            print("*",terminator:"")
+        }
+        print()
+    }
+    
+    
 }
+
+
+
 
 //4.배열 오름차순으로 정렬하기
 func sortarray(){
@@ -74,7 +92,7 @@ func sortarray(){
 func findPrime(){
     print("2부터 20사이의 소수를 찾아봅시다.")
     let numbers = Array(2...20)
-    
+    /*
     for number in numbers{
         var numberofDivisor = 0
         for i in 1...number{
@@ -85,13 +103,25 @@ func findPrime(){
         if(numberofDivisor == 2){
             print(String(number) + "은 소수입니다.")
         }
-            
+    }
+    */
+    (2...20).map { number in
+        var numberofDivisor = 0
+        (1...number).map { i in
+            if(number%i == 0){
+                numberofDivisor += 1
+            }
+        }
+        
+        if(numberofDivisor == 2){
+            print(String(number) + "은 소수입니다.")
+        }
     }
 }
 
 
 //findNumberofDivisor()
 //add1through100()
-//printstar()
+printstar()
 //sortarray()
 findPrime()
