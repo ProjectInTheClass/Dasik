@@ -113,5 +113,5 @@ iOSInjectionProject/
 
 ##DS_Store - mac's design : it has folder information
 **/.DS_Store
-
+.DS_Store
 # End of https://www.toptal.com/developers/gitignore/api/swift,xcode,cocoapods
