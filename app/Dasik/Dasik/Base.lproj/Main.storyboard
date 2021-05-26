@@ -82,7 +82,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZW-Oh-wmY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1584.057971014493" y="1072.7678571428571"/>
+            <point key="canvasLocation" x="-2565" y="1045"/>
         </scene>
         <!--Home-->
         <scene sceneID="Rrk-Dy-Kjb">
@@ -121,7 +121,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xne-dF-Hpf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2241" y="1589"/>
+            <point key="canvasLocation" x="-2658" y="1813"/>
         </scene>
         <!--Rank-->
         <scene sceneID="bA3-SY-zjB">
