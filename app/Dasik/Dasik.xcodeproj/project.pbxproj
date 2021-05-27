@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		20EAF808261EF1A5008A8A05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF807261EF1A5008A8A05 /* AppDelegate.swift */; };
 		20EAF80A261EF1A5008A8A05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF809261EF1A5008A8A05 /* SceneDelegate.swift */; };
-		20EAF80C261EF1A5008A8A05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF80B261EF1A5008A8A05 /* ViewController.swift */; };
 		20EAF80F261EF1A5008A8A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EAF80D261EF1A5008A8A05 /* Main.storyboard */; };
 		20EAF811261EF1A9008A8A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EAF810261EF1A9008A8A05 /* Assets.xcassets */; };
 		20EAF814261EF1A9008A8A05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EAF812261EF1A9008A8A05 /* LaunchScreen.storyboard */; };
@@ -45,7 +44,6 @@
 		20EAF804261EF1A5008A8A05 /* Dasik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dasik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EAF807261EF1A5008A8A05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20EAF809261EF1A5008A8A05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		20EAF80B261EF1A5008A8A05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		20EAF80E261EF1A5008A8A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20EAF810261EF1A9008A8A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20EAF813261EF1A9008A8A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -113,14 +111,12 @@
 		20EAF806261EF1A5008A8A05 /* Dasik */ = {
 			isa = PBXGroup;
 			children = (
-				48B88BF1265E701600D1E316 /* Personal.storyboard */,
-				48807C17265BDCE900509FDC /* Rank.storyboard */,
-				48807C12265BDC0800509FDC /* Diet.storyboard */,
-				48B88BF3265E74B400D1E316 /* HomeViewController.swift */,
-				48807C0D265BDB6100509FDC /* Home.storyboard */,
+				484E1303265F7FF900152637 /* Diet */,
+				484E1302265F7FDF00152637 /* Rank */,
+				484E1300265F7FB400152637 /* PersonalInfo */,
+				484E12FF265F7F5200152637 /* HomeView */,
 				20EAF807261EF1A5008A8A05 /* AppDelegate.swift */,
 				20EAF809261EF1A5008A8A05 /* SceneDelegate.swift */,
-				20EAF80B261EF1A5008A8A05 /* ViewController.swift */,
 				20EAF80D261EF1A5008A8A05 /* Main.storyboard */,
 				20EAF810261EF1A9008A8A05 /* Assets.xcassets */,
 				20EAF812261EF1A9008A8A05 /* LaunchScreen.storyboard */,
@@ -147,6 +143,39 @@
 				20EAF82B261EF1A9008A8A05 /* Info.plist */,
 			);
 			path = DasikUITests;
+			sourceTree = "<group>";
+		};
+		484E12FF265F7F5200152637 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				48807C0D265BDB6100509FDC /* Home.storyboard */,
+				48B88BF3265E74B400D1E316 /* HomeViewController.swift */,
+			);
+			name = HomeView;
+			sourceTree = "<group>";
+		};
+		484E1300265F7FB400152637 /* PersonalInfo */ = {
+			isa = PBXGroup;
+			children = (
+				48B88BF1265E701600D1E316 /* Personal.storyboard */,
+			);
+			name = PersonalInfo;
+			sourceTree = "<group>";
+		};
+		484E1302265F7FDF00152637 /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+				48807C17265BDCE900509FDC /* Rank.storyboard */,
+			);
+			name = Rank;
+			sourceTree = "<group>";
+		};
+		484E1303265F7FF900152637 /* Diet */ = {
+			isa = PBXGroup;
+			children = (
+				48807C12265BDC0800509FDC /* Diet.storyboard */,
+			);
+			name = Diet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +312,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20EAF80C261EF1A5008A8A05 /* ViewController.swift in Sources */,
 				20EAF808261EF1A5008A8A05 /* AppDelegate.swift in Sources */,
 				20EAF840261F0206008A8A05 /* DetailViewController.swift in Sources */,
 				20EAF83B261EFDBB008A8A05 /* Movie.swift in Sources */,
