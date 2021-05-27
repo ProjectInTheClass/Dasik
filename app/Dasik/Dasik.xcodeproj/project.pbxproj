@@ -113,10 +113,10 @@
 		20EAF806261EF1A5008A8A05 /* Dasik */ = {
 			isa = PBXGroup;
 			children = (
-				484E1303265F7FF900152637 /* Diet */,
-				484E1302265F7FDF00152637 /* Rank */,
-				484E1300265F7FB400152637 /* PersonalInfo */,
-				484E12FF265F7F5200152637 /* HomeView */,
+				484E1313265F854400152637 /* HomeView */,
+				484E1312265F852900152637 /* PersonalInfo */,
+				484E1311265F850E00152637 /* Rank */,
+				484E130F265F84DC00152637 /* Diet */,
 				20EAF807261EF1A5008A8A05 /* AppDelegate.swift */,
 				20EAF809261EF1A5008A8A05 /* SceneDelegate.swift */,
 				20EAF80D261EF1A5008A8A05 /* Main.storyboard */,
@@ -145,40 +145,40 @@
 			path = DasikUITests;
 			sourceTree = "<group>";
 		};
-		484E12FF265F7F5200152637 /* HomeView */ = {
-			isa = PBXGroup;
-			children = (
-				48807C0D265BDB6100509FDC /* Home.storyboard */,
-				48B88BF3265E74B400D1E316 /* HomeViewController.swift */,
-			);
-			name = HomeView;
-			sourceTree = "<group>";
-		};
-		484E1300265F7FB400152637 /* PersonalInfo */ = {
-			isa = PBXGroup;
-			children = (
-				48B88BF1265E701600D1E316 /* Personal.storyboard */,
-				484E1308265F82ED00152637 /* PersonalViewController.swift */,
-			);
-			name = PersonalInfo;
-			sourceTree = "<group>";
-		};
-		484E1302265F7FDF00152637 /* Rank */ = {
-			isa = PBXGroup;
-			children = (
-				48807C17265BDCE900509FDC /* Rank.storyboard */,
-				484E130A265F831E00152637 /* RankViewController.swift */,
-			);
-			name = Rank;
-			sourceTree = "<group>";
-		};
-		484E1303265F7FF900152637 /* Diet */ = {
+		484E130F265F84DC00152637 /* Diet */ = {
 			isa = PBXGroup;
 			children = (
 				48807C12265BDC0800509FDC /* Diet.storyboard */,
 				484E130C265F835200152637 /* DietViewController.swift */,
 			);
-			name = Diet;
+			path = Diet;
+			sourceTree = "<group>";
+		};
+		484E1311265F850E00152637 /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+				48807C17265BDCE900509FDC /* Rank.storyboard */,
+				484E130A265F831E00152637 /* RankViewController.swift */,
+			);
+			path = Rank;
+			sourceTree = "<group>";
+		};
+		484E1312265F852900152637 /* PersonalInfo */ = {
+			isa = PBXGroup;
+			children = (
+				48B88BF1265E701600D1E316 /* Personal.storyboard */,
+				484E1308265F82ED00152637 /* PersonalViewController.swift */,
+			);
+			path = PersonalInfo;
+			sourceTree = "<group>";
+		};
+		484E1313265F854400152637 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				48807C0D265BDB6100509FDC /* Home.storyboard */,
+				48B88BF3265E74B400D1E316 /* HomeViewController.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
