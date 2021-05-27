@@ -14,8 +14,9 @@
 		20EAF814261EF1A9008A8A05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EAF812261EF1A9008A8A05 /* LaunchScreen.storyboard */; };
 		20EAF81F261EF1A9008A8A05 /* DasikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF81E261EF1A9008A8A05 /* DasikTests.swift */; };
 		20EAF82A261EF1A9008A8A05 /* DasikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF829261EF1A9008A8A05 /* DasikUITests.swift */; };
-		20EAF83B261EFDBB008A8A05 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF83A261EFDBB008A8A05 /* Movie.swift */; };
-		20EAF840261F0206008A8A05 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF83F261F0206008A8A05 /* DetailViewController.swift */; };
+		484E1309265F82ED00152637 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484E1308265F82ED00152637 /* PersonalViewController.swift */; };
+		484E130B265F831E00152637 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484E130A265F831E00152637 /* RankViewController.swift */; };
+		484E130D265F835200152637 /* DietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484E130C265F835200152637 /* DietViewController.swift */; };
 		48807C0E265BDB6100509FDC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48807C0D265BDB6100509FDC /* Home.storyboard */; };
 		48807C13265BDC0800509FDC /* Diet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48807C12265BDC0800509FDC /* Diet.storyboard */; };
 		48807C18265BDCE900509FDC /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48807C17265BDCE900509FDC /* Rank.storyboard */; };
@@ -54,8 +55,9 @@
 		20EAF825261EF1A9008A8A05 /* DasikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DasikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EAF829261EF1A9008A8A05 /* DasikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DasikUITests.swift; sourceTree = "<group>"; };
 		20EAF82B261EF1A9008A8A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		20EAF83A261EFDBB008A8A05 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		20EAF83F261F0206008A8A05 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		484E1308265F82ED00152637 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
+		484E130A265F831E00152637 /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		484E130C265F835200152637 /* DietViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietViewController.swift; sourceTree = "<group>"; };
 		48807C0D265BDB6100509FDC /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		48807C12265BDC0800509FDC /* Diet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diet.storyboard; sourceTree = "<group>"; };
 		48807C17265BDCE900509FDC /* Rank.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Rank.storyboard; sourceTree = "<group>"; };
@@ -121,8 +123,6 @@
 				20EAF810261EF1A9008A8A05 /* Assets.xcassets */,
 				20EAF812261EF1A9008A8A05 /* LaunchScreen.storyboard */,
 				20EAF815261EF1A9008A8A05 /* Info.plist */,
-				20EAF83A261EFDBB008A8A05 /* Movie.swift */,
-				20EAF83F261F0206008A8A05 /* DetailViewController.swift */,
 			);
 			path = Dasik;
 			sourceTree = "<group>";
@@ -158,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				48B88BF1265E701600D1E316 /* Personal.storyboard */,
+				484E1308265F82ED00152637 /* PersonalViewController.swift */,
 			);
 			name = PersonalInfo;
 			sourceTree = "<group>";
@@ -166,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				48807C17265BDCE900509FDC /* Rank.storyboard */,
+				484E130A265F831E00152637 /* RankViewController.swift */,
 			);
 			name = Rank;
 			sourceTree = "<group>";
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				48807C12265BDC0800509FDC /* Diet.storyboard */,
+				484E130C265F835200152637 /* DietViewController.swift */,
 			);
 			name = Diet;
 			sourceTree = "<group>";
@@ -312,10 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484E130D265F835200152637 /* DietViewController.swift in Sources */,
 				20EAF808261EF1A5008A8A05 /* AppDelegate.swift in Sources */,
-				20EAF840261F0206008A8A05 /* DetailViewController.swift in Sources */,
-				20EAF83B261EFDBB008A8A05 /* Movie.swift in Sources */,
+				484E130B265F831E00152637 /* RankViewController.swift in Sources */,
 				20EAF80A261EF1A5008A8A05 /* SceneDelegate.swift in Sources */,
+				484E1309265F82ED00152637 /* PersonalViewController.swift in Sources */,
 				48B88BF4265E74B400D1E316 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
