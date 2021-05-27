@@ -17,6 +17,11 @@
 		20EAF82A261EF1A9008A8A05 /* DasikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF829261EF1A9008A8A05 /* DasikUITests.swift */; };
 		20EAF83B261EFDBB008A8A05 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF83A261EFDBB008A8A05 /* Movie.swift */; };
 		20EAF840261F0206008A8A05 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF83F261F0206008A8A05 /* DetailViewController.swift */; };
+		48807C0E265BDB6100509FDC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48807C0D265BDB6100509FDC /* Home.storyboard */; };
+		48807C13265BDC0800509FDC /* Diet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48807C12265BDC0800509FDC /* Diet.storyboard */; };
+		48807C18265BDCE900509FDC /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48807C17265BDCE900509FDC /* Rank.storyboard */; };
+		48B88BF2265E701600D1E316 /* Personal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B88BF1265E701600D1E316 /* Personal.storyboard */; };
+		48B88BF4265E74B400D1E316 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B88BF3265E74B400D1E316 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		20EAF82B261EF1A9008A8A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20EAF83A261EFDBB008A8A05 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		20EAF83F261F0206008A8A05 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		48807C0D265BDB6100509FDC /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		48807C12265BDC0800509FDC /* Diet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diet.storyboard; sourceTree = "<group>"; };
+		48807C17265BDCE900509FDC /* Rank.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Rank.storyboard; sourceTree = "<group>"; };
+		48B88BF1265E701600D1E316 /* Personal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Personal.storyboard; sourceTree = "<group>"; };
+		48B88BF3265E74B400D1E316 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,11 @@
 		20EAF806261EF1A5008A8A05 /* Dasik */ = {
 			isa = PBXGroup;
 			children = (
+				48B88BF1265E701600D1E316 /* Personal.storyboard */,
+				48807C17265BDCE900509FDC /* Rank.storyboard */,
+				48807C12265BDC0800509FDC /* Diet.storyboard */,
+				48B88BF3265E74B400D1E316 /* HomeViewController.swift */,
+				48807C0D265BDB6100509FDC /* Home.storyboard */,
 				20EAF807261EF1A5008A8A05 /* AppDelegate.swift */,
 				20EAF809261EF1A5008A8A05 /* SceneDelegate.swift */,
 				20EAF80B261EF1A5008A8A05 /* ViewController.swift */,
@@ -237,9 +252,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48807C18265BDCE900509FDC /* Rank.storyboard in Resources */,
+				48807C13265BDC0800509FDC /* Diet.storyboard in Resources */,
 				20EAF814261EF1A9008A8A05 /* LaunchScreen.storyboard in Resources */,
 				20EAF811261EF1A9008A8A05 /* Assets.xcassets in Resources */,
 				20EAF80F261EF1A5008A8A05 /* Main.storyboard in Resources */,
+				48807C0E265BDB6100509FDC /* Home.storyboard in Resources */,
+				48B88BF2265E701600D1E316 /* Personal.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +288,7 @@
 				20EAF840261F0206008A8A05 /* DetailViewController.swift in Sources */,
 				20EAF83B261EFDBB008A8A05 /* Movie.swift in Sources */,
 				20EAF80A261EF1A5008A8A05 /* SceneDelegate.swift in Sources */,
+				48B88BF4265E74B400D1E316 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
