@@ -30,11 +30,11 @@
             </objects>
             <point key="canvasLocation" x="-4215.9420289855079" y="316.07142857142856"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--HOME-->
         <scene sceneID="YsW-8D-2av">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lXz-mW-41R" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="house.fill" catalog="system" id="gEa-j9-Uqg"/>
+                    <tabBarItem key="tabBarItem" title="HOME" image="house.fill" catalog="system" id="gEa-j9-Uqg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="fyu-sG-ras">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
@@ -244,15 +244,15 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bo-jW-G9w">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="290"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2090"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="zHi-KX-lWM">
-                                                <rect key="frame" x="15" y="15" width="345" height="260"/>
+                                                <rect key="frame" x="15" y="15" width="345" height="2060"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gvb-e5-nwR">
-                                                        <rect key="frame" x="0.0" y="0.0" width="345" height="50"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="345" height="500"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="height" constant="50" id="c1s-XR-dPQ"/>
+                                                            <constraint firstAttribute="height" constant="500" id="c1s-XR-dPQ"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <state key="normal" title="  프로필 설정">
@@ -271,7 +271,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RhZ-Ms-CRW">
-                                                        <rect key="frame" x="0.0" y="70" width="345" height="50"/>
+                                                        <rect key="frame" x="0.0" y="520" width="345" height="500"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <state key="normal" title="  알레르기 설정">
                                                             <color key="titleColor" systemColor="labelColor"/>
@@ -289,7 +289,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y68-cC-jUL">
-                                                        <rect key="frame" x="0.0" y="140" width="345" height="50"/>
+                                                        <rect key="frame" x="0.0" y="1040" width="345" height="500"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <state key="normal" title="  문의하기">
                                                             <color key="titleColor" systemColor="labelColor"/>
@@ -307,16 +307,16 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="imD-Dz-N41">
-                                                        <rect key="frame" x="0.0" y="210" width="345" height="50"/>
+                                                        <rect key="frame" x="0.0" y="1560" width="345" height="500"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  앱 버전" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wtH-eU-GEj">
-                                                                <rect key="frame" x="0.0" y="0.0" width="172.5" height="50"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="172.5" height="500"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="              1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfa-eX-Xkz">
-                                                                <rect key="frame" x="172.5" y="0.0" width="172.5" height="50"/>
+                                                                <rect key="frame" x="172.5" y="0.0" width="172.5" height="500"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" systemColor="systemGrayColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -435,11 +435,11 @@
             </objects>
             <point key="canvasLocation" x="1113" y="-1693"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--식단표-->
         <scene sceneID="NQC-CV-jFS">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rCb-bp-fDO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="calendar" catalog="system" id="Cf6-SM-TNA"/>
+                    <tabBarItem key="tabBarItem" title="식단표" image="calendar" catalog="system" id="Cf6-SM-TNA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="PTA-HU-Xqd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
@@ -483,11 +483,11 @@
             </objects>
             <point key="canvasLocation" x="-2210" y="315"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--추천음식-->
         <scene sceneID="lTF-dn-2Jb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NOM-rs-GZW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="hand.thumbsup.fill" catalog="system" id="Tff-Xc-jwc"/>
+                    <tabBarItem key="tabBarItem" title="추천음식" image="hand.thumbsup.fill" catalog="system" id="Tff-Xc-jwc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="GXb-bd-d5s">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
