@@ -14,14 +14,11 @@
 		20EAF814261EF1A9008A8A05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EAF812261EF1A9008A8A05 /* LaunchScreen.storyboard */; };
 		20EAF81F261EF1A9008A8A05 /* DasikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF81E261EF1A9008A8A05 /* DasikTests.swift */; };
 		20EAF82A261EF1A9008A8A05 /* DasikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF829261EF1A9008A8A05 /* DasikUITests.swift */; };
-		484E1309265F82ED00152637 /* PersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484E1308265F82ED00152637 /* PersonalViewController.swift */; };
-		484E130B265F831E00152637 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484E130A265F831E00152637 /* RankViewController.swift */; };
-		484E130D265F835200152637 /* DietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484E130C265F835200152637 /* DietViewController.swift */; };
-		48807C0E265BDB6100509FDC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48807C0D265BDB6100509FDC /* Home.storyboard */; };
-		48807C13265BDC0800509FDC /* Diet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48807C12265BDC0800509FDC /* Diet.storyboard */; };
-		48807C18265BDCE900509FDC /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48807C17265BDCE900509FDC /* Rank.storyboard */; };
-		48B88BF2265E701600D1E316 /* Personal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B88BF1265E701600D1E316 /* Personal.storyboard */; };
-		48B88BF4265E74B400D1E316 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B88BF3265E74B400D1E316 /* HomeViewController.swift */; };
+		EA5FBA052661443500B534BA /* Extension_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA042661443500B534BA /* Extension_UIView.swift */; };
+		EA5FBA4826618E6F00B534BA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA4726618E6F00B534BA /* SettingViewController.swift */; };
+		EA5FBA56266192F000B534BA /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA55266192F000B534BA /* RankViewController.swift */; };
+		EA5FBA5E266193FF00B534BA /* DietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA5D266193FF00B534BA /* DietViewController.swift */; };
+		EA5FBA662661941700B534BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA652661941700B534BA /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,14 +52,11 @@
 		20EAF825261EF1A9008A8A05 /* DasikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DasikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EAF829261EF1A9008A8A05 /* DasikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DasikUITests.swift; sourceTree = "<group>"; };
 		20EAF82B261EF1A9008A8A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		484E1308265F82ED00152637 /* PersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalViewController.swift; sourceTree = "<group>"; };
-		484E130A265F831E00152637 /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
-		484E130C265F835200152637 /* DietViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietViewController.swift; sourceTree = "<group>"; };
-		48807C0D265BDB6100509FDC /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		48807C12265BDC0800509FDC /* Diet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Diet.storyboard; sourceTree = "<group>"; };
-		48807C17265BDCE900509FDC /* Rank.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Rank.storyboard; sourceTree = "<group>"; };
-		48B88BF1265E701600D1E316 /* Personal.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Personal.storyboard; sourceTree = "<group>"; };
-		48B88BF3265E74B400D1E316 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA5FBA042661443500B534BA /* Extension_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIView.swift; sourceTree = "<group>"; };
+		EA5FBA4726618E6F00B534BA /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		EA5FBA55266192F000B534BA /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		EA5FBA5D266193FF00B534BA /* DietViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietViewController.swift; sourceTree = "<group>"; };
+		EA5FBA652661941700B534BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,16 +107,17 @@
 		20EAF806261EF1A5008A8A05 /* Dasik */ = {
 			isa = PBXGroup;
 			children = (
-				484E1313265F854400152637 /* HomeView */,
-				484E1312265F852900152637 /* PersonalInfo */,
-				484E1311265F850E00152637 /* Rank */,
-				484E130F265F84DC00152637 /* Diet */,
+				EA5FBA2126618CE500B534BA /* Setting */,
+				EA5FBA2026618CD900B534BA /* Rank */,
+				EA5FBA1F26618CD100B534BA /* Diet */,
+				EA5FBA1B26618CC500B534BA /* Home */,
 				20EAF807261EF1A5008A8A05 /* AppDelegate.swift */,
 				20EAF809261EF1A5008A8A05 /* SceneDelegate.swift */,
 				20EAF80D261EF1A5008A8A05 /* Main.storyboard */,
 				20EAF810261EF1A9008A8A05 /* Assets.xcassets */,
 				20EAF812261EF1A9008A8A05 /* LaunchScreen.storyboard */,
 				20EAF815261EF1A9008A8A05 /* Info.plist */,
+				EA5FBA042661443500B534BA /* Extension_UIView.swift */,
 			);
 			path = Dasik;
 			sourceTree = "<group>";
@@ -145,40 +140,36 @@
 			path = DasikUITests;
 			sourceTree = "<group>";
 		};
-		484E130F265F84DC00152637 /* Diet */ = {
+		EA5FBA1B26618CC500B534BA /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				48807C12265BDC0800509FDC /* Diet.storyboard */,
-				484E130C265F835200152637 /* DietViewController.swift */,
+				EA5FBA652661941700B534BA /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EA5FBA1F26618CD100B534BA /* Diet */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FBA5D266193FF00B534BA /* DietViewController.swift */,
 			);
 			path = Diet;
 			sourceTree = "<group>";
 		};
-		484E1311265F850E00152637 /* Rank */ = {
+		EA5FBA2026618CD900B534BA /* Rank */ = {
 			isa = PBXGroup;
 			children = (
-				48807C17265BDCE900509FDC /* Rank.storyboard */,
-				484E130A265F831E00152637 /* RankViewController.swift */,
+				EA5FBA55266192F000B534BA /* RankViewController.swift */,
 			);
 			path = Rank;
 			sourceTree = "<group>";
 		};
-		484E1312265F852900152637 /* PersonalInfo */ = {
+		EA5FBA2126618CE500B534BA /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				48B88BF1265E701600D1E316 /* Personal.storyboard */,
-				484E1308265F82ED00152637 /* PersonalViewController.swift */,
+				EA5FBA4726618E6F00B534BA /* SettingViewController.swift */,
 			);
-			path = PersonalInfo;
-			sourceTree = "<group>";
-		};
-		484E1313265F854400152637 /* HomeView */ = {
-			isa = PBXGroup;
-			children = (
-				48807C0D265BDB6100509FDC /* Home.storyboard */,
-				48B88BF3265E74B400D1E316 /* HomeViewController.swift */,
-			);
-			path = HomeView;
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,13 +275,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48807C18265BDCE900509FDC /* Rank.storyboard in Resources */,
-				48807C13265BDC0800509FDC /* Diet.storyboard in Resources */,
 				20EAF814261EF1A9008A8A05 /* LaunchScreen.storyboard in Resources */,
 				20EAF811261EF1A9008A8A05 /* Assets.xcassets in Resources */,
 				20EAF80F261EF1A5008A8A05 /* Main.storyboard in Resources */,
-				48807C0E265BDB6100509FDC /* Home.storyboard in Resources */,
-				48B88BF2265E701600D1E316 /* Personal.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,12 +302,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				484E130D265F835200152637 /* DietViewController.swift in Sources */,
+				EA5FBA56266192F000B534BA /* RankViewController.swift in Sources */,
+				EA5FBA052661443500B534BA /* Extension_UIView.swift in Sources */,
+				EA5FBA5E266193FF00B534BA /* DietViewController.swift in Sources */,
 				20EAF808261EF1A5008A8A05 /* AppDelegate.swift in Sources */,
-				484E130B265F831E00152637 /* RankViewController.swift in Sources */,
+				EA5FBA4826618E6F00B534BA /* SettingViewController.swift in Sources */,
+				EA5FBA662661941700B534BA /* HomeViewController.swift in Sources */,
 				20EAF80A261EF1A5008A8A05 /* SceneDelegate.swift in Sources */,
-				484E1309265F82ED00152637 /* PersonalViewController.swift in Sources */,
-				48B88BF4265E74B400D1E316 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
