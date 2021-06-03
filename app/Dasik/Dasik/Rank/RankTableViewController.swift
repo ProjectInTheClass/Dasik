@@ -1,5 +1,5 @@
 //
-//  DetailsRankTableViewController.swift
+//  RankTableViewController.swift
 //  Dasik
 //
 //  Created by 이현민 on 2021/06/03.
@@ -7,17 +7,11 @@
 
 import UIKit
 
-class DetailsRankTableViewController: UITableViewController {
+class RankTableViewController: UITableViewController {
 
-    @IBOutlet var detailName: UILabel!
-    var detailnamestring:String = ""
-    var selectedcategory:RankCategory!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        detailName.text = selectedcategory.categoryname
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -34,18 +28,19 @@ class DetailsRankTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return rankfoods.count
+        return categoryfoods.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RankCell1", for: indexPath) as! RankCell
-
-        let item = rankfoods[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "foodCategory", for: indexPath) as! foodCategory
         
-        cell.foodimg.image = UIImage(named: item.foodimage)
-        cell.foodname.text = item.name
-        cell.foodprice.text = String(item.price)
+        
+        let item = categoryfoods[indexPath.row]
+        
+        cell.categoryImage.image = UIImage(named: item.categoryimage)
+        cell.categoryName.text = item.categoryname
+        
         // Configure the cell...
 
         return cell
@@ -58,11 +53,11 @@ class DetailsRankTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if let indexPath = self.tableView.indexPathForSelectedRow,
-           let subdetailVC = segue.destination as? SubDetailsViewController{
-            subdetailVC.selectedFood = rankfoods[indexPath.row]
+           let detailVC = segue.destination as? DetailsRankTableViewController{
+            detailVC.selectedcategory = categoryfoods[indexPath.row]
         }
     }
-
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -110,9 +105,7 @@ class DetailsRankTableViewController: UITableViewController {
 
 }
 
-class RankCell: UITableViewCell{
-    
-    @IBOutlet var foodimg: UIImageView!
-    @IBOutlet var foodname: UILabel!
-    @IBOutlet var foodprice: UILabel!
+class foodCategory:UITableViewCell{
+    @IBOutlet var categoryImage: UIImageView!
+    @IBOutlet var categoryName: UILabel!
 }

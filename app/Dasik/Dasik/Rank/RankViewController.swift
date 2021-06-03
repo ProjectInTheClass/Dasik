@@ -7,46 +7,23 @@
 
 import UIKit
 
-class RankViewController: UIViewController {
-    
-    @IBOutlet var rice: UIView!
-    @IBOutlet var noodle: UIView!
-    @IBOutlet var cookie: UIView!
-    @IBOutlet var chicken: UIView!
-    @IBOutlet var riceimage: UIImageView!
-    @IBOutlet var noodleimage: UIImageView!
-    @IBOutlet var cookieimage: UIImageView!
-    @IBOutlet var chickenimage: UIImageView!
+class RankViewController: UITableView {
     
     var detailname: String = ""
     
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+       // super.viewDidLoad()
     // Do any additional setup after loading the view.
-        riceimage.image = UIImage(named:"testimage")
-        noodleimage.image = UIImage(named:"testimage")
-        cookieimage.image = UIImage(named:"testimage")
-        chickenimage.image = UIImage(named:"testimage")
-        
-        let RicetapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewRiceTapped))
-        rice.addGestureRecognizer(RicetapGestureRecognizer)
-        
-        let NoodletapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewNoodleTapped))
-        noodle.addGestureRecognizer(NoodletapGestureRecognizer)
-        
-        let CookietapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewCookieTapped))
-        cookie.addGestureRecognizer(CookietapGestureRecognizer)
-        
-        let ChickentapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewChickenTapped))
-        chicken.addGestureRecognizer(ChickentapGestureRecognizer)
+    
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let detailVC = segue.destination as? DetailsRankTableViewController else { return }
-        print(sender!)
-        detailVC.detailnamestring = self.detailname
+        if let indexPath = self.tableView.indexPathForSelectedRow,
+           let subdetailVC = segue.destination as? SubDetailsViewController{
+            subdetailVC.selectedFood = rankfoods[indexPath.row]
+        }
     }
     
         

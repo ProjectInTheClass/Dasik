@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct RankCategory{
+    var categoryimage:String
+    var categoryname:String
+}
 struct RankFood {
     var name: String        //이름
     var type: String        //종류
@@ -19,6 +23,15 @@ struct RankFood {
     var siteurl:String      //사이트url
     var foodimage:String        //음식사진
 }
+
+var categoryfoods: [RankCategory] = [
+    RankCategory(categoryimage: "testimage", categoryname: "밥"),
+    RankCategory(categoryimage: "testimage", categoryname: "면"),
+    RankCategory(categoryimage: "testimage", categoryname: "샐러드"),
+    RankCategory(categoryimage: "testimage", categoryname: "닭가슴살"),
+    RankCategory(categoryimage: "testimage", categoryname: "간편식"),
+    RankCategory(categoryimage: "testimage", categoryname: "간식")
+]
 
 var rankfoods: [RankFood] = [
     RankFood(name: "스테이크 닭가슴살", type:"닭가슴살",ingredient: "두유", kcal:138, carbohydrate: 9.74, protein:18.91, fat:2.6,price:2900,siteurl:"www.naver.com" , foodimage: "testimage"),

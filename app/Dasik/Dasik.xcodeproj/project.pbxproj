@@ -10,6 +10,7 @@
 		20778004266818D600111ED3 /* RankFoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20778003266818D600111ED3 /* RankFoodModel.swift */; };
 		2077801A26686D6A00111ED3 /* DetailsRankTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077801926686D6900111ED3 /* DetailsRankTableViewController.swift */; };
 		207780232668A81800111ED3 /* SubDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207780222668A81800111ED3 /* SubDetailsViewController.swift */; };
+		2077802B2668C71100111ED3 /* RankTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077802A2668C71100111ED3 /* RankTableViewController.swift */; };
 		20EAF808261EF1A5008A8A05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF807261EF1A5008A8A05 /* AppDelegate.swift */; };
 		20EAF80A261EF1A5008A8A05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF809261EF1A5008A8A05 /* SceneDelegate.swift */; };
 		20EAF80F261EF1A5008A8A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EAF80D261EF1A5008A8A05 /* Main.storyboard */; };
@@ -19,7 +20,6 @@
 		20EAF82A261EF1A9008A8A05 /* DasikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF829261EF1A9008A8A05 /* DasikUITests.swift */; };
 		EA5FBA052661443500B534BA /* Extension_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA042661443500B534BA /* Extension_UIView.swift */; };
 		EA5FBA4826618E6F00B534BA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA4726618E6F00B534BA /* SettingViewController.swift */; };
-		EA5FBA56266192F000B534BA /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA55266192F000B534BA /* RankViewController.swift */; };
 		EA5FBA5E266193FF00B534BA /* DietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA5D266193FF00B534BA /* DietViewController.swift */; };
 		EA5FBA662661941700B534BA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA652661941700B534BA /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +45,7 @@
 		20778003266818D600111ED3 /* RankFoodModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankFoodModel.swift; sourceTree = "<group>"; };
 		2077801926686D6900111ED3 /* DetailsRankTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRankTableViewController.swift; sourceTree = "<group>"; };
 		207780222668A81800111ED3 /* SubDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubDetailsViewController.swift; sourceTree = "<group>"; };
+		2077802A2668C71100111ED3 /* RankTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewController.swift; sourceTree = "<group>"; };
 		20EAF804261EF1A5008A8A05 /* Dasik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dasik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EAF807261EF1A5008A8A05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20EAF809261EF1A5008A8A05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		20EAF82B261EF1A9008A8A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA5FBA042661443500B534BA /* Extension_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIView.swift; sourceTree = "<group>"; };
 		EA5FBA4726618E6F00B534BA /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		EA5FBA55266192F000B534BA /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
 		EA5FBA5D266193FF00B534BA /* DietViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietViewController.swift; sourceTree = "<group>"; };
 		EA5FBA652661941700B534BA /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,10 +165,10 @@
 		EA5FBA2026618CD900B534BA /* Rank */ = {
 			isa = PBXGroup;
 			children = (
-				EA5FBA55266192F000B534BA /* RankViewController.swift */,
 				20778003266818D600111ED3 /* RankFoodModel.swift */,
 				2077801926686D6900111ED3 /* DetailsRankTableViewController.swift */,
 				207780222668A81800111ED3 /* SubDetailsViewController.swift */,
+				2077802A2668C71100111ED3 /* RankTableViewController.swift */,
 			);
 			path = Rank;
 			sourceTree = "<group>";
@@ -311,13 +311,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA5FBA56266192F000B534BA /* RankViewController.swift in Sources */,
 				EA5FBA052661443500B534BA /* Extension_UIView.swift in Sources */,
 				207780232668A81800111ED3 /* SubDetailsViewController.swift in Sources */,
 				EA5FBA5E266193FF00B534BA /* DietViewController.swift in Sources */,
 				20EAF808261EF1A5008A8A05 /* AppDelegate.swift in Sources */,
 				EA5FBA4826618E6F00B534BA /* SettingViewController.swift in Sources */,
 				EA5FBA662661941700B534BA /* HomeViewController.swift in Sources */,
+				2077802B2668C71100111ED3 /* RankTableViewController.swift in Sources */,
 				2077801A26686D6A00111ED3 /* DetailsRankTableViewController.swift in Sources */,
 				20EAF80A261EF1A5008A8A05 /* SceneDelegate.swift in Sources */,
 				20778004266818D600111ED3 /* RankFoodModel.swift in Sources */,
