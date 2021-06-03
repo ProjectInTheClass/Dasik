@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		124A32D1D8F391D35169CD73 /* Pods_Dasik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D529118053CD92873DEFA4DB /* Pods_Dasik.framework */; };
 		20778004266818D600111ED3 /* RankFoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20778003266818D600111ED3 /* RankFoodModel.swift */; };
 		2077801A26686D6A00111ED3 /* DetailsRankTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077801926686D6900111ED3 /* DetailsRankTableViewController.swift */; };
 		207780232668A81800111ED3 /* SubDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207780222668A81800111ED3 /* SubDetailsViewController.swift */; };
@@ -18,6 +19,8 @@
 		20EAF814261EF1A9008A8A05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EAF812261EF1A9008A8A05 /* LaunchScreen.storyboard */; };
 		20EAF81F261EF1A9008A8A05 /* DasikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF81E261EF1A9008A8A05 /* DasikTests.swift */; };
 		20EAF82A261EF1A9008A8A05 /* DasikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF829261EF1A9008A8A05 /* DasikUITests.swift */; };
+		C4AD06975CCB365A1961E611 /* Pods_DasikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74D2E71F3534A39A0DED053 /* Pods_DasikTests.framework */; };
+		D24A95E4D96FBA4B3896B009 /* Pods_Dasik_DasikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1A29B33841D122AF742892 /* Pods_Dasik_DasikUITests.framework */; };
 		EA5FBA052661443500B534BA /* Extension_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA042661443500B534BA /* Extension_UIView.swift */; };
 		EA5FBA4826618E6F00B534BA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA4726618E6F00B534BA /* SettingViewController.swift */; };
 		EA5FBA5E266193FF00B534BA /* DietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA5D266193FF00B534BA /* DietViewController.swift */; };
@@ -59,6 +62,15 @@
 		20EAF825261EF1A9008A8A05 /* DasikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DasikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EAF829261EF1A9008A8A05 /* DasikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DasikUITests.swift; sourceTree = "<group>"; };
 		20EAF82B261EF1A9008A8A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DF4A04DF9BFA38868AEFEC7 /* Pods-DasikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DasikTests.release.xcconfig"; path = "Target Support Files/Pods-DasikTests/Pods-DasikTests.release.xcconfig"; sourceTree = "<group>"; };
+		6B5A98AAF540BF93CADB1147 /* Pods-Dasik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dasik.debug.xcconfig"; path = "Target Support Files/Pods-Dasik/Pods-Dasik.debug.xcconfig"; sourceTree = "<group>"; };
+		8FCBECE95183F9FE7DC89E3A /* Pods-Dasik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dasik.release.xcconfig"; path = "Target Support Files/Pods-Dasik/Pods-Dasik.release.xcconfig"; sourceTree = "<group>"; };
+		9D221336C63C326E7F4AD2F3 /* Pods-Dasik-DasikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dasik-DasikUITests.release.xcconfig"; path = "Target Support Files/Pods-Dasik-DasikUITests/Pods-Dasik-DasikUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A9945F11EC32394C13CCAD54 /* Pods-Dasik-DasikUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dasik-DasikUITests.debug.xcconfig"; path = "Target Support Files/Pods-Dasik-DasikUITests/Pods-Dasik-DasikUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AA5F01330CA6B6FBF7AEAF3F /* Pods-DasikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DasikTests.debug.xcconfig"; path = "Target Support Files/Pods-DasikTests/Pods-DasikTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB1A29B33841D122AF742892 /* Pods_Dasik_DasikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dasik_DasikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D529118053CD92873DEFA4DB /* Pods_Dasik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dasik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E74D2E71F3534A39A0DED053 /* Pods_DasikTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DasikTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA5FBA042661443500B534BA /* Extension_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIView.swift; sourceTree = "<group>"; };
 		EA5FBA4726618E6F00B534BA /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		EA5FBA5D266193FF00B534BA /* DietViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				124A32D1D8F391D35169CD73 /* Pods_Dasik.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AD06975CCB365A1961E611 /* Pods_DasikTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24A95E4D96FBA4B3896B009 /* Pods_Dasik_DasikUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +112,8 @@
 				20EAF81D261EF1A9008A8A05 /* DasikTests */,
 				20EAF828261EF1A9008A8A05 /* DasikUITests */,
 				20EAF805261EF1A5008A8A05 /* Products */,
+				C8BD81DB86455A8A670D7C3D /* Pods */,
+				7ED73044C97BE68439CE6D72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -146,6 +163,30 @@
 			path = DasikUITests;
 			sourceTree = "<group>";
 		};
+		7ED73044C97BE68439CE6D72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D529118053CD92873DEFA4DB /* Pods_Dasik.framework */,
+				BB1A29B33841D122AF742892 /* Pods_Dasik_DasikUITests.framework */,
+				E74D2E71F3534A39A0DED053 /* Pods_DasikTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C8BD81DB86455A8A670D7C3D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B5A98AAF540BF93CADB1147 /* Pods-Dasik.debug.xcconfig */,
+				8FCBECE95183F9FE7DC89E3A /* Pods-Dasik.release.xcconfig */,
+				A9945F11EC32394C13CCAD54 /* Pods-Dasik-DasikUITests.debug.xcconfig */,
+				9D221336C63C326E7F4AD2F3 /* Pods-Dasik-DasikUITests.release.xcconfig */,
+				AA5F01330CA6B6FBF7AEAF3F /* Pods-DasikTests.debug.xcconfig */,
+				3DF4A04DF9BFA38868AEFEC7 /* Pods-DasikTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EA5FBA1B26618CC500B534BA /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,9 +229,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20EAF82E261EF1A9008A8A05 /* Build configuration list for PBXNativeTarget "Dasik" */;
 			buildPhases = (
+				F608D1208B2B519D430C0517 /* [CP] Check Pods Manifest.lock */,
 				20EAF800261EF1A5008A8A05 /* Sources */,
 				20EAF801261EF1A5008A8A05 /* Frameworks */,
 				20EAF802261EF1A5008A8A05 /* Resources */,
+				40836EBF80DA9A0461E34315 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,6 +248,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20EAF831261EF1A9008A8A05 /* Build configuration list for PBXNativeTarget "DasikTests" */;
 			buildPhases = (
+				7692B7A0935FCFBDBF2AF50F /* [CP] Check Pods Manifest.lock */,
 				20EAF816261EF1A9008A8A05 /* Sources */,
 				20EAF817261EF1A9008A8A05 /* Frameworks */,
 				20EAF818261EF1A9008A8A05 /* Resources */,
@@ -223,9 +267,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20EAF834261EF1A9008A8A05 /* Build configuration list for PBXNativeTarget "DasikUITests" */;
 			buildPhases = (
+				69EB0EF062897375C45932B6 /* [CP] Check Pods Manifest.lock */,
 				20EAF821261EF1A9008A8A05 /* Sources */,
 				20EAF822261EF1A9008A8A05 /* Frameworks */,
 				20EAF823261EF1A9008A8A05 /* Resources */,
+				0A42CE49FEF100E92494CE69 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,6 +351,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A42CE49FEF100E92494CE69 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dasik-DasikUITests/Pods-Dasik-DasikUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dasik-DasikUITests/Pods-Dasik-DasikUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dasik-DasikUITests/Pods-Dasik-DasikUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40836EBF80DA9A0461E34315 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dasik/Pods-Dasik-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Dasik/Pods-Dasik-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dasik/Pods-Dasik-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69EB0EF062897375C45932B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dasik-DasikUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7692B7A0935FCFBDBF2AF50F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DasikTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F608D1208B2B519D430C0517 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Dasik-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		20EAF800261EF1A5008A8A05 /* Sources */ = {
@@ -493,6 +642,7 @@
 		};
 		20EAF82F261EF1A9008A8A05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B5A98AAF540BF93CADB1147 /* Pods-Dasik.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -511,6 +661,7 @@
 		};
 		20EAF830261EF1A9008A8A05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FCBECE95183F9FE7DC89E3A /* Pods-Dasik.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -529,6 +680,7 @@
 		};
 		20EAF832261EF1A9008A8A05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA5F01330CA6B6FBF7AEAF3F /* Pods-DasikTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -550,6 +702,7 @@
 		};
 		20EAF833261EF1A9008A8A05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DF4A04DF9BFA38868AEFEC7 /* Pods-DasikTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -571,6 +724,7 @@
 		};
 		20EAF835261EF1A9008A8A05 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9945F11EC32394C13CCAD54 /* Pods-Dasik-DasikUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,6 +744,7 @@
 		};
 		20EAF836261EF1A9008A8A05 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D221336C63C326E7F4AD2F3 /* Pods-Dasik-DasikUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
