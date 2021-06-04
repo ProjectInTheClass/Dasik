@@ -21,6 +21,10 @@
 		20EAF82A261EF1A9008A8A05 /* DasikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF829261EF1A9008A8A05 /* DasikUITests.swift */; };
 		C4AD06975CCB365A1961E611 /* Pods_DasikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E74D2E71F3534A39A0DED053 /* Pods_DasikTests.framework */; };
 		D24A95E4D96FBA4B3896B009 /* Pods_Dasik_DasikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1A29B33841D122AF742892 /* Pods_Dasik_DasikUITests.framework */; };
+		EA41921F266A2D3E007812B5 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA41921E266A2D3E007812B5 /* Setting.storyboard */; };
+		EA419227266A2FC9007812B5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA419226266A2FC9007812B5 /* Home.storyboard */; };
+		EA41922C266A325E007812B5 /* Diet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA41922B266A325E007812B5 /* Diet.storyboard */; };
+		EA419231266A328D007812B5 /* Rank.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA419230266A328D007812B5 /* Rank.storyboard */; };
 		EA5FBA052661443500B534BA /* Extension_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA042661443500B534BA /* Extension_UIView.swift */; };
 		EA5FBA4826618E6F00B534BA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA4726618E6F00B534BA /* SettingViewController.swift */; };
 		EA5FBA5E266193FF00B534BA /* DietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FBA5D266193FF00B534BA /* DietViewController.swift */; };
@@ -71,6 +75,10 @@
 		BB1A29B33841D122AF742892 /* Pods_Dasik_DasikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dasik_DasikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D529118053CD92873DEFA4DB /* Pods_Dasik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dasik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E74D2E71F3534A39A0DED053 /* Pods_DasikTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DasikTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA41921E266A2D3E007812B5 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		EA419226266A2FC9007812B5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		EA41922B266A325E007812B5 /* Diet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Diet.storyboard; sourceTree = "<group>"; };
+		EA419230266A328D007812B5 /* Rank.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Rank.storyboard; sourceTree = "<group>"; };
 		EA5FBA042661443500B534BA /* Extension_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIView.swift; sourceTree = "<group>"; };
 		EA5FBA4726618E6F00B534BA /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		EA5FBA5D266193FF00B534BA /* DietViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5FBA652661941700B534BA /* HomeViewController.swift */,
+				EA419226266A2FC9007812B5 /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -198,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5FBA5D266193FF00B534BA /* DietViewController.swift */,
+				EA41922B266A325E007812B5 /* Diet.storyboard */,
 			);
 			path = Diet;
 			sourceTree = "<group>";
@@ -209,6 +219,7 @@
 				2077801926686D6900111ED3 /* DetailsRankTableViewController.swift */,
 				207780222668A81800111ED3 /* SubDetailsViewController.swift */,
 				2077802A2668C71100111ED3 /* RankTableViewController.swift */,
+				EA419230266A328D007812B5 /* Rank.storyboard */,
 			);
 			path = Rank;
 			sourceTree = "<group>";
@@ -217,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5FBA4726618E6F00B534BA /* SettingViewController.swift */,
+				EA41921E266A2D3E007812B5 /* Setting.storyboard */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -330,8 +342,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				20EAF814261EF1A9008A8A05 /* LaunchScreen.storyboard in Resources */,
+				EA419231266A328D007812B5 /* Rank.storyboard in Resources */,
+				EA419227266A2FC9007812B5 /* Home.storyboard in Resources */,
+				EA41922C266A325E007812B5 /* Diet.storyboard in Resources */,
 				20EAF811261EF1A9008A8A05 /* Assets.xcassets in Resources */,
 				20EAF80F261EF1A5008A8A05 /* Main.storyboard in Resources */,
+				EA41921F266A2D3E007812B5 /* Setting.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

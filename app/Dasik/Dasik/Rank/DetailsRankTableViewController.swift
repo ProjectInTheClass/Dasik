@@ -9,15 +9,14 @@ import UIKit
 
 class DetailsRankTableViewController: UITableViewController {
 
-    @IBOutlet var detailName: UILabel!
+    @IBOutlet weak var detailNameNavigation: UINavigationItem!
     var detailnamestring:String = ""
     var selectedcategory:RankCategory!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        detailName.text = selectedcategory.categoryname
+        detailNameNavigation.title = selectedcategory.categoryname
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
