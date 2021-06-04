@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oVo-tX-5a2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oVo-tX-5a2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -511,12 +511,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Au-2s-WI6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-607" y="-1693"/>
+            <point key="canvasLocation" x="-342" y="-2220"/>
         </scene>
         <!--알레르기 설정-->
         <scene sceneID="BGb-gs-kJO">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="0hq-X2-Xki" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="0hq-X2-Xki" customClass="AllergyViewController" customModule="Dasik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Erm-zo-qKQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -539,8 +539,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="atX-bR-UJJ">
+                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="atX-bR-UJJ">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="cGC-RL-TVD"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -574,8 +577,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G8P-Oi-SY9">
+                                                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="G8P-Oi-SY9">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="LGm-46-yaN"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -609,8 +615,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dly-Ly-IRl">
+                                                            <switch opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="dly-Ly-IRl">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="Mmi-uL-OVa"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -644,8 +653,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qpy-QY-ULO">
+                                                            <switch opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="qpy-QY-ULO">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="dCJ-ro-Zcq"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -679,8 +691,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WKV-4H-L1k">
+                                                            <switch opaque="NO" tag="4" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="WKV-4H-L1k">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="Y7u-wm-31l"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -714,8 +729,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xmM-I7-IYh">
+                                                            <switch opaque="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="xmM-I7-IYh">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="wiP-OP-34S"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -749,8 +767,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WDO-HV-8um">
+                                                            <switch opaque="NO" tag="6" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="WDO-HV-8um">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="gsx-zP-iaN"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -784,8 +805,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="for-ao-GPu">
+                                                            <switch opaque="NO" tag="7" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="for-ao-GPu">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="45l-eM-9Bh"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -819,8 +843,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U2H-km-p1u">
+                                                            <switch opaque="NO" tag="8" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="U2H-km-p1u">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="kce-is-chc"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -854,8 +881,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o9U-Ue-Etk">
+                                                            <switch opaque="NO" tag="9" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="o9U-Ue-Etk">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="1VY-fh-Tbb"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -889,8 +919,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tKm-tN-oJs">
+                                                            <switch opaque="NO" tag="10" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="tKm-tN-oJs">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="2E3-ri-KiW"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -924,8 +957,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ruN-Js-TQ1">
+                                                            <switch opaque="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="ruN-Js-TQ1">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="gRm-Ff-SwK"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -959,8 +995,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Xk-Ww-iX0">
+                                                            <switch opaque="NO" tag="12" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="6Xk-Ww-iX0">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="lWC-vL-Nhf"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -994,8 +1033,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SDY-uH-bLV">
+                                                            <switch opaque="NO" tag="13" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="SDY-uH-bLV">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="tuA-c8-hhk"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1029,8 +1071,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MnL-7e-Zlr">
+                                                            <switch opaque="NO" tag="14" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="MnL-7e-Zlr">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="aYn-io-mgs"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1064,8 +1109,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHv-9B-KkU">
+                                                            <switch opaque="NO" tag="15" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="VHv-9B-KkU">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="adx-7s-MNt"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1099,8 +1147,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="34T-Ja-4G5">
+                                                            <switch opaque="NO" tag="16" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="34T-Ja-4G5">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="VgP-zG-6aK"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1134,8 +1185,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQ0-em-54M">
+                                                            <switch opaque="NO" tag="17" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="aQ0-em-54M">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="4fc-G0-Frc"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1169,8 +1223,11 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5JF-Zp-g5w">
+                                                            <switch opaque="NO" tag="18" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="5JF-Zp-g5w">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
+                                                                <connections>
+                                                                    <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="D4R-2G-6wv"/>
+                                                                </connections>
                                                             </switch>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1228,6 +1285,31 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="알레르기 설정" id="rM2-Du-FO1"/>
+                    <connections>
+                        <outletCollection property="allergyButtons" destination="atX-bR-UJJ" collectionClass="NSMutableArray" id="dea-h7-ixy"/>
+                        <outletCollection property="allergyButtons" destination="G8P-Oi-SY9" collectionClass="NSMutableArray" id="AKX-4i-tCx"/>
+                        <outletCollection property="allergyButtons" destination="dly-Ly-IRl" collectionClass="NSMutableArray" id="oE2-bl-g8X"/>
+                        <outletCollection property="allergyButtons" destination="qpy-QY-ULO" collectionClass="NSMutableArray" id="Rqs-Kk-ho9"/>
+                        <outletCollection property="allergyButtons" destination="qpy-QY-ULO" collectionClass="NSMutableArray" id="Rnl-VO-YTx"/>
+                        <outletCollection property="allergyButtons" destination="qpy-QY-ULO" collectionClass="NSMutableArray" id="eef-en-z5U"/>
+                        <outletCollection property="allergyButtons" destination="qpy-QY-ULO" collectionClass="NSMutableArray" id="4Ec-0P-CuK"/>
+                        <outletCollection property="allergyButtons" destination="WKV-4H-L1k" collectionClass="NSMutableArray" id="xTs-dp-8N9"/>
+                        <outletCollection property="allergyButtons" destination="xmM-I7-IYh" collectionClass="NSMutableArray" id="LIa-Pr-lth"/>
+                        <outletCollection property="allergyButtons" destination="WDO-HV-8um" collectionClass="NSMutableArray" id="Av2-df-ozx"/>
+                        <outletCollection property="allergyButtons" destination="for-ao-GPu" collectionClass="NSMutableArray" id="ixq-w1-Om7"/>
+                        <outletCollection property="allergyButtons" destination="U2H-km-p1u" collectionClass="NSMutableArray" id="Cj1-w2-lmH"/>
+                        <outletCollection property="allergyButtons" destination="o9U-Ue-Etk" collectionClass="NSMutableArray" id="OWe-hh-t7l"/>
+                        <outletCollection property="allergyButtons" destination="tKm-tN-oJs" collectionClass="NSMutableArray" id="XLI-CE-J8I"/>
+                        <outletCollection property="allergyButtons" destination="ruN-Js-TQ1" collectionClass="NSMutableArray" id="kwb-0g-KIP"/>
+                        <outletCollection property="allergyButtons" destination="6Xk-Ww-iX0" collectionClass="NSMutableArray" id="DoA-Xs-248"/>
+                        <outletCollection property="allergyButtons" destination="SDY-uH-bLV" collectionClass="NSMutableArray" id="wD1-SC-boG"/>
+                        <outletCollection property="allergyButtons" destination="MnL-7e-Zlr" collectionClass="NSMutableArray" id="poz-ew-84S"/>
+                        <outletCollection property="allergyButtons" destination="VHv-9B-KkU" collectionClass="NSMutableArray" id="Bq5-WT-DUk"/>
+                        <outletCollection property="allergyButtons" destination="34T-Ja-4G5" collectionClass="NSMutableArray" id="cRt-pc-guv"/>
+                        <outletCollection property="allergyButtons" destination="aQ0-em-54M" collectionClass="NSMutableArray" id="Gry-ca-OFD"/>
+                        <outletCollection property="allergyButtons" destination="5JF-Zp-g5w" collectionClass="NSMutableArray" id="oic-36-hMT"/>
+                        <outletCollection property="allergyButtons" destination="5JF-Zp-g5w" collectionClass="NSMutableArray" id="eG1-uv-huy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPn-9H-rEf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

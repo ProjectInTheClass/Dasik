@@ -24,7 +24,7 @@ public struct UserInfo{
     let name : String
     var height : Float
     var weight : Float
-    var allergy : [Int]
+    var allergy : [Int] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     var checkDiet : [Int]
 }
 
@@ -38,3 +38,6 @@ public struct DayMealInfo{
 public struct MonthlyDietInfo{
     var monthDiet : [DayMealInfo]
 }
+
+var TmpUser = UserInfo(name: "junkyo", height: 175.0, weight: 75, checkDiet: [])
+
