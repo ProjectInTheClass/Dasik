@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -183,7 +183,6 @@
 				AA5F01330CA6B6FBF7AEAF3F /* Pods-DasikTests.debug.xcconfig */,
 				3DF4A04DF9BFA38868AEFEC7 /* Pods-DasikTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
