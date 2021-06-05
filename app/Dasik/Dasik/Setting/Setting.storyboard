@@ -284,6 +284,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="설정" largeTitleDisplayMode="never" id="cdd-DG-nuV"/>
+                    <connections>
+                        <outlet property="userHeightLabel" destination="WT6-m6-gc0" id="j64-8X-6eK"/>
+                        <outlet property="userNameLabel" destination="JRW-CU-cEO" id="gFp-Ks-DcX"/>
+                        <outlet property="userWeightLabel" destination="HW6-Q5-XKT" id="zmT-f3-zAl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ITj-JP-osK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
