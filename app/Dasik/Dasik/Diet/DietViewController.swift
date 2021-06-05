@@ -8,7 +8,7 @@
 import UIKit
 import FSCalendar
 
-class DietViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSource {
+class DietViewController: UIViewController {
     @IBOutlet weak var calendar: FSCalendar!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,16 +19,14 @@ class DietViewController: UIViewController, FSCalendarDelegate, FSCalendarDataSo
         calendar.dataSource = self
     }
     
-    func calendar(_ calendar: FSCalendar, subtitleFor date: Date) -> String? {
-        return "kcal :\nkcal :\nkcal :\n"
-    }
-    
-    func calendar(_ calendar: FSCalendar, didDeselect date: Date, at monthPosition: FSCalendarMonthPosition) {
+}
+extension DietViewController:FSCalendarDelegate,FSCalendarDataSource{
+    func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         let dataFormatter = DateFormatter()
         dataFormatter.dateFormat = "yyyy-MM-dd"
                 
         dateSelected = dataFormatter.string(from: date)
-                
+        print(dateSelected)
         let vc = DietVC()
         self.present(vc, animated: true, completion: nil)
     }
