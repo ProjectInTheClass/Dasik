@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oVo-tX-5a2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oVo-tX-5a2">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -511,18 +511,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Au-2s-WI6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-342" y="-2220"/>
+            <point key="canvasLocation" x="-604" y="-1694"/>
         </scene>
         <!--알레르기 설정-->
         <scene sceneID="BGb-gs-kJO">
             <objects>
                 <viewController hidesBottomBarWhenPushed="YES" id="0hq-X2-Xki" customClass="AllergyViewController" customModule="Dasik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Erm-zo-qKQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1446"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kYU-R1-9Mw">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1446"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nrs-JE-dbi">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1340"/>
@@ -1285,6 +1285,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="알레르기 설정" id="rM2-Du-FO1"/>
+                    <size key="freeformSize" width="414" height="1500"/>
                     <connections>
                         <outletCollection property="allergyButtons" destination="atX-bR-UJJ" collectionClass="NSMutableArray" id="dea-h7-ixy"/>
                         <outletCollection property="allergyButtons" destination="G8P-Oi-SY9" collectionClass="NSMutableArray" id="AKX-4i-tCx"/>
