@@ -21,7 +21,7 @@ public struct RegularDietFood{
 }
 
 public struct UserInfo{
-    let name : String
+    var name : String
     var height : Float
     var weight : Float
     var allergy : [Int] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
