@@ -19,9 +19,6 @@ class UserInfoSettingViewController: UIViewController {
         nameTextField.keyboardType = .default
         heightTextField.keyboardType = .decimalPad
         weightTextField.keyboardType = .decimalPad
-        nameTextField.text = "홍길동"
-        heightTextField.text = "174"
-        weightTextField.text = "70"
     }
     
     @IBAction func setUserName(_ sender: Any) {
