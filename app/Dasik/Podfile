@@ -7,6 +7,7 @@ target 'Dasik' do
 
   # Pods for Dasik
   pod 'FSCalendar' 
+  pod 'Charts'
 
   target 'DasikTests' do
     inherit! :search_paths
