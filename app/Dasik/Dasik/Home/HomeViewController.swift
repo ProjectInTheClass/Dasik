@@ -24,6 +24,7 @@ class HomeViewController: UIViewController {
     var kcals: [Double]!
     
     let mainColor = #colorLiteral(red: 0.7457820773, green: 0.5518586636, blue: 0.2199451327, alpha: 1)
+    let checkGreen = #colorLiteral(red: 0.115068391, green: 0.7852822542, blue: 0.1747186184, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,21 +33,21 @@ class HomeViewController: UIViewController {
             breakfastButton.tintColor = .lightGray
         }
         else if bfBNum == 1{
-            breakfastButton.tintColor = mainColor
+            breakfastButton.tintColor = checkGreen
         }
         
         if lBNum == 0{
             lunchButton.tintColor = .lightGray
         }
         else if lBNum == 1{
-            lunchButton.tintColor = mainColor
+            lunchButton.tintColor = checkGreen
         }
         
         if dBNum == 0{
             dinnerButton.tintColor = .lightGray
         }
         else if dBNum == 1{
-            dinnerButton.tintColor = mainColor
+            dinnerButton.tintColor = checkGreen
         }
         
         dates = WeekString()
@@ -160,30 +161,30 @@ class HomeViewController: UIViewController {
     }
     @IBAction func breakfastButtonCheck(_ sender: UIButton) {
         if breakfastButton.tintColor == .lightGray{
-            breakfastButton.tintColor = .green
+            breakfastButton.tintColor = checkGreen
             bfBNum = 1
         }
-        else if breakfastButton.tintColor == .green{
+        else if breakfastButton.tintColor == checkGreen{
             breakfastButton.tintColor = .lightGray
             bfBNum = 0
         }
     }
     @IBAction func lunchButtonCheck(_ sender: UIButton) {
         if lunchButton.tintColor == .lightGray{
-            lunchButton.tintColor = .green
+            lunchButton.tintColor = checkGreen
             lBNum = 1
         }
-        else if lunchButton.tintColor == .green{
+        else if lunchButton.tintColor == checkGreen{
             lunchButton.tintColor = .lightGray
             lBNum = 0
         }
     }
     @IBAction func dinnerButtonCheck(_ sender: UIButton) {
         if dinnerButton.tintColor == .lightGray{
-            dinnerButton.tintColor = .green
+            dinnerButton.tintColor = checkGreen
             //dBNum = 1
         }
-        else if dinnerButton.tintColor == .green{
+        else if dinnerButton.tintColor == checkGreen{
             dinnerButton.tintColor = .lightGray
             //dBNum = 0
         }
