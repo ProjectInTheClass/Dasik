@@ -29,6 +29,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     // Do any additional setup after loading the view.
+
         if bfBNum == 0{
             breakfastButton.tintColor = .lightGray
         }
@@ -60,6 +61,9 @@ class HomeViewController: UIViewController {
         percentLabel.text = String(progressView.progress * 100) + "%"
         
         setChart(dataPoints: dates, values: kcals)
+
+        APITest()
+
     }
     
     func WeekString() -> [String]{
@@ -68,6 +72,7 @@ class HomeViewController: UIViewController {
         let calendar = Calendar.current
         let dateFormatter = DateFormatter()
         
+
         let day1 = DateComponents(day: -1)
         let day2 = DateComponents(day: -2)
         let day3 = DateComponents(day: -3)
@@ -188,5 +193,51 @@ class HomeViewController: UIViewController {
             dinnerButton.tintColor = .lightGray
             //dBNum = 0
         }
+    }
+    
+    public func APITest(){
+        print("APITEST Function Start!")
+        let dic:Dictionary = ["message":"test"]
+        
+        guard let url = URL(string:"http://localhost:3000/foods") else {
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        
+        do{
+            //request.httpBody = try JSONSerialization.data(withJSONObject: dic, options: .prettyPrinted)
+            print(request)
+        }
+        catch{
+            print(error.localizedDescription)
+        }
+        
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept-Type")
+        
+        let session = URLSession.shared
+        session.dataTask(with: request, completionHandler: { (data, response, error) in
+//            print(data!)
+            
+            let newData = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+            print("data--------")
+            print(newData!)
+            guard let jsonToArray = try? JSONSerialization.jsonObject(with: data!, options: []) else{
+                print("json to Any Error")
+                return
+            }
+            
+            
+            
+            
+//            print("data--------")
+//            print(data!)
+//            print("response------")
+//            print(response!)
+//            print("datajson-------")
+//            print(jsonToArray)
+        }).resume()
     }
 }
