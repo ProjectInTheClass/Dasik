@@ -12,22 +12,22 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     // Do any additional setup after loading the view.
-        //APITest()
+        APITest()
     }
     
     public func APITest(){
         print("APITEST Function Start!")
         let dic:Dictionary = ["message":"test"]
         
-        guard let url = URL(string:"http://localhost:3000") else {
+        guard let url = URL(string:"http://localhost:3000/foods") else {
             return
         }
         
         var request = URLRequest(url: url)
-        request.httpMethod = "POST"
+        request.httpMethod = "GET"
         
         do{
-            request.httpBody = try JSONSerialization.data(withJSONObject: dic, options: .prettyPrinted)
+            //request.httpBody = try JSONSerialization.data(withJSONObject: dic, options: .prettyPrinted)
             print(request)
         }
         catch{
@@ -39,19 +39,25 @@ class HomeViewController: UIViewController {
         
         let session = URLSession.shared
         session.dataTask(with: request, completionHandler: { (data, response, error) in
+//            print(data!)
             
+            let newData = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
+            print("data--------")
+            print(newData!)
             guard let jsonToArray = try? JSONSerialization.jsonObject(with: data!, options: []) else{
                 print("json to Any Error")
                 return
             }
             
             
-            print("data--------")
-            print(data!)
-            print("response------")
-            print(response!)
-            print("datajson-------")
-            print(jsonToArray)
+            
+            
+//            print("data--------")
+//            print(data!)
+//            print("response------")
+//            print(response!)
+//            print("datajson-------")
+//            print(jsonToArray)
         }).resume()
     }
 }
