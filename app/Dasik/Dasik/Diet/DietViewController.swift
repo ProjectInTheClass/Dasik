@@ -18,13 +18,11 @@ class DietViewController: UIViewController {
         calendar.appearance.headerMinimumDissolvedAlpha = 0.0
         calendar.delegate = self
         calendar.dataSource = self
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
             calendar.reloadData()
     }
-        
 }
 
 
