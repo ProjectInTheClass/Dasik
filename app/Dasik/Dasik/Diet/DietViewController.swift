@@ -34,6 +34,9 @@ extension DietViewController:FSCalendarDelegate,FSCalendarDataSource, FSCalendar
     }
     
     func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, fillDefaultColorFor date: Date) -> UIColor? {
+        let redColor = #colorLiteral(red: 0.9999999404, green: 0.4634621441, blue: 0.4539236426, alpha: 1)
+        let yellowColor = #colorLiteral(red: 0.9565297365, green: 0.9999999404, blue: 0.4745624959, alpha: 1)
+        let greenColor = #colorLiteral(red: 0.5128232241, green: 0.9999999404, blue: 0.5238958001, alpha: 1)
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM-dd"
         
@@ -48,16 +51,16 @@ extension DietViewController:FSCalendarDelegate,FSCalendarDataSource, FSCalendar
         
         if let colorindex = TmpUser.checkMeal[key] {
             if colorindex == 0{
-                return UIColor.gray
+                return UIColor.white
             }
             else if colorindex == 1{
-                return UIColor.red
+                return redColor
             }
             else if colorindex == 2{
-                return UIColor.orange
+                return yellowColor
             }
             else{
-                return UIColor.green
+                return greenColor
             }
         }else {
             return UIColor.white

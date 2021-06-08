@@ -40,9 +40,9 @@ public struct MonthlyDietInfo{
 }
 
 var TmpUser = UserInfo(name: "junkyo", height: 175.0, weight: 75)
-var tmp = RankFood(name: "스테이크 닭가슴살", type:"닭가슴살",ingredient: "두유", kcal:138, carbohydrate: 9.74, protein:18.91, fat:2.6,price:2900,siteurl:"www.naver.com" , foodimage: "testimage")
-var tmp1 = RankFood(name: "HI 닭가슴살", type:"닭가슴살",ingredient: "두유", kcal:138, carbohydrate: 9.74, protein:18.91, fat:2.6,price:3100,siteurl:"www.naver.com" , foodimage: "testimage")
-var tmp2 = RankFood(name: "Good 닭가슴살", type:"닭가슴살",ingredient: "두유", kcal:138, carbohydrate: 9.74, protein:18.91, fat:2.6,price:3300,siteurl:"www.naver.com" , foodimage: "testimage")
+var tmp = RankFood(name: "스테이크 닭가슴살", type:"닭가슴살",ingredient: "우유", kcal:138, carbohydrate: 9.74, protein:18.91, fat:2.6,price:2900,siteurl:"www.naver.com" , foodimage: "testimage")
+var tmp1 = RankFood(name: "HI 닭가슴살", type:"닭가슴살",ingredient: "우유", kcal:138, carbohydrate: 9.74, protein:18.91, fat:2.6,price:3100,siteurl:"www.naver.com" , foodimage: "testimage")
+var tmp2 = RankFood(name: "Good 닭가슴살", type:"닭가슴살",ingredient: "우유", kcal:138, carbohydrate: 9.74, protein:18.91, fat:2.6,price:3300,siteurl:"www.naver.com" , foodimage: "testimage")
 var dayMeal = DayMealInfo(date: "06-01", breakFast: tmp, lunch: tmp1, dinner: tmp2)
 var dayMeal2 = DayMealInfo(date: "06-02", breakFast: tmp, lunch: tmp1, dinner: tmp2)
 var dayMeal3 = DayMealInfo(date: "06-03", breakFast: tmp, lunch: tmp1, dinner: tmp2)
