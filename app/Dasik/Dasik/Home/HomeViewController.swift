@@ -80,7 +80,7 @@ class HomeViewController: UIViewController {
         let day5 = DateComponents(day: -5)
         let day6 = DateComponents(day: -6)
         
-        dateFormatter.dateFormat = "M-dd"
+        dateFormatter.dateFormat = "MM-dd"
         
         if let D6 = calendar.date(byAdding: day6, to: now){
             dates.append(dateFormatter.string(from: D6))
@@ -241,3 +241,5 @@ class HomeViewController: UIViewController {
         }).resume()
     }
 }
+
+
