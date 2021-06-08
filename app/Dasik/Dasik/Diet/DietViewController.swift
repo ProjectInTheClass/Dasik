@@ -38,6 +38,8 @@ extension DietViewController:FSCalendarDelegate,FSCalendarDataSource, FSCalendar
         selectData = dateFormatter.string(from: date)
         
         self.performSegue(withIdentifier: "DietDetail", sender: nil)
+        
+        calendar.deselect(date)
     }
     
     func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, fillDefaultColorFor date: Date) -> UIColor? {
