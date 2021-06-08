@@ -51,6 +51,7 @@ var rankfoods: [RankFood] = [
     RankFood(name: "Good 닭가슴살", type:"닭가슴살",ingredient: "두유", kcal:138, carbohydrate: 9.74, protein:18.91, fat:2.6,price:3300,siteurl:"www.naver.com" , foodimage: "testimage")
 ]
 
+
 struct foodsData {
     var ricefoods:[RankFood2]
     var noodlefoods:[RankFood2]

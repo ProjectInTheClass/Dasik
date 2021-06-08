@@ -8,7 +8,8 @@
 import Foundation
 import SwiftUI
 
-var dateSelected : String = ""
+
+var selectedDate : Date = Date()
 
 class DietVC: UIHostingController<DetailView> {
     
