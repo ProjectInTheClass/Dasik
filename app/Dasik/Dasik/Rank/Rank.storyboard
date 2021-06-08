@@ -34,18 +34,28 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="103"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1SE-6m-kqV">
-                                            <rect key="frame" x="16" y="11" width="127" height="81"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1SE-6m-kqV">
+                                            <rect key="frame" x="20" y="10" width="83" height="83"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="83" id="D7W-EN-yvM"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afq-h4-Wkb">
-                                            <rect key="frame" x="178" y="11" width="110" height="81"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afq-h4-Wkb">
+                                            <rect key="frame" x="123" y="11" width="251" height="81"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1SE-6m-kqV" firstAttribute="leading" secondItem="HcL-Zq-6D6" secondAttribute="leading" constant="20" id="6d6-yc-mVD"/>
+                                        <constraint firstItem="1SE-6m-kqV" firstAttribute="top" secondItem="HcL-Zq-6D6" secondAttribute="top" constant="10" id="FbN-Dm-2ky"/>
+                                        <constraint firstItem="afq-h4-Wkb" firstAttribute="top" secondItem="HcL-Zq-6D6" secondAttribute="topMargin" id="GfW-oj-Mye"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="afq-h4-Wkb" secondAttribute="trailing" constant="20" id="Gii-CM-EN5"/>
+                                        <constraint firstItem="afq-h4-Wkb" firstAttribute="leading" secondItem="1SE-6m-kqV" secondAttribute="trailing" constant="20" id="eAA-Pw-DaV"/>
+                                        <constraint firstItem="afq-h4-Wkb" firstAttribute="bottom" secondItem="HcL-Zq-6D6" secondAttribute="bottomMargin" id="i44-wX-JJE"/>
+                                        <constraint firstAttribute="bottom" secondItem="1SE-6m-kqV" secondAttribute="bottom" constant="10" id="kb0-gP-k3H"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="categoryImage" destination="1SE-6m-kqV" id="sqI-zf-nWV"/>

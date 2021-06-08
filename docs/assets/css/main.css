@@ -2647,7 +2647,7 @@ input, select, textarea {
 			header.major h2:after {
 				display: block;
 				content: '';
-				width: 3.25em;
+				width: 9.25em;
 				height: 2px;
 				margin: 0.7em 0 1em 0;
 				border-radius: 2px;
@@ -2812,6 +2812,14 @@ input, select, textarea {
 		padding: 0;
 		list-style: none;
 	}
+        .features .image {
+            display: inline-block;
+            margin-left: 0em;
+            padding: 0.65em;
+            border-radius: 2%;
+            border: solid 1px;
+            border-color: lightgray;
+        }
 
 		.features li {
 			width: calc(33.33333% - 2em);
@@ -2858,6 +2866,86 @@ input, select, textarea {
 					}
 
 		}
+
+/* TeamFeatures */
+
+    .teamFeatures {
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -moz-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        width: calc(100% + 2em);
+        margin: 0 0 3em -2em;
+        padding: 0;
+        list-style: none;
+    }
+        .teamFeatures .image {
+            display: inline-block;
+            margin-left: 0em;
+            padding: 0.65em;
+            border-radius: 100%;
+            border: solid 1px;
+            border-color: lightgray;
+        }
+            .teamFeatures .image img {
+                display: block;
+                border-radius: 100%;
+            }
+
+        .teamFeatures li {
+            width: calc(33.33333% - 2em);
+            margin-left: 2em;
+            margin-top: 3em;
+            padding: 0;
+        }
+
+            .teamFeatures li:nth-child(1), .teamFeatures li:nth-child(2), .teamFeatures li:nth-child(3) {
+                margin-top: 0;
+            }
+
+            .teamFeatures li > :last-child {
+                margin-bottom: 0;
+            }
+
+        @media screen and (max-width: 980px) {
+
+            .teamFeatures li {
+                width: calc(50% - 2em);
+            }
+
+                .teamFeatures li:nth-child(3) {
+                    margin-top: 3em;
+                }
+
+        }
+
+        @media screen and (max-width: 736px) {
+
+            .teamFeatures {
+                width: 100%;
+                margin: 0 0 2em 0;
+            }
+
+                .teamFeatures li {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: 2em;
+                }
+
+                    .teamFeatures li:nth-child(2), .teamFeatures li:nth-child(3) {
+                        margin-top: 2em;
+                    }
+
+        }
+
 
 /* Statistics */
 
@@ -3546,10 +3634,10 @@ input, select, textarea {
 
 		#main header.major h2:after {
 			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+			background-image: -moz-linear-gradient(-45deg, #936C30 20%, #CB973E 80%);
+			background-image: -webkit-linear-gradient(-45deg, #936C30 20%, #CB973E 80%);
+			background-image: -ms-linear-gradient(-45deg, #936C30 20%, #CB973E 80%);
+			background-image: linear-gradient(-45deg, #936C30 20%, #CB973E 80%);
 		}
 
 		#main table tbody tr {
