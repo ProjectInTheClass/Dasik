@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 public struct RegularDietFood{
     var name: String        //이름
     var type: String        //종류
@@ -25,19 +26,19 @@ public struct UserInfo{
     var height : Float
     var weight : Float
     var allergy : [Int] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-    var checkDiet : [Int]
+    var checkMeal : [ String : Int] = ["06-11":1, "06-12":2, "06-13":3,"06-14":0, "06-01":3]
 }
 
 public struct DayMealInfo{
     var date : Date
-    var breakFast : RegularDietFood
-    var lunch : RegularDietFood
-    var dinner : RegularDietFood
+    var breakFast : RankFood
+    var lunch : RankFood
+    var dinner : RankFood
 }
 
 public struct MonthlyDietInfo{
     var monthDiet : [DayMealInfo]
 }
 
-var TmpUser = UserInfo(name: "junkyo", height: 175.0, weight: 75, checkDiet: [])
+var TmpUser = UserInfo(name: "junkyo", height: 175.0, weight: 75)
 

@@ -17,17 +17,47 @@ class DietViewController: UIViewController {
         calendar.appearance.headerMinimumDissolvedAlpha = 0.0
         calendar.delegate = self
         calendar.dataSource = self
+        
     }
     
 }
-extension DietViewController:FSCalendarDelegate,FSCalendarDataSource{
+extension DietViewController:FSCalendarDelegate,FSCalendarDataSource, FSCalendarDelegateAppearance{
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
-        let dataFormatter = DateFormatter()
-        dataFormatter.dateFormat = "yyyy-MM-dd"
-                
-        dateSelected = dataFormatter.string(from: date)
-        print(dateSelected)
+        
+        selectedDate = date
+        
         let vc = DietVC()
         self.present(vc, animated: true, completion: nil)
+    }
+    
+    func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, fillDefaultColorFor date: Date) -> UIColor? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd"
+        
+        let today = Date.init()
+        let today_string = dateFormatter.string(from: today)
+        
+        let key = dateFormatter.string(from: date)
+        
+        if key == today_string{
+            return .blue
+        }
+        
+        if let colorindex = TmpUser.checkMeal[key] {
+            if colorindex == 0{
+                return UIColor.gray
+            }
+            else if colorindex == 1{
+                return UIColor.red
+            }
+            else if colorindex == 2{
+                return UIColor.orange
+            }
+            else{
+                return UIColor.green
+            }
+        }else {
+            return UIColor.white
+        }
     }
 }

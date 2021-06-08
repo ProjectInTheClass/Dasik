@@ -8,9 +8,12 @@
 import SwiftUI
 
 struct DetailView: View {
+    var dateInfo = printDateInof()
+    
     var body: some View {
         //Text(dateSelected)
         VStack {
+            Text(dateInfo)
             Text("식단표")
                 .font(.title)
                 .position(x: 150 ,y: 20)
@@ -26,6 +29,13 @@ struct DetailView: View {
         }
             
     }
+}
+
+func printDateInof()->String{
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "MM-dd"
+    
+    return dateFormatter.string(from: selectedDate)
 }
 
 struct DetailView_Previews: PreviewProvider {
