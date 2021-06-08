@@ -67,6 +67,7 @@ class CreateMenuViewController: UIViewController {
     }
     
     @IBAction func makeMenu(_ sender: Any) {
+        
         if let tmpHeight = Float(UserHeight.text!){
             TmpUser.height = tmpHeight
         }
