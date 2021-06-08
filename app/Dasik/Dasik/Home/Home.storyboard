@@ -727,6 +727,15 @@
                         <outlet property="nameLabel" destination="Y3j-hh-ZMm" id="TcV-Td-ZFR"/>
                         <outlet property="percentLabel" destination="6Aa-lt-oug" id="NG1-tn-YFk"/>
                         <outlet property="progressView" destination="abg-IM-5pn" id="phB-2D-ymp"/>
+                        <outletCollection property="mealName" destination="7u5-V5-yje" collectionClass="NSMutableArray" id="BmJ-Bf-o7r"/>
+                        <outletCollection property="mealName" destination="rT7-d5-LPy" collectionClass="NSMutableArray" id="gHl-Yq-uhi"/>
+                        <outletCollection property="mealName" destination="5i7-cg-31j" collectionClass="NSMutableArray" id="5wC-gZ-wWf"/>
+                        <outletCollection property="mealName" destination="FGq-xG-8aj" collectionClass="NSMutableArray" id="WKC-pm-rcX"/>
+                        <outletCollection property="mealName" destination="eWJ-Xn-Bys" collectionClass="NSMutableArray" id="poD-Mg-dGd"/>
+                        <outletCollection property="mealName" destination="b42-sK-hpk" collectionClass="NSMutableArray" id="8HB-fa-Ukw"/>
+                        <outletCollection property="kcalLabels" destination="eQv-iV-F9g" collectionClass="NSMutableArray" id="v15-S2-xMR"/>
+                        <outletCollection property="kcalLabels" destination="cVN-aP-CEO" collectionClass="NSMutableArray" id="wdB-sF-CQq"/>
+                        <outletCollection property="kcalLabels" destination="b8N-Wa-W1o" collectionClass="NSMutableArray" id="Ngd-x0-loF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U5r-8B-R7b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -472,6 +472,12 @@
                         <outlet property="lunchButton" destination="ukz-rl-t30" id="AUr-ag-2Mu"/>
                         <outlet property="lunchKcal" destination="eZK-2E-3Az" id="MW0-J7-deb"/>
                         <outlet property="navigation" destination="eVP-so-Wvm" id="0lv-Fa-Unw"/>
+                        <outletCollection property="mealNameLabels" destination="gzH-C5-omK" collectionClass="NSMutableArray" id="ikO-2X-0n8"/>
+                        <outletCollection property="mealNameLabels" destination="xUQ-lc-8R3" collectionClass="NSMutableArray" id="bL3-Cy-HPv"/>
+                        <outletCollection property="mealNameLabels" destination="LKB-i8-Fa7" collectionClass="NSMutableArray" id="JRL-37-YaB"/>
+                        <outletCollection property="mealNameLabels" destination="yS6-x6-CXE" collectionClass="NSMutableArray" id="iX8-p8-QhX"/>
+                        <outletCollection property="mealNameLabels" destination="BxH-eI-epk" collectionClass="NSMutableArray" id="jaC-d4-hgD"/>
+                        <outletCollection property="mealNameLabels" destination="D3a-Ce-Uga" collectionClass="NSMutableArray" id="Mxd-Nb-qK7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eOF-A1-Cmu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

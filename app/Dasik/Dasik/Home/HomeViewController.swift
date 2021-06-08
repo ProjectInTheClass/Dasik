@@ -10,6 +10,13 @@ import Charts
 
 class HomeViewController: UIViewController {
     
+    fileprivate lazy var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM-dd"
+        return formatter
+    }()
+
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet var progressView: UIProgressView!
     @IBOutlet var percentLabel: UILabel!
@@ -18,32 +25,50 @@ class HomeViewController: UIViewController {
     @IBOutlet var lunchButton: UIButton!
     @IBOutlet var dinnerButton: UIButton!
     
+    @IBOutlet var mealName: [UILabel]!
+    @IBOutlet var kcalLabels: [UILabel]!
+    
     var bfBNum: Int = 0
     var lBNum: Int = 0
     var dBNum: Int = 0
     var dates: [String]!
-    var kcals: [Double]!
-    
+    var kcals: [Double] = [0.0,0.0,0.0,0.0,0.0,0.0,0.0]
     let mainColor = #colorLiteral(red: 0.7457820773, green: 0.5518586636, blue: 0.2199451327, alpha: 1)
     let checkGreen = #colorLiteral(red: 0.115068391, green: 0.7852822542, blue: 0.1747186184, alpha: 1)
+    var todayMealInfo : DayMealInfo!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
     // Do any additional setup after loading the view.
+        nameLabel.text = TmpUser.name
+        let now = Date.init()
+        let now_string = dateFormatter.string(from: now)
         
+        for tmp in tmpMonthMeal.monthDiet{
+            if now_string == tmp.date{
+                todayMealInfo = tmp
+                break
+            }
+        }
+        
+        mealName[0].text = todayMealInfo.breakFast.name
+        mealName[2].text = todayMealInfo.lunch.name
+        mealName[4].text = todayMealInfo.dinner.name
+        
+        kcalLabels[0].text = String(todayMealInfo.breakFast.kcal)
+        kcalLabels[1].text = String(todayMealInfo.lunch.kcal)
+        kcalLabels[2].text = String(todayMealInfo.dinner.kcal)
+       
         dates = WeekString()
-        kcals = [300.0, 314.5, 350.0, 233.3, 400.0, 520.0, 410.0]
-        
-        barChartView.noDataText = "데이터가 없습니다."
-        barChartView.noDataFont = .systemFont(ofSize: 20)
-        barChartView.noDataTextColor = .lightGray
-        
+        //barChartView.noDataText = "데이터가 없습니다."
+        //barChartView.noDataFont = .systemFont(ofSize: 20)
+        //barChartView.noDataTextColor = .lightGray
         percentLabel.text = String(progressView.progress * 100) + "%"
         
         setChart(dataPoints: dates, values: kcals)
         
         updateUI()
-
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,8 +79,6 @@ class HomeViewController: UIViewController {
         var dates: [String] = []
         let now = Date()
         let calendar = Calendar.current
-        let dateFormatter = DateFormatter()
-        
 
         let day1 = DateComponents(day: -1)
         let day2 = DateComponents(day: -2)
@@ -63,30 +86,56 @@ class HomeViewController: UIViewController {
         let day4 = DateComponents(day: -4)
         let day5 = DateComponents(day: -5)
         let day6 = DateComponents(day: -6)
+        let day7 = DateComponents(day: -7)
         
-        dateFormatter.dateFormat = "MM-dd"
-        
+        if let D7 = calendar.date(byAdding: day7, to: now){
+            dates.append(dateFormatter.string(from: D7))
+            let sum = getTotalKcal(date: dateFormatter.string(from: D7))
+            kcals[0] = sum
+        }
         if let D6 = calendar.date(byAdding: day6, to: now){
             dates.append(dateFormatter.string(from: D6))
+            let sum = getTotalKcal(date: dateFormatter.string(from: D6))
+            kcals[1] = sum
         }
         if let D5 = calendar.date(byAdding: day5, to: now){
             dates.append(dateFormatter.string(from: D5))
+            let sum = getTotalKcal(date: dateFormatter.string(from: D5))
+            kcals[2] = sum
         }
         if let D4 = calendar.date(byAdding: day4, to: now){
             dates.append(dateFormatter.string(from: D4))
+            let sum = getTotalKcal(date: dateFormatter.string(from: D4))
+            kcals[3] = sum
         }
         if let D3 = calendar.date(byAdding: day3, to: now){
             dates.append(dateFormatter.string(from: D3))
+            let sum = getTotalKcal(date: dateFormatter.string(from: D3))
+            kcals[4] = sum
         }
         if let D2 = calendar.date(byAdding: day2, to: now){
             dates.append(dateFormatter.string(from: D2))
+            let sum = getTotalKcal(date: dateFormatter.string(from: D2))
+            kcals[5] = sum
         }
         if let D1 = calendar.date(byAdding: day1, to: now){
             dates.append(dateFormatter.string(from: D1))
+            let sum = getTotalKcal(date: dateFormatter.string(from: D1))
+            kcals[6] = sum
         }
-        dates.append(dateFormatter.string(from: now))
         
         return dates
+    }
+    
+    func getTotalKcal(date : String)->Double{
+        var dayMeal : DayMealInfo!
+        for tmp in tmpMonthMeal.monthDiet{
+            if date == tmp.date{
+                dayMeal = tmp
+                break
+            }
+        }
+        return dayMeal.breakFast.kcal+dayMeal.lunch.kcal+dayMeal.dinner.kcal
     }
     
     func setChart(dataPoints: [String], values: [Double]) {
@@ -155,8 +204,6 @@ class HomeViewController: UIViewController {
     
     func updateUI(){
         
-        nameLabel.text = TmpUser.name
-        
         if bfBNum == 0{
             breakfastButton.tintColor = .lightGray
         }
@@ -176,8 +223,6 @@ class HomeViewController: UIViewController {
             dinnerButton.tintColor = checkGreen
         }
     }
-    
-
 }
 
 
