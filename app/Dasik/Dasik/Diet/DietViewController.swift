@@ -61,21 +61,27 @@ extension DietViewController:FSCalendarDelegate,FSCalendarDataSource, FSCalendar
         }
         
         if let colorindex = TmpUser.checkMeal[key] {
-            if colorindex == 0{
+            var sum = 0
+                for i in colorindex{
+                    if i == "1"{
+                        sum = sum+1
+                    }
+                }
+            if sum == 0{
                 return UIColor.white
             }
-            else if colorindex == 1{
+            else if sum == 1{
                 return redColor
             }
-            else if colorindex == 2{
+            else if sum == 2{
                 return yellowColor
             }
             else{
                 return greenColor
             }
-        }else {
-            return UIColor.white
-        }
+            }else {
+                return UIColor.white
+            }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

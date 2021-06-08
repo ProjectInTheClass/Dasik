@@ -25,7 +25,7 @@ public struct UserInfo{
     var height : Float
     var weight : Float
     var allergy : [Int] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-    var checkMeal : [ String : Int] = ["06-02":1, "06-03":2, "06-13":3,"06-14":0, "06-01":3]
+    var checkMeal : [ String : String] = ["06-02":"100", "06-03":"101", "06-13":"111","06-14":"000", "06-01":"111"]
 }
 
 public struct DayMealInfo{

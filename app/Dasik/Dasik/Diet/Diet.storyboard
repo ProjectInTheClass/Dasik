@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w4a-NV-VRK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w4a-NV-VRK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -194,7 +194,7 @@
                                                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" image="circle.fill" catalog="system"/>
                                                                 <connections>
-                                                                    <action selector="breakfastButtonCheck:" destination="8Ov-I5-Zet" eventType="touchUpInside" id="Zbg-ND-2Hh"/>
+                                                                    <action selector="buttonTapped:" destination="8Ov-I5-Zet" eventType="touchUpInside" id="M6B-Xl-JXT"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -261,7 +261,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukz-rl-t30">
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ukz-rl-t30">
                                                                 <rect key="frame" x="334" y="0.0" width="50" height="80"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="Vbd-LO-45p"/>
@@ -269,7 +269,7 @@
                                                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" image="circle.fill" catalog="system"/>
                                                                 <connections>
-                                                                    <action selector="lunchButtonCheck:" destination="8Ov-I5-Zet" eventType="touchUpInside" id="9In-sz-ih4"/>
+                                                                    <action selector="buttonTapped:" destination="8Ov-I5-Zet" eventType="touchUpInside" id="SBB-Ak-jNI"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -336,7 +336,7 @@
                                                                     </userDefinedRuntimeAttribute>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7Z-kf-tvg">
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H7Z-kf-tvg">
                                                                 <rect key="frame" x="334" y="0.0" width="50" height="80"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="50" id="ru1-at-iNa"/>
@@ -344,7 +344,7 @@
                                                                 <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <state key="normal" image="circle.fill" catalog="system"/>
                                                                 <connections>
-                                                                    <action selector="dinnerButtonCheck:" destination="8Ov-I5-Zet" eventType="touchUpInside" id="Uek-Ci-VMz"/>
+                                                                    <action selector="buttonTapped:" destination="8Ov-I5-Zet" eventType="touchUpInside" id="3HJ-Qe-LJw"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>

@@ -27,76 +27,88 @@ class DietDetailViewController: UIViewController {
     var dBNum: Int = 0
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        navigation.title = selectedData + " 식단"
-        breakfastKcal.text = "" + " kcal"
-        breakfastKcal.textColor = .lightGray
-        lunchKcal.text = "" + " kcal"
-        lunchKcal.textColor = .lightGray
-        dinnerKcal.text = "" + " kcal"
-        dinnerKcal.textColor = .lightGray
-        
-        if bfBNum == 0{
-            breakfastButton.tintColor = .lightGray
-        }
-        else if bfBNum == 1{
-            breakfastButton.tintColor = checkGreen
+            super.viewDidLoad()
+            navigation.title = selectedData + " 식단"
+            breakfastKcal.text = "" + " kcal"
+            breakfastKcal.textColor = .lightGray
+            lunchKcal.text = "" + " kcal"
+            lunchKcal.textColor = .lightGray
+            dinnerKcal.text = "" + " kcal"
+            dinnerKcal.textColor = .lightGray
+            
+            getDayInfo()
+            updateUI()
+            // Do any additional setup after loading the view.
         }
         
-        if lBNum == 0{
-            lunchButton.tintColor = .lightGray
+
+        /*
+        // MARK: - Navigation
+        // In a storyboard-based application, you will often want to do a little preparation before navigation
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            // Get the new view controller using segue.destination.
+            // Pass the selected object to the new view controller.
         }
-        else if lBNum == 1{
-            lunchButton.tintColor = checkGreen
+        */
+        @IBAction func buttonTapped(_ sender: UIButton) {
+            if sender.tag == 0{
+                bfBNum = 1 - bfBNum
+            }else if sender.tag == 1{
+                lBNum = 1 - lBNum
+            }else if sender.tag == 2{
+                dBNum = 1 - dBNum
+            }
+            updateUI()
+            let changedCheckMeal = "" + String(bfBNum) + String(lBNum) + String(dBNum)
+            TmpUser.checkMeal.updateValue(changedCheckMeal, forKey: selectedData)
+        }
+       
+        
+        func getDayInfo(){
+            if let buttonInfo = TmpUser.checkMeal[selectedData]{
+                if buttonInfo[buttonInfo.startIndex] == "1"{
+                    bfBNum = 1
+                }else if buttonInfo[buttonInfo.startIndex] == "0"{
+                    bfBNum = 0
+                }
+                
+                if buttonInfo[buttonInfo.index(buttonInfo.endIndex, offsetBy: -2)] == "1"{
+                    lBNum = 1
+                }else if buttonInfo[buttonInfo.index(buttonInfo.endIndex, offsetBy: -2)] == "0"{
+                    lBNum = 0
+                }
+                
+                if buttonInfo[buttonInfo.index(buttonInfo.endIndex, offsetBy: -1)] == "1"{
+                    dBNum = 1
+                }else if buttonInfo[buttonInfo.index(buttonInfo.endIndex, offsetBy: -1)] == "0"{
+                    dBNum = 0
+                }
+            }else{
+                return ;
+            }
         }
         
-        if dBNum == 0{
-            dinnerButton.tintColor = .lightGray
+        func updateUI(){
+            if bfBNum == 0{
+                breakfastButton.tintColor = .lightGray
+            }
+            else if bfBNum == 1{
+                breakfastButton.tintColor = checkGreen
+            }
+            
+            if lBNum == 0{
+                lunchButton.tintColor = .lightGray
+            }
+            else if lBNum == 1{
+                lunchButton.tintColor = checkGreen
+            }
+            
+            if dBNum == 0{
+                dinnerButton.tintColor = .lightGray
+            }
+            else if dBNum == 1{
+                dinnerButton.tintColor = checkGreen
+            }
         }
-        else if dBNum == 1{
-            dinnerButton.tintColor = checkGreen
-        }
-        // Do any additional setup after loading the view.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    @IBAction func breakfastButtonCheck(_ sender: UIButton) {
-        if breakfastButton.tintColor == .lightGray{
-            breakfastButton.tintColor = checkGreen
-            bfBNum = 1
-        }
-        else if breakfastButton.tintColor == checkGreen{
-            breakfastButton.tintColor = .lightGray
-            bfBNum = 0
-        }
-    }
-    @IBAction func lunchButtonCheck(_ sender: UIButton) {
-        if lunchButton.tintColor == .lightGray{
-            lunchButton.tintColor = checkGreen
-            lBNum = 1
-        }
-        else if lunchButton.tintColor == checkGreen{
-            lunchButton.tintColor = .lightGray
-            lBNum = 0
-        }
-    }
-    @IBAction func dinnerButtonCheck(_ sender: UIButton) {
-        if dinnerButton.tintColor == .lightGray{
-            dinnerButton.tintColor = checkGreen
-            //dBNum = 1
-        }
-        else if dinnerButton.tintColor == checkGreen{
-            dinnerButton.tintColor = .lightGray
-            //dBNum = 0
-        }
-    }
 }
