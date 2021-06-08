@@ -52,6 +52,10 @@ extension DietViewController:FSCalendarDelegate,FSCalendarDataSource, FSCalendar
         
         let key = dateFormatter.string(from: date)
         
+        if today < date {
+            return UIColor.white
+        }
+        
         if key == today_string{
             return .blue
         }
