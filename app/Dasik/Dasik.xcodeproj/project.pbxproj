@@ -13,6 +13,7 @@
 		207780232668A81800111ED3 /* SubDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207780222668A81800111ED3 /* SubDetailsViewController.swift */; };
 		2077802B2668C71100111ED3 /* RankTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077802A2668C71100111ED3 /* RankTableViewController.swift */; };
 		207B5716266FC6AA002FDA02 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207B5715266FC6AA002FDA02 /* ContactViewController.swift */; };
+		207B5724266FD093002FDA02 /* CreateMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207B5723266FD093002FDA02 /* CreateMenuViewController.swift */; };
 		20EAF808261EF1A5008A8A05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF807261EF1A5008A8A05 /* AppDelegate.swift */; };
 		20EAF80A261EF1A5008A8A05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF809261EF1A5008A8A05 /* SceneDelegate.swift */; };
 		20EAF80F261EF1A5008A8A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EAF80D261EF1A5008A8A05 /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		207780222668A81800111ED3 /* SubDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubDetailsViewController.swift; sourceTree = "<group>"; };
 		2077802A2668C71100111ED3 /* RankTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewController.swift; sourceTree = "<group>"; };
 		207B5715266FC6AA002FDA02 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		207B5723266FD093002FDA02 /* CreateMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMenuViewController.swift; sourceTree = "<group>"; };
 		20EAF804261EF1A5008A8A05 /* Dasik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dasik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EAF807261EF1A5008A8A05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20EAF809261EF1A5008A8A05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				EA5FBA5D266193FF00B534BA /* DietViewController.swift */,
 				EA41922B266A325E007812B5 /* Diet.storyboard */,
 				489A5421266F5DBB00ED3523 /* DietDetailViewController.swift */,
+				207B5723266FD093002FDA02 /* CreateMenuViewController.swift */,
 			);
 			path = Diet;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA5FBA052661443500B534BA /* Extension_UIView.swift in Sources */,
+				207B5724266FD093002FDA02 /* CreateMenuViewController.swift in Sources */,
 				489A5422266F5DBB00ED3523 /* DietDetailViewController.swift in Sources */,
 				48AFEB0D266B671C00AA32B8 /* UserInfoSettingViewController.swift in Sources */,
 				207780232668A81800111ED3 /* SubDetailsViewController.swift in Sources */,
