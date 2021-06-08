@@ -17,7 +17,7 @@ class SubDetailsViewController: UIViewController {
     @IBOutlet var foodCPF: UILabel!
     @IBOutlet var foodPrice: UILabel!
     @IBOutlet var foodURL: UILabel!
-    var selectedFood: RankFood!
+    var selectedFood: RankFood2!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class SubDetailsViewController: UIViewController {
         foodType.text = selectedFood.type
         foodIngredient.text = selectedFood.ingredient
         foodKcal.text = String(selectedFood.kcal)
-        foodCPF.text = String(selectedFood.carbohydrate) + "/" + String(selectedFood.protein) + "/" + String(selectedFood.fat)
+        foodCPF.text = String(selectedFood.carbo) + "/" + String(selectedFood.protein) + "/" + String(selectedFood.fat)
         foodPrice.text = String(selectedFood.price)
         foodURL.text = selectedFood.siteurl
         

@@ -12,6 +12,7 @@ class DetailsRankTableViewController: UITableViewController {
     @IBOutlet weak var detailNameNavigation: UINavigationItem!
     var detailnamestring:String = ""
     var selectedcategory:RankCategory!
+    var selectedfoodArray:[RankFood2]!
     
     
     override func viewDidLoad() {
@@ -33,16 +34,16 @@ class DetailsRankTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return rankfoods.count
+        return selectedfoodArray.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "RankCell1", for: indexPath) as! RankCell
 
-        let item = rankfoods[indexPath.row]
+        let item = selectedfoodArray[indexPath.row]
         
-        cell.foodimg.image = UIImage(named: item.foodimage)
+        cell.foodimg.image = UIImage(named: "testimage")
         cell.foodname.text = item.name
         cell.foodprice.text = String(item.price)
         // Configure the cell...
@@ -58,7 +59,7 @@ class DetailsRankTableViewController: UITableViewController {
         
         if let indexPath = self.tableView.indexPathForSelectedRow,
            let subdetailVC = segue.destination as? SubDetailsViewController{
-            subdetailVC.selectedFood = rankfoods[indexPath.row]
+            subdetailVC.selectedFood = selectedfoodArray[indexPath.row]
         }
     }
 
