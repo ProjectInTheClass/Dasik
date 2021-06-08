@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w4a-NV-VRK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="w4a-NV-VRK">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -1317,7 +1317,13 @@
                             <constraint firstItem="Vn3-Eo-VZY" firstAttribute="top" secondItem="q5c-ES-jep" secondAttribute="top" id="EOP-fY-n8Q"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="알레르기 설정" id="p72-Y8-T29"/>
+                    <navigationItem key="navigationItem" title="알레르기 설정" id="p72-Y8-T29">
+                        <barButtonItem key="rightBarButtonItem" title="식단표짜기" id="kbP-K1-WZP" userLabel="식단표짜기">
+                            <connections>
+                                <action selector="makeMenu:" destination="we5-Kq-qxc" id="RHD-MP-tEl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <size key="freeformSize" width="414" height="1500"/>
                     <connections>
                         <outlet property="UserHeight" destination="GfF-Hl-PTe" id="TpM-RN-X7R"/>

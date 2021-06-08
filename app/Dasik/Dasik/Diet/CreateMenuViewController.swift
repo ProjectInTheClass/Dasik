@@ -65,7 +65,26 @@ class CreateMenuViewController: UIViewController {
         }
         print(TmpUser.allergy)
     }
-
+    
+    @IBAction func makeMenu(_ sender: Any) {
+        if let tmpHeight = Float(UserHeight.text!){
+            TmpUser.height = tmpHeight
+        }
+        else{
+            TmpUser.height = 0.0
+            print("blank height")
+        }
+        if let tmpWeight = Float(UserWeight.text!){
+            TmpUser.weight = tmpWeight
+        }
+        else{
+            TmpUser.weight = 0.0
+        }
+        print(TmpUser.name)
+        print(TmpUser.height)
+        print(TmpUser.weight)
+    }
+    
     /*
     // MARK: - Navigation
 
