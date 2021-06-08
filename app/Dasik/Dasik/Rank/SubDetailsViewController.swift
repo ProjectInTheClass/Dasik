@@ -28,7 +28,7 @@ class SubDetailsViewController: UIViewController {
         foodIngredient.text = selectedFood.ingredient
         foodKcal.text = String(selectedFood.kcal)
         foodCPF.text = String(selectedFood.carbohydrate) + " / " + String(selectedFood.protein) + " / " + String(selectedFood.fat)
-        foodPrice.text = String(selectedFood.price)
+        foodPrice.text = String(selectedFood.price) + "원"
         foodURL.text = selectedFood.siteurl
         
         // Do any additional setup after loading the view.
