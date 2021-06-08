@@ -12,6 +12,7 @@
 		2077801A26686D6A00111ED3 /* DetailsRankTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077801926686D6900111ED3 /* DetailsRankTableViewController.swift */; };
 		207780232668A81800111ED3 /* SubDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207780222668A81800111ED3 /* SubDetailsViewController.swift */; };
 		2077802B2668C71100111ED3 /* RankTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2077802A2668C71100111ED3 /* RankTableViewController.swift */; };
+		207B5716266FC6AA002FDA02 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207B5715266FC6AA002FDA02 /* ContactViewController.swift */; };
 		20EAF808261EF1A5008A8A05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF807261EF1A5008A8A05 /* AppDelegate.swift */; };
 		20EAF80A261EF1A5008A8A05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF809261EF1A5008A8A05 /* SceneDelegate.swift */; };
 		20EAF80F261EF1A5008A8A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EAF80D261EF1A5008A8A05 /* Main.storyboard */; };
@@ -57,6 +58,7 @@
 		2077801926686D6900111ED3 /* DetailsRankTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsRankTableViewController.swift; sourceTree = "<group>"; };
 		207780222668A81800111ED3 /* SubDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubDetailsViewController.swift; sourceTree = "<group>"; };
 		2077802A2668C71100111ED3 /* RankTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewController.swift; sourceTree = "<group>"; };
+		207B5715266FC6AA002FDA02 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		20EAF804261EF1A5008A8A05 /* Dasik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dasik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EAF807261EF1A5008A8A05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20EAF809261EF1A5008A8A05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 				EA41921E266A2D3E007812B5 /* Setting.storyboard */,
 				48A8DD07266A717100EDABBF /* AllergyViewController.swift */,
 				48AFEB0C266B671C00AA32B8 /* UserInfoSettingViewController.swift */,
+				207B5715266FC6AA002FDA02 /* ContactViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				EA5FBA662661941700B534BA /* HomeViewController.swift in Sources */,
 				2077802B2668C71100111ED3 /* RankTableViewController.swift in Sources */,
 				48A8DD06266A62FB00EDABBF /* DasikData.swift in Sources */,
+				207B5716266FC6AA002FDA02 /* ContactViewController.swift in Sources */,
 				2077801A26686D6A00111ED3 /* DetailsRankTableViewController.swift in Sources */,
 				48A8DD08266A717100EDABBF /* AllergyViewController.swift in Sources */,
 				20EAF80A261EF1A5008A8A05 /* SceneDelegate.swift in Sources */,

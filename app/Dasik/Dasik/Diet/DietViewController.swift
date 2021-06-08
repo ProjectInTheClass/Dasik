@@ -21,7 +21,14 @@ class DietViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+            calendar.reloadData()
+    }
+        
 }
+
+
+
 extension DietViewController:FSCalendarDelegate,FSCalendarDataSource, FSCalendarDelegateAppearance{
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         

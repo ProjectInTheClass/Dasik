@@ -339,23 +339,13 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39a-RN-f84">
-                                                                <rect key="frame" x="334" y="0.0" width="30" height="50"/>
-                                                                <state key="normal" title="저장"/>
-                                                                <connections>
-                                                                    <action selector="setUserName:" destination="tm5-5S-5XQ" eventType="touchUpInside" id="9fp-se-A2F"/>
-                                                                </connections>
-                                                            </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="bottom" secondItem="39a-RN-f84" secondAttribute="bottom" id="5vZ-SM-6Ud"/>
                                                             <constraint firstAttribute="bottom" secondItem="3NH-U0-axq" secondAttribute="bottom" id="89R-Ei-RsD"/>
                                                             <constraint firstAttribute="trailing" secondItem="3NH-U0-axq" secondAttribute="trailing" constant="70" id="8Gg-Wh-Tvs"/>
                                                             <constraint firstAttribute="trailing" secondItem="YFO-ls-Qoh" secondAttribute="trailing" constant="100" id="D1P-rO-4rB"/>
                                                             <constraint firstAttribute="bottom" secondItem="YFO-ls-Qoh" secondAttribute="bottom" constant="10" id="QZK-nV-IN8"/>
-                                                            <constraint firstItem="39a-RN-f84" firstAttribute="top" secondItem="PjB-Vv-QOP" secondAttribute="top" id="Zpa-CK-0cz"/>
-                                                            <constraint firstAttribute="trailing" secondItem="39a-RN-f84" secondAttribute="trailing" constant="20" id="aUe-MF-SFP"/>
                                                             <constraint firstAttribute="height" constant="50" id="bRl-JJ-Kms"/>
                                                             <constraint firstItem="NG5-Z6-bYj" firstAttribute="leading" secondItem="PjB-Vv-QOP" secondAttribute="leading" constant="20" id="cFs-Do-ueI"/>
                                                             <constraint firstAttribute="bottom" secondItem="NG5-Z6-bYj" secondAttribute="bottom" id="krD-4A-Aev"/>
@@ -390,13 +380,6 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKs-ja-cYh">
-                                                                <rect key="frame" x="334" y="0.0" width="30" height="50"/>
-                                                                <state key="normal" title="저장"/>
-                                                                <connections>
-                                                                    <action selector="setUserHeight:" destination="tm5-5S-5XQ" eventType="touchUpInside" id="r9F-KM-ab0"/>
-                                                                </connections>
-                                                            </button>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="169" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mCP-0o-cHj">
                                                                 <rect key="frame" x="194" y="10" width="90" height="30"/>
                                                                 <constraints>
@@ -414,17 +397,14 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstItem="Yag-TX-Yum" firstAttribute="top" secondItem="K5D-Z0-HKK" secondAttribute="top" id="6pj-6f-v01"/>
-                                                            <constraint firstAttribute="bottom" secondItem="CKs-ja-cYh" secondAttribute="bottom" id="8Dh-K9-I3I"/>
                                                             <constraint firstItem="mCP-0o-cHj" firstAttribute="top" secondItem="K5D-Z0-HKK" secondAttribute="top" constant="10" id="Blg-GP-G8d"/>
                                                             <constraint firstItem="dbN-ue-JFR" firstAttribute="top" secondItem="K5D-Z0-HKK" secondAttribute="top" id="DFi-zs-TVK"/>
                                                             <constraint firstAttribute="bottom" secondItem="dbN-ue-JFR" secondAttribute="bottom" id="ELg-e7-Lr7"/>
                                                             <constraint firstAttribute="trailing" secondItem="mCP-0o-cHj" secondAttribute="trailing" constant="100" id="Xod-pc-1H2"/>
                                                             <constraint firstAttribute="bottom" secondItem="Yag-TX-Yum" secondAttribute="bottom" id="awN-V9-ZR1"/>
-                                                            <constraint firstItem="CKs-ja-cYh" firstAttribute="top" secondItem="K5D-Z0-HKK" secondAttribute="top" id="bYb-HB-nfc"/>
                                                             <constraint firstAttribute="bottom" secondItem="mCP-0o-cHj" secondAttribute="bottom" constant="10" id="fzo-vD-beS"/>
                                                             <constraint firstItem="dbN-ue-JFR" firstAttribute="leading" secondItem="K5D-Z0-HKK" secondAttribute="leading" constant="20" id="itN-ul-hqC"/>
                                                             <constraint firstAttribute="trailing" secondItem="Yag-TX-Yum" secondAttribute="trailing" constant="70" id="qVk-e6-Kvh"/>
-                                                            <constraint firstAttribute="trailing" secondItem="CKs-ja-cYh" secondAttribute="trailing" constant="20" id="wqv-3F-LHI"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -453,13 +433,6 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mX-Z9-dHg">
-                                                                <rect key="frame" x="334" y="0.0" width="30" height="50"/>
-                                                                <state key="normal" title="저장"/>
-                                                                <connections>
-                                                                    <action selector="setUserWeight:" destination="tm5-5S-5XQ" eventType="touchUpInside" id="S66-Lq-3BB"/>
-                                                                </connections>
-                                                            </button>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="70" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fwq-jn-muW">
                                                                 <rect key="frame" x="194" y="10" width="90" height="30"/>
                                                                 <constraints>
@@ -477,14 +450,11 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="9tX-HS-96w" secondAttribute="bottom" id="JPM-Yn-9NF"/>
-                                                            <constraint firstAttribute="bottom" secondItem="3mX-Z9-dHg" secondAttribute="bottom" id="KHC-gh-UjG"/>
                                                             <constraint firstAttribute="bottom" secondItem="Fwq-jn-muW" secondAttribute="bottom" constant="10" id="KvD-dw-1za"/>
                                                             <constraint firstItem="dIc-tU-VKj" firstAttribute="top" secondItem="fSh-fq-OLO" secondAttribute="top" id="QYq-kx-Jey"/>
                                                             <constraint firstAttribute="trailing" secondItem="Fwq-jn-muW" secondAttribute="trailing" constant="100" id="WS2-UT-E7N"/>
                                                             <constraint firstAttribute="bottom" secondItem="dIc-tU-VKj" secondAttribute="bottom" id="dke-ra-FcS"/>
-                                                            <constraint firstItem="3mX-Z9-dHg" firstAttribute="top" secondItem="fSh-fq-OLO" secondAttribute="top" id="jcM-lw-J4Z"/>
                                                             <constraint firstItem="9tX-HS-96w" firstAttribute="leading" secondItem="fSh-fq-OLO" secondAttribute="leading" constant="20" id="lsq-fA-s33"/>
-                                                            <constraint firstAttribute="trailing" secondItem="3mX-Z9-dHg" secondAttribute="trailing" constant="20" id="pXh-PJ-ejF"/>
                                                             <constraint firstItem="9tX-HS-96w" firstAttribute="top" secondItem="fSh-fq-OLO" secondAttribute="top" id="pfE-NV-e8f"/>
                                                             <constraint firstAttribute="trailing" secondItem="dIc-tU-VKj" secondAttribute="trailing" constant="70" id="rPq-nL-Vky"/>
                                                             <constraint firstItem="Fwq-jn-muW" firstAttribute="top" secondItem="fSh-fq-OLO" secondAttribute="top" constant="10" id="v88-Qf-Je8"/>
@@ -533,7 +503,13 @@
                             <constraint firstItem="Wb3-Gc-NIB" firstAttribute="leading" secondItem="gR5-Ge-8Pw" secondAttribute="leading" id="iTB-7D-8uR"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="프로필 설정" id="wlT-gE-MVk"/>
+                    <navigationItem key="navigationItem" title="프로필 설정" id="wlT-gE-MVk">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="Kfc-fT-RhR" userLabel="저장">
+                            <connections>
+                                <action selector="setUserInfo:" destination="tm5-5S-5XQ" id="PIj-fy-WkY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="heightTextField" destination="mCP-0o-cHj" id="pGF-hB-XR7"/>
                         <outlet property="nameTextField" destination="YFO-ls-Qoh" id="DvZ-P2-oBj"/>
@@ -542,7 +518,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Au-2s-WI6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-604" y="-1694"/>
+            <point key="canvasLocation" x="-604.34782608695662" y="-1694.1964285714284"/>
         </scene>
         <!--알레르기 설정-->
         <scene sceneID="BGb-gs-kJO">
@@ -608,7 +584,7 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="G8P-Oi-SY9">
+                                                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G8P-Oi-SY9">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
                                                                 <connections>
                                                                     <action selector="switchChanged:" destination="0hq-X2-Xki" eventType="valueChanged" id="LGm-46-yaN"/>
@@ -1318,6 +1294,25 @@
                     <navigationItem key="navigationItem" title="알레르기 설정" id="rM2-Du-FO1"/>
                     <size key="freeformSize" width="414" height="1500"/>
                     <connections>
+                        <outlet property="ahwang" destination="34T-Ja-4G5" id="whu-qz-dIY"/>
+                        <outlet property="bean" destination="for-ao-GPu" id="HkC-8R-TEO"/>
+                        <outlet property="beef" destination="VHv-9B-KkU" id="fHm-Zp-ahA"/>
+                        <outlet property="chicken" destination="MnL-7e-Zlr" id="b5O-tQ-T8o"/>
+                        <outlet property="crab" destination="tKm-tN-oJs" id="Sz3-EF-qUp"/>
+                        <outlet property="daedu" destination="WKV-4H-L1k" id="CZv-UG-Al0"/>
+                        <outlet property="egg" destination="atX-bR-UJJ" id="vHI-Ea-f7n"/>
+                        <outlet property="fish" destination="U2H-km-p1u" id="HUH-uR-t0t"/>
+                        <outlet property="fork" destination="SDY-uH-bLV" id="aoD-pK-Cty"/>
+                        <outlet property="hodu" destination="WDO-HV-8um" id="d9U-p2-5DU"/>
+                        <outlet property="jogae" destination="ruN-Js-TQ1" id="ial-qr-kqL"/>
+                        <outlet property="maemil" destination="dly-Ly-IRl" id="eST-fd-KIA"/>
+                        <outlet property="mil" destination="qpy-QY-ULO" id="ZUU-pM-nLn"/>
+                        <outlet property="milk" destination="G8P-Oi-SY9" id="4d2-gZ-mqd"/>
+                        <outlet property="peach" destination="aQ0-em-54M" id="9r3-jy-2nO"/>
+                        <outlet property="peanut" destination="xmM-I7-IYh" id="cUe-xM-uRk"/>
+                        <outlet property="shrimp" destination="o9U-Ue-Etk" id="rVF-ae-4zc"/>
+                        <outlet property="squid" destination="6Xk-Ww-iX0" id="ZUT-Ps-zih"/>
+                        <outlet property="tomato" destination="5JF-Zp-g5w" id="F56-S7-Ggv"/>
                         <outletCollection property="allergyButtons" destination="atX-bR-UJJ" collectionClass="NSMutableArray" id="dea-h7-ixy"/>
                         <outletCollection property="allergyButtons" destination="G8P-Oi-SY9" collectionClass="NSMutableArray" id="AKX-4i-tCx"/>
                         <outletCollection property="allergyButtons" destination="dly-Ly-IRl" collectionClass="NSMutableArray" id="oE2-bl-g8X"/>
@@ -1350,7 +1345,7 @@
         <!--문의하기-->
         <scene sceneID="DFf-fI-eLZ">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="nJU-1d-8J3" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="nJU-1d-8J3" customClass="contactViewController" customModule="Dasik" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dat-zh-RXF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1401,7 +1396,11 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="문의하기" id="d9n-Up-hnI">
-                        <barButtonItem key="rightBarButtonItem" title="보내기" id="c6R-h7-YNG"/>
+                        <barButtonItem key="rightBarButtonItem" title="보내기" id="c6R-h7-YNG">
+                            <connections>
+                                <action selector="sendContact:" destination="nJU-1d-8J3" id="tsv-aT-2Ld"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ru-fT-369" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -21,29 +21,25 @@ class UserInfoSettingViewController: UIViewController {
         weightTextField.keyboardType = .decimalPad
     }
     
-    @IBAction func setUserName(_ sender: Any) {
+    @IBAction func setUserInfo(_ sender: Any) {
         TmpUser.name = nameTextField.text!
+        if let tmpHeight = Float(heightTextField.text!){
+            TmpUser.height = tmpHeight
+        }
+        else{
+            TmpUser.height = 0.0
+        }
+        if let tmpWeight = Float(weightTextField.text!){
+            TmpUser.weight = tmpWeight
+        }
+        else{
+            TmpUser.weight = 0.0
+        }
         print(TmpUser.name)
         print(TmpUser.height)
         print(TmpUser.weight)
     }
     
-    @IBAction func setUserHeight(_ sender: Any) {
-        if let tmpHeight = Float(heightTextField.text!){
-            TmpUser.height = tmpHeight
-        }
-        print(TmpUser.name)
-        print(TmpUser.height)
-        print(TmpUser.weight)
-    }
-    @IBAction func setUserWeight(_ sender: Any) {
-        if let tmpWeight = Float(weightTextField.text!){
-            TmpUser.weight = tmpWeight
-        }
-        print(TmpUser.name)
-        print(TmpUser.height)
-        print(TmpUser.weight)
-    }
     /*
     // MARK: - Navigation
 

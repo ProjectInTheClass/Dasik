@@ -10,17 +10,57 @@ import UIKit
 class AllergyViewController: UIViewController {
 
     @IBOutlet var allergyButtons: [UISwitch]!
+    @IBOutlet var egg: UISwitch!
+    @IBOutlet var milk: UISwitch!
+    @IBOutlet var maemil: UISwitch!
+    @IBOutlet var mil: UISwitch!
+    @IBOutlet var daedu: UISwitch!
+    @IBOutlet var peanut: UISwitch!
+    @IBOutlet var hodu: UISwitch!
+    @IBOutlet var bean: UISwitch!
+    @IBOutlet var fish: UISwitch!
+    @IBOutlet var shrimp: UISwitch!
+    @IBOutlet var crab: UISwitch!
+    @IBOutlet var jogae: UISwitch!
+    @IBOutlet var squid: UISwitch!
+    @IBOutlet var fork: UISwitch!
+    @IBOutlet var chicken: UISwitch!
+    @IBOutlet var beef: UISwitch!
+    @IBOutlet var ahwang: UISwitch!
+    @IBOutlet var peach: UISwitch!
+    @IBOutlet var tomato: UISwitch!
+    
+    var allergyNames:[UISwitch]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        allergyNames = [egg,milk,maemil,mil,daedu,peanut,hodu,bean,fish,shrimp,crab,jogae,squid,fork,chicken,beef,ahwang,peach,tomato]
         // Do any additional setup after loading the view.
+        let allergySize = TmpUser.allergy.count
+        for i in 0..<allergySize{
+            if TmpUser.allergy[i] == 1{
+                allergyNames[i].isOn = true
+            }
+            else{
+                allergyNames[i].isOn = false
+            }
+        }
     }
     
     
     @IBAction func switchChanged(_ sender: UISwitch) {
         let index = sender.tag
-        TmpUser.allergy[index] = 1 - TmpUser.allergy[index]
         
+        TmpUser.allergy[index] = 1 - TmpUser.allergy[index]
+        let allergySize = TmpUser.allergy.count
+        for i in 0..<allergySize{
+            if TmpUser.allergy[i] == 1{
+                allergyNames[i].isOn = true
+            }
+            else{
+                allergyNames[i].isOn = false
+            }
+        }
         print(TmpUser.allergy)
     }
     
