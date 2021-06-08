@@ -10,6 +10,7 @@ import Charts
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet var progressView: UIProgressView!
     @IBOutlet var percentLabel: UILabel!
     @IBOutlet var barChartView: BarChartView!
@@ -29,27 +30,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     // Do any additional setup after loading the view.
-
-        if bfBNum == 0{
-            breakfastButton.tintColor = .lightGray
-        }
-        else if bfBNum == 1{
-            breakfastButton.tintColor = checkGreen
-        }
-        
-        if lBNum == 0{
-            lunchButton.tintColor = .lightGray
-        }
-        else if lBNum == 1{
-            lunchButton.tintColor = checkGreen
-        }
-        
-        if dBNum == 0{
-            dinnerButton.tintColor = .lightGray
-        }
-        else if dBNum == 1{
-            dinnerButton.tintColor = checkGreen
-        }
         
         dates = WeekString()
         kcals = [300.0, 314.5, 350.0, 233.3, 400.0, 520.0, 410.0]
@@ -61,7 +41,13 @@ class HomeViewController: UIViewController {
         percentLabel.text = String(progressView.progress * 100) + "%"
         
         setChart(dataPoints: dates, values: kcals)
+        
+        updateUI()
 
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        updateUI()
     }
     
     func WeekString() -> [String]{
@@ -143,53 +129,51 @@ class HomeViewController: UIViewController {
         
         // 기본 애니메이션
         barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0)
-        // 옵션 애니메이션
-        //barChartView.animate(xAxisDuration: 2.0, yAxisDuration: 2.0, easingOption: .easeInBounce)
-
-
-        // 리미트라인
-        //let ll = ChartLimitLine(limit: 10.0, label: "타겟")
-        //barChartView.leftAxis.addLimitLine(ll)
-
-
-        // 맥시멈
-        //barChartView.leftAxis.axisMaximum = 30
-        // 미니멈
         barChartView.leftAxis.axisMinimum = 0
-
-        
-        // 백그라운드컬러
-        //barChartView.backgroundColor = .yellow
         
     }
-    @IBAction func breakfastButtonCheck(_ sender: UIButton) {
-        if breakfastButton.tintColor == .lightGray{
-            breakfastButton.tintColor = checkGreen
-            bfBNum = 1
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        if sender.tag == 0{
+            bfBNum = 1 - bfBNum
+        }else if sender.tag == 1{
+            lBNum = 1 - lBNum
+        }else if sender.tag == 2{
+            dBNum = 1 - dBNum
         }
-        else if breakfastButton.tintColor == checkGreen{
+        updateUI()
+        
+        let changedCheckMeal = "" + String(bfBNum) + String(lBNum) + String(dBNum)
+        let dateFormmater = DateFormatter()
+        dateFormmater.dateFormat = "MM-dd"
+        
+        let now = Date.init()
+        let now_string = dateFormmater.string(from: now)
+        
+        TmpUser.checkMeal.updateValue(changedCheckMeal, forKey: now_string)
+    }
+    
+    func updateUI(){
+        
+        nameLabel.text = TmpUser.name
+        
+        if bfBNum == 0{
             breakfastButton.tintColor = .lightGray
-            bfBNum = 0
         }
-    }
-    @IBAction func lunchButtonCheck(_ sender: UIButton) {
-        if lunchButton.tintColor == .lightGray{
-            lunchButton.tintColor = checkGreen
-            lBNum = 1
+        else if bfBNum == 1{
+            breakfastButton.tintColor = checkGreen
         }
-        else if lunchButton.tintColor == checkGreen{
+        if lBNum == 0{
             lunchButton.tintColor = .lightGray
-            lBNum = 0
         }
-    }
-    @IBAction func dinnerButtonCheck(_ sender: UIButton) {
-        if dinnerButton.tintColor == .lightGray{
-            dinnerButton.tintColor = checkGreen
-            //dBNum = 1
+        else if lBNum == 1{
+            lunchButton.tintColor = checkGreen
         }
-        else if dinnerButton.tintColor == checkGreen{
+        if dBNum == 0{
             dinnerButton.tintColor = .lightGray
-            //dBNum = 0
+        }
+        else if dBNum == 1{
+            dinnerButton.tintColor = checkGreen
         }
     }
     
