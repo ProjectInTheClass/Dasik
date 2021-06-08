@@ -9,6 +9,7 @@ import UIKit
 import FSCalendar
 
 class DietViewController: UIViewController {
+    var selectData : String = ""
     @IBOutlet weak var calendar: FSCalendar!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,10 +25,12 @@ class DietViewController: UIViewController {
 extension DietViewController:FSCalendarDelegate,FSCalendarDataSource, FSCalendarDelegateAppearance{
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
         
-        selectedDate = date
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MM-dd"
         
-        let vc = DietVC()
-        self.present(vc, animated: true, completion: nil)
+        selectData = dateFormatter.string(from: date)
+        
+        self.performSegue(withIdentifier: "DietDetail", sender: nil)
     }
     
     func calendar(_ calendar: FSCalendar, appearance: FSCalendarAppearance, fillDefaultColorFor date: Date) -> UIColor? {
@@ -58,6 +61,12 @@ extension DietViewController:FSCalendarDelegate,FSCalendarDataSource, FSCalendar
             }
         }else {
             return UIColor.white
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detail = segue.destination as? DietDetailViewController{
+            detail.selectedData = selectData
         }
     }
 }

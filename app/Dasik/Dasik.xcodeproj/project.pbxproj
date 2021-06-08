@@ -19,8 +19,7 @@
 		20EAF814261EF1A9008A8A05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EAF812261EF1A9008A8A05 /* LaunchScreen.storyboard */; };
 		20EAF81F261EF1A9008A8A05 /* DasikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF81E261EF1A9008A8A05 /* DasikTests.swift */; };
 		20EAF82A261EF1A9008A8A05 /* DasikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EAF829261EF1A9008A8A05 /* DasikUITests.swift */; };
-		48A8DD02266A627100EDABBF /* DietVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A8DD01266A627100EDABBF /* DietVC.swift */; };
-		48A8DD04266A629300EDABBF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A8DD03266A629300EDABBF /* DetailView.swift */; };
+		489A5422266F5DBB00ED3523 /* DietDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489A5421266F5DBB00ED3523 /* DietDetailViewController.swift */; };
 		48A8DD06266A62FB00EDABBF /* DasikData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A8DD05266A62FB00EDABBF /* DasikData.swift */; };
 		48A8DD08266A717100EDABBF /* AllergyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A8DD07266A717100EDABBF /* AllergyViewController.swift */; };
 		48AFEB0D266B671C00AA32B8 /* UserInfoSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AFEB0C266B671C00AA32B8 /* UserInfoSettingViewController.swift */; };
@@ -72,8 +71,7 @@
 		20EAF829261EF1A9008A8A05 /* DasikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DasikUITests.swift; sourceTree = "<group>"; };
 		20EAF82B261EF1A9008A8A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DF4A04DF9BFA38868AEFEC7 /* Pods-DasikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DasikTests.release.xcconfig"; path = "Target Support Files/Pods-DasikTests/Pods-DasikTests.release.xcconfig"; sourceTree = "<group>"; };
-		48A8DD01266A627100EDABBF /* DietVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietVC.swift; sourceTree = "<group>"; };
-		48A8DD03266A629300EDABBF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		489A5421266F5DBB00ED3523 /* DietDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietDetailViewController.swift; sourceTree = "<group>"; };
 		48A8DD05266A62FB00EDABBF /* DasikData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DasikData.swift; sourceTree = "<group>"; };
 		48A8DD07266A717100EDABBF /* AllergyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllergyViewController.swift; sourceTree = "<group>"; };
 		48AFEB0C266B671C00AA32B8 /* UserInfoSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoSettingViewController.swift; sourceTree = "<group>"; };
@@ -219,8 +217,7 @@
 			children = (
 				EA5FBA5D266193FF00B534BA /* DietViewController.swift */,
 				EA41922B266A325E007812B5 /* Diet.storyboard */,
-				48A8DD01266A627100EDABBF /* DietVC.swift */,
-				48A8DD03266A629300EDABBF /* DetailView.swift */,
+				489A5421266F5DBB00ED3523 /* DietDetailViewController.swift */,
 			);
 			path = Diet;
 			sourceTree = "<group>";
@@ -491,12 +488,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA5FBA052661443500B534BA /* Extension_UIView.swift in Sources */,
+				489A5422266F5DBB00ED3523 /* DietDetailViewController.swift in Sources */,
 				48AFEB0D266B671C00AA32B8 /* UserInfoSettingViewController.swift in Sources */,
-				48A8DD04266A629300EDABBF /* DetailView.swift in Sources */,
 				207780232668A81800111ED3 /* SubDetailsViewController.swift in Sources */,
 				EA5FBA5E266193FF00B534BA /* DietViewController.swift in Sources */,
 				20EAF808261EF1A5008A8A05 /* AppDelegate.swift in Sources */,
-				48A8DD02266A627100EDABBF /* DietVC.swift in Sources */,
 				EA5FBA4826618E6F00B534BA /* SettingViewController.swift in Sources */,
 				EA5FBA662661941700B534BA /* HomeViewController.swift in Sources */,
 				2077802B2668C71100111ED3 /* RankTableViewController.swift in Sources */,

@@ -10,6 +10,7 @@ import SwiftUI
 
 
 var selectedDate : Date = Date()
+
 class DietVC: UIHostingController<DetailView> {
     
   init() {

@@ -38,3 +38,4 @@ var rankfoods: [RankFood] = [
     RankFood(name: "HI 닭가슴살", type:"닭가슴살",ingredient: "두유", kcal:138, carbohydrate: 9.74, protein:18.91, fat:2.6,price:3100,siteurl:"www.naver.com" , foodimage: "testimage"),
     RankFood(name: "Good 닭가슴살", type:"닭가슴살",ingredient: "두유", kcal:138, carbohydrate: 9.74, protein:18.91, fat:2.6,price:3300,siteurl:"www.naver.com" , foodimage: "testimage")
 ]
+
