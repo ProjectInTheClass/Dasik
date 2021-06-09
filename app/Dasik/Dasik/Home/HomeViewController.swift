@@ -15,6 +15,13 @@ class HomeViewController: UIViewController {
         formatter.dateFormat = "MM-dd"
         return formatter
     }()
+    
+    fileprivate lazy var numberFormatter : NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.roundingMode = .floor
+        formatter.maximumSignificantDigits = 3
+        return formatter
+    }()
 
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -296,8 +303,11 @@ class HomeViewController: UIViewController {
         
         dates = WeekString()
         
+        let progressValue = getProgress() * 100
         progressView.progress = getProgress()
-        percentLabel.text = String(progressView.progress * 100) + "%"
+        if let numberLabel = numberFormatter.string(for: progressValue){
+            percentLabel.text = numberLabel + "%"
+        }
         
         setChart(dataPoints: dates, values: kcals)
         nameLabel.text = TmpUser.name
