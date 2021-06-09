@@ -188,11 +188,11 @@ struct changeData {
         do{
             print("TmpUser-------")
             print(TmpUser)
-
+            
             var encoder = JSONEncoder()
             encoder.outputFormatting = .prettyPrinted
             let jsonData:Data = try encoder.encode(TmpUser) // data
-            
+            print(jsonData)
             request.httpBody = jsonData
 
         }

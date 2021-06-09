@@ -32,6 +32,7 @@ class DietViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         calendar.reloadData()
+        changedata.sendUserInfotoServer()
     }
 }
 

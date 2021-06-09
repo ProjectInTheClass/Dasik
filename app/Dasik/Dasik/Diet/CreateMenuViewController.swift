@@ -88,7 +88,7 @@ class CreateMenuViewController: UIViewController {
             }
         }
         print(TmpUser.allergy)
-        changedata.sendUserInfotoServer()
+        
     }
     
     @IBAction func makeMenu(_ sender: Any) {
@@ -121,6 +121,7 @@ class CreateMenuViewController: UIViewController {
             let okAction1 = UIAlertAction(title: "OK", style: .default){(ok) in
                 //reset data
                 TmpUser.monthDiet = []
+                DietFoods = []
                 TmpUser.checkMeal = [:]
                 self.makeMenuAPI()
                 let alert = UIAlertController(title: "성공", message: "식단표가 완성되었습니다. 성공적인 다이어트를 기원합니다.", preferredStyle: UIAlertController.Style.alert)
@@ -160,7 +161,8 @@ class CreateMenuViewController: UIViewController {
         
         do{
             request.httpBody = try JSONSerialization.data(withJSONObject: dic, options: .prettyPrinted)
-            print(request)
+            print("dic dic")
+            print(dic)
         }
         catch{
             print(error.localizedDescription)
@@ -236,9 +238,9 @@ class CreateMenuViewController: UIViewController {
                 }
             }
             
-            TmpUser.monthDiet.forEach{
-                print("date : \($0.date), name1 : \($0.breakFast[0].name), name2 : \($0.breakFast[1].name), name3 : \($0.lunch[0].name), name4 : \($0.lunch[1].name), name5 : \($0.dinner[0].name), name6 : \($0.dinner[1].name)")
-            }
+//            TmpUser.monthDiet.forEach{
+//                print("date : \($0.date), name1 : \($0.breakFast[0].name), name2 : \($0.breakFast[1].name), name3 : \($0.lunch[0].name), name4 : \($0.lunch[1].name), name5 : \($0.dinner[0].name), name6 : \($0.dinner[1].name)")
+//            }
             
             changedata.sendUserInfotoServer()
         }).resume()
