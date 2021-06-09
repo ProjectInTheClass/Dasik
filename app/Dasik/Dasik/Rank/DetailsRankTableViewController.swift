@@ -45,7 +45,7 @@ class DetailsRankTableViewController: UITableViewController {
         
         cell.foodimg.image = UIImage(named: "testimage")
         cell.foodname.text = item.name
-        cell.foodprice.text = String(item.price)
+        cell.foodprice.text = String(item.price) + "원"
         // Configure the cell...
 
         return cell
