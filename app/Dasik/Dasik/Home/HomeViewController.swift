@@ -83,6 +83,29 @@ class HomeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        let now = Date.init()
+        let now_string = dateFormatter.string(from: now)
+        
+        if let todayInfo = TmpUser.checkMeal[now_string]{
+            if todayInfo[todayInfo.startIndex] == "1"{
+                bfBNum = 1
+            }else if todayInfo[todayInfo.startIndex] == "0"{
+                bfBNum = 0
+            }
+            if todayInfo[todayInfo.index(todayInfo.endIndex, offsetBy: -2)] == "1"{
+                lBNum = 1
+            }else if todayInfo[todayInfo.index(todayInfo.endIndex, offsetBy: -2)] == "0"{
+                lBNum = 0
+            }
+            
+            if todayInfo[todayInfo.index(todayInfo.endIndex, offsetBy: -1)] == "1"{
+                dBNum = 1
+            }else if todayInfo[todayInfo.index(todayInfo.endIndex, offsetBy: -1)] == "0"{
+                dBNum = 0
+            }
+            
+        }
         updateUI()
     }
     
@@ -297,6 +320,7 @@ class HomeViewController: UIViewController {
         let now_string = dateFormmater.string(from: now)
         
         TmpUser.checkMeal.updateValue(changedCheckMeal, forKey: now_string)
+        
         updateUI()
     }
     

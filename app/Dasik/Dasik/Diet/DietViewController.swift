@@ -16,6 +16,7 @@ class DietViewController: UIViewController {
     @IBOutlet var oneColor: UIView!
     @IBOutlet var twoColor: UIView!
     @IBOutlet var threeColor: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     // Do any additional setup after loading the view.
@@ -33,8 +34,6 @@ class DietViewController: UIViewController {
         calendar.reloadData()
     }
 }
-
-
 
 extension DietViewController:FSCalendarDelegate,FSCalendarDataSource, FSCalendarDelegateAppearance{
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
