@@ -2942,6 +2942,67 @@ input, select, textarea {
 
         }
 
+/* Features3 */
+
+    .features3 {
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -moz-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        width: calc(100% + 2em);
+        margin: 0 0 3em -2em;
+        padding: 0;
+        list-style: none;
+    }
+        .features3 .image {
+            display: inline-block;
+            margin-left: 0em;
+            padding: 0.65em;
+            border-radius: 2%;
+            border: solid 1px;
+            border-color: lightgray;
+        }
+
+        .features3 li {
+            width: calc(100% - 2em);
+            margin-left: 2em;
+            margin-top: 3em;
+            padding: 0;
+        }
+
+            
+
+        @media screen and (max-width: 980px) {
+
+            .features3 li {
+                width: calc(100% - 2em);
+            }
+
+        }
+
+        @media screen and (max-width: 736px) {
+
+            .features3 {
+                width: 100%;
+                margin: 0 0 2em 0;
+            }
+
+                .features3 li {
+                    width: 100%;
+                    margin-left: 0;
+                    margin-top: 2em;
+                }
+
+        }
+
 /* TeamFeatures */
 
     .teamFeatures {
