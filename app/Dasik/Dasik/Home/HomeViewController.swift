@@ -41,7 +41,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     // Do any additional setup after loading the view.
-        nameLabel.text = TmpUser.name
+        
         let now = Date.init()
         let now_string = dateFormatter.string(from: now)
         
@@ -51,6 +51,8 @@ class HomeViewController: UIViewController {
                 break
             }
         }
+        
+        getUserName()
         
         mealName[0].text = todayMealInfo.breakFast.name
         mealName[2].text = todayMealInfo.lunch.name
@@ -73,6 +75,22 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         updateUI()
+    }
+    
+    func getUserName(){
+        let alert = UIAlertController(title: "User Name", message: nil, preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addTextField(){ (userNameTextField) in
+            userNameTextField.placeholder = "한현진"
+            userNameTextField.keyboardType = .default
+        }
+        
+        let ok = UIAlertAction(title: "OK", style: .default){(ok) in
+            TmpUser.name = (alert.textFields?[0].text!)!
+            self.updateUI()
+        }
+        alert.addAction(ok)
+        self.present(alert, animated: true, completion: nil)
     }
     
     func WeekString() -> [String]{
@@ -203,7 +221,7 @@ class HomeViewController: UIViewController {
     }
     
     func updateUI(){
-        
+        nameLabel.text = TmpUser.name
         if bfBNum == 0{
             breakfastButton.tintColor = .lightGray
         }
