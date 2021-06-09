@@ -42,7 +42,7 @@ var monthDiet : [DayMealInfo]! = []
 //}
 
 var TmpUser = UserInfo(name: "junkyo", height: 175.0, weight: 75)
-var tmp = RankFood2(name: "스테이크 닭가슴살", type:"닭가슴살",ingredient: "우유", kcal:138, carbo: 9.74, protein:18.91, fat:2.6,price:2900,siteurl:"www.naver.com")
+var tmp = RankFood2(name: "", type:"",ingredient: "", kcal:0.0, carbo: 9.74, protein:18.91, fat:2.6,price:2900,siteurl:"www.naver.com")
 var tmp1 = RankFood2(name: "HI 닭가슴살", type:"닭가슴살",ingredient: "우유", kcal:138, carbo: 9.74, protein:18.91, fat:2.6,price:3100,siteurl:"www.naver.com")
 var tmp2 = RankFood2(name: "Good 닭가슴살", type:"닭가슴살",ingredient: "우유", kcal:138, carbo: 9.74, protein:18.91, fat:2.6,price:3300,siteurl:"www.naver.com")
 
