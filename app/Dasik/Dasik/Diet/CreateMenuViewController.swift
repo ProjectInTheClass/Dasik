@@ -36,6 +36,8 @@ class CreateMenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        UserHeight.keyboardType = .decimalPad
+        UserWeight.keyboardType = .decimalPad
         allergyNames = [egg,milk,maemil,mil,daedu,peanut,hodu,bean,fish,shrimp,crab,jogae,squid,fork,chicken,beef,ahwang,peach,tomato]
         // Do any additional setup after loading the view.
         let allergySize = TmpUser.allergy.count

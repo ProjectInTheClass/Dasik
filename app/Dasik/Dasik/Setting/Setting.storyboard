@@ -321,7 +321,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="정희석" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YFO-ls-Qoh">
-                                                                <rect key="frame" x="194" y="10" width="90" height="30"/>
+                                                                <rect key="frame" x="244" y="10" width="90" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="90" id="nQv-SG-h48"/>
                                                                 </constraints>
@@ -334,7 +334,7 @@
                                                                 </userDefinedRuntimeAttributes>
                                                             </textField>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="님" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NH-U0-axq">
-                                                                <rect key="frame" x="299" y="0.0" width="15" height="50"/>
+                                                                <rect key="frame" x="349" y="0.0" width="15" height="50"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
@@ -343,8 +343,8 @@
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="bottom" secondItem="3NH-U0-axq" secondAttribute="bottom" id="89R-Ei-RsD"/>
-                                                            <constraint firstAttribute="trailing" secondItem="3NH-U0-axq" secondAttribute="trailing" constant="70" id="8Gg-Wh-Tvs"/>
-                                                            <constraint firstAttribute="trailing" secondItem="YFO-ls-Qoh" secondAttribute="trailing" constant="100" id="D1P-rO-4rB"/>
+                                                            <constraint firstAttribute="trailing" secondItem="3NH-U0-axq" secondAttribute="trailing" constant="20" id="8Gg-Wh-Tvs"/>
+                                                            <constraint firstAttribute="trailing" secondItem="YFO-ls-Qoh" secondAttribute="trailing" constant="50" id="D1P-rO-4rB"/>
                                                             <constraint firstAttribute="bottom" secondItem="YFO-ls-Qoh" secondAttribute="bottom" constant="10" id="QZK-nV-IN8"/>
                                                             <constraint firstAttribute="height" constant="50" id="bRl-JJ-Kms"/>
                                                             <constraint firstItem="NG5-Z6-bYj" firstAttribute="leading" secondItem="PjB-Vv-QOP" secondAttribute="leading" constant="20" id="cFs-Do-ueI"/>
@@ -375,13 +375,13 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yag-TX-Yum">
-                                                                <rect key="frame" x="290.5" y="0.0" width="23.5" height="50"/>
+                                                                <rect key="frame" x="340.5" y="0.0" width="23.5" height="50"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="169" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mCP-0o-cHj">
-                                                                <rect key="frame" x="194" y="10" width="90" height="30"/>
+                                                                <rect key="frame" x="244" y="10" width="90" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="90" id="xwC-bd-35s"/>
                                                                 </constraints>
@@ -400,11 +400,11 @@
                                                             <constraint firstItem="mCP-0o-cHj" firstAttribute="top" secondItem="K5D-Z0-HKK" secondAttribute="top" constant="10" id="Blg-GP-G8d"/>
                                                             <constraint firstItem="dbN-ue-JFR" firstAttribute="top" secondItem="K5D-Z0-HKK" secondAttribute="top" id="DFi-zs-TVK"/>
                                                             <constraint firstAttribute="bottom" secondItem="dbN-ue-JFR" secondAttribute="bottom" id="ELg-e7-Lr7"/>
-                                                            <constraint firstAttribute="trailing" secondItem="mCP-0o-cHj" secondAttribute="trailing" constant="100" id="Xod-pc-1H2"/>
+                                                            <constraint firstAttribute="trailing" secondItem="mCP-0o-cHj" secondAttribute="trailing" constant="50" id="Xod-pc-1H2"/>
                                                             <constraint firstAttribute="bottom" secondItem="Yag-TX-Yum" secondAttribute="bottom" id="awN-V9-ZR1"/>
                                                             <constraint firstAttribute="bottom" secondItem="mCP-0o-cHj" secondAttribute="bottom" constant="10" id="fzo-vD-beS"/>
                                                             <constraint firstItem="dbN-ue-JFR" firstAttribute="leading" secondItem="K5D-Z0-HKK" secondAttribute="leading" constant="20" id="itN-ul-hqC"/>
-                                                            <constraint firstAttribute="trailing" secondItem="Yag-TX-Yum" secondAttribute="trailing" constant="70" id="qVk-e6-Kvh"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Yag-TX-Yum" secondAttribute="trailing" constant="20" id="qVk-e6-Kvh"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -428,13 +428,13 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dIc-tU-VKj">
-                                                                <rect key="frame" x="295.5" y="0.0" width="18.5" height="50"/>
+                                                                <rect key="frame" x="345.5" y="0.0" width="18.5" height="50"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="70" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fwq-jn-muW">
-                                                                <rect key="frame" x="194" y="10" width="90" height="30"/>
+                                                                <rect key="frame" x="244" y="10" width="90" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="90" id="3lm-22-Ayj"/>
                                                                 </constraints>
@@ -452,11 +452,11 @@
                                                             <constraint firstAttribute="bottom" secondItem="9tX-HS-96w" secondAttribute="bottom" id="JPM-Yn-9NF"/>
                                                             <constraint firstAttribute="bottom" secondItem="Fwq-jn-muW" secondAttribute="bottom" constant="10" id="KvD-dw-1za"/>
                                                             <constraint firstItem="dIc-tU-VKj" firstAttribute="top" secondItem="fSh-fq-OLO" secondAttribute="top" id="QYq-kx-Jey"/>
-                                                            <constraint firstAttribute="trailing" secondItem="Fwq-jn-muW" secondAttribute="trailing" constant="100" id="WS2-UT-E7N"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Fwq-jn-muW" secondAttribute="trailing" constant="50" id="WS2-UT-E7N"/>
                                                             <constraint firstAttribute="bottom" secondItem="dIc-tU-VKj" secondAttribute="bottom" id="dke-ra-FcS"/>
                                                             <constraint firstItem="9tX-HS-96w" firstAttribute="leading" secondItem="fSh-fq-OLO" secondAttribute="leading" constant="20" id="lsq-fA-s33"/>
                                                             <constraint firstItem="9tX-HS-96w" firstAttribute="top" secondItem="fSh-fq-OLO" secondAttribute="top" id="pfE-NV-e8f"/>
-                                                            <constraint firstAttribute="trailing" secondItem="dIc-tU-VKj" secondAttribute="trailing" constant="70" id="rPq-nL-Vky"/>
+                                                            <constraint firstAttribute="trailing" secondItem="dIc-tU-VKj" secondAttribute="trailing" constant="20" id="rPq-nL-Vky"/>
                                                             <constraint firstItem="Fwq-jn-muW" firstAttribute="top" secondItem="fSh-fq-OLO" secondAttribute="top" constant="10" id="v88-Qf-Je8"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>

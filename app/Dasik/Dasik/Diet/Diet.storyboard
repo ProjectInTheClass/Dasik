@@ -521,13 +521,13 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="cm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9g-dm-cau">
-                                                                <rect key="frame" x="290.5" y="0.0" width="23.5" height="50"/>
+                                                                <rect key="frame" x="340.5" y="0.0" width="23.5" height="50"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="169" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GfF-Hl-PTe">
-                                                                <rect key="frame" x="194" y="10" width="90" height="30"/>
+                                                                <rect key="frame" x="244" y="10" width="90" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="90" id="ZZf-Je-RcE"/>
                                                                 </constraints>
@@ -542,13 +542,13 @@
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="trailing" secondItem="GfF-Hl-PTe" secondAttribute="trailing" constant="100" id="Aty-TE-yjJ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="GfF-Hl-PTe" secondAttribute="trailing" constant="50" id="Aty-TE-yjJ"/>
                                                             <constraint firstItem="mMV-XQ-3vL" firstAttribute="leading" secondItem="BFt-JX-iwh" secondAttribute="leading" constant="20" id="Ddt-TR-GHr"/>
                                                             <constraint firstItem="GfF-Hl-PTe" firstAttribute="top" secondItem="BFt-JX-iwh" secondAttribute="top" constant="10" id="FpS-4b-o2O"/>
                                                             <constraint firstItem="A9g-dm-cau" firstAttribute="top" secondItem="BFt-JX-iwh" secondAttribute="top" id="I8p-Yo-ob9"/>
                                                             <constraint firstItem="mMV-XQ-3vL" firstAttribute="top" secondItem="BFt-JX-iwh" secondAttribute="top" id="aeH-I1-7CZ"/>
                                                             <constraint firstAttribute="bottom" secondItem="mMV-XQ-3vL" secondAttribute="bottom" id="arh-mw-Lbu"/>
-                                                            <constraint firstAttribute="trailing" secondItem="A9g-dm-cau" secondAttribute="trailing" constant="70" id="iqL-fd-ZI6"/>
+                                                            <constraint firstAttribute="trailing" secondItem="A9g-dm-cau" secondAttribute="trailing" constant="20" id="iqL-fd-ZI6"/>
                                                             <constraint firstAttribute="bottom" secondItem="A9g-dm-cau" secondAttribute="bottom" id="lgt-py-tgw"/>
                                                             <constraint firstAttribute="bottom" secondItem="GfF-Hl-PTe" secondAttribute="bottom" constant="10" id="yRS-wt-oyG"/>
                                                         </constraints>
@@ -574,13 +574,13 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZy-Fm-dSS">
-                                                                <rect key="frame" x="295.5" y="0.0" width="18.5" height="50"/>
+                                                                <rect key="frame" x="345.5" y="0.0" width="18.5" height="50"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="70" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jcp-mv-bg8">
-                                                                <rect key="frame" x="194" y="10" width="90" height="30"/>
+                                                                <rect key="frame" x="244" y="10" width="90" height="30"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="90" id="zcf-sT-wXW"/>
                                                                 </constraints>
@@ -601,9 +601,9 @@
                                                             <constraint firstItem="XZy-Fm-dSS" firstAttribute="top" secondItem="Ht6-eE-EsQ" secondAttribute="top" id="NlG-xq-N9i"/>
                                                             <constraint firstAttribute="bottom" secondItem="jcp-mv-bg8" secondAttribute="bottom" constant="10" id="Omk-js-bOD"/>
                                                             <constraint firstItem="QlS-Oo-6vZ" firstAttribute="leading" secondItem="Ht6-eE-EsQ" secondAttribute="leading" constant="20" id="PRC-L9-Evx"/>
-                                                            <constraint firstAttribute="trailing" secondItem="jcp-mv-bg8" secondAttribute="trailing" constant="100" id="X28-bP-Zfy"/>
+                                                            <constraint firstAttribute="trailing" secondItem="jcp-mv-bg8" secondAttribute="trailing" constant="50" id="X28-bP-Zfy"/>
                                                             <constraint firstAttribute="bottom" secondItem="XZy-Fm-dSS" secondAttribute="bottom" id="hSx-O5-AX6"/>
-                                                            <constraint firstAttribute="trailing" secondItem="XZy-Fm-dSS" secondAttribute="trailing" constant="70" id="poW-tD-imJ"/>
+                                                            <constraint firstAttribute="trailing" secondItem="XZy-Fm-dSS" secondAttribute="trailing" constant="20" id="poW-tD-imJ"/>
                                                         </constraints>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
@@ -664,7 +664,7 @@
                                                                 <nil key="textColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vUj-h3-9WD">
+                                                            <switch opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="vUj-h3-9WD">
                                                                 <rect key="frame" x="300" y="10" width="51" height="30"/>
                                                                 <connections>
                                                                     <action selector="switchChanged:" destination="we5-Kq-qxc" eventType="valueChanged" id="bMK-3G-u7h"/>
@@ -1371,7 +1371,7 @@
                             <constraint firstItem="Vn3-Eo-VZY" firstAttribute="top" secondItem="q5c-ES-jep" secondAttribute="top" id="EOP-fY-n8Q"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="알레르기 설정" id="p72-Y8-T29">
+                    <navigationItem key="navigationItem" title="알레르기 설정" largeTitleDisplayMode="never" id="p72-Y8-T29">
                         <barButtonItem key="rightBarButtonItem" title="식단표짜기" id="kbP-K1-WZP" userLabel="식단표짜기">
                             <connections>
                                 <action selector="makeMenu:" destination="we5-Kq-qxc" id="RHD-MP-tEl"/>
