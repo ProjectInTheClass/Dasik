@@ -31,9 +31,13 @@ public struct UserInfo{
 public struct DayMealInfo{
     var date : String
     var breakFast : RankFood
+//    var breakFastide : RankFood2
     var lunch : RankFood
+//    var lunchside : RankFood2
     var dinner : RankFood
+//    var dinnerside : RankFood2
 }
+
 
 public struct MonthlyDietInfo{
     var monthDiet : [DayMealInfo] = [dayMeal, dayMeal2, dayMeal3,dayMeal4, dayMeal5, dayMeal6,dayMeal7, dayMeal8, dayMeal9,dayMeal10, dayMeal11, dayMeal12,dayMeal13, dayMeal4, dayMeal15,dayMeal16, dayMeal17, dayMeal18,dayMeal19, dayMeal21, dayMeal22,dayMeal24]

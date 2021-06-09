@@ -92,6 +92,10 @@ class CreateMenuViewController: UIViewController {
         }
         else{
             makeMenuAPI()
+            let alert = UIAlertController(title: "성공", message: "식단표가 완성되었습니다. 성공적인 다이어트를 기원합니다.", preferredStyle: UIAlertController.Style.alert)
+            let okAction = UIAlertAction(title: "OK", style: .default)
+            alert.addAction(okAction)
+            present(alert, animated: false, completion: nil)
         }
         print(TmpUser.name)
         print(TmpUser.height)
@@ -132,13 +136,12 @@ class CreateMenuViewController: UIViewController {
         let session = URLSession.shared
         session.dataTask(with: request, completionHandler: { (data, response, error) in
 
-            
-
             let json = try? JSONSerialization.jsonObject(with: data!, options: []) as! [String:[Any]]
             let foodjsons = json!["diets"] as! [Any]
             
             print(foodjsons)
             foodjsons.forEach{ item in
+                
                 guard let object = item as? [String : Any] else { return }
                 // 가지고 있는 string key값을 이용하여 값을 가져온다.
                 let date = object["date"] as! String
@@ -157,23 +160,11 @@ class CreateMenuViewController: UIViewController {
                 let siteurl = foodObject["siteurl"] as! String
                 
                 
-            
-                
-                
-                
-//                var newElement = RankFood2(name:name, type: type, ingredient: ingredient, kcal:kcal, carbo: carbo, protein:protein, fat:fat, price:price,siteurl: siteurl)
-//                if type == "밥"{foodData.ricefoods.append(newElement)}
-//                else if type == "면"{foodData.noodlefoods.append(newElement)}
-//                else if type == "샐러드"{foodData.saladfoods.append(newElement)}
-//                else if type == "닭가슴살"{foodData.chickenfoods.append(newElement)}
-//                else if type == "간편식"{foodData.hmrfoods.append(newElement)}
-//                else if type == "간식"{foodData.cookiefoods.append(newElement)}
-//
-                //products.append(RankFood2(name:name, type: type, ingredient: ingredient, kcal:kcal, carbo: carbo, protein:protein, fat:fat, price:price,siteurl: siteurl))
+                DietFoods.append(DietFood(date: date, time: time, name: name, type: type, ingredient: ingredient, kcal: kcal, carbo: carbo, protein: protein, fat: fat, price: price, siteurl: siteurl))
             }
-//            products.forEach{
-//                print("name : \($0.name), type : \($0.type), kcal : \($0.kcal), siteurl: \($0.siteurl)")
-//            }
+            DietFoods.forEach{
+                print("date : \($0.date), name : \($0.name), type : \($0.type), kcal : \($0.kcal), siteurl: \($0.siteurl)")
+            }
         }).resume()
     }
     
