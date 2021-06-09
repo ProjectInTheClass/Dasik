@@ -104,8 +104,12 @@ class HomeViewController: UIViewController {
             }else if todayInfo[todayInfo.index(todayInfo.endIndex, offsetBy: -1)] == "0"{
                 dBNum = 0
             }
-            
+        }else{
+            bfBNum = 0
+            lBNum = 0
+            dBNum = 0
         }
+        
         updateUI()
     }
     
@@ -421,6 +425,10 @@ class HomeViewController: UIViewController {
                 dBNum = 0
             }
             
+        }else{
+            bfBNum = 0
+            lBNum = 0
+            dBNum = 0
         }
     }
     
