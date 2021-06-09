@@ -121,6 +121,7 @@ class HomeViewController: UIViewController {
             let alert2 = UIAlertController(title: "로딩중", message: nil, preferredStyle: UIAlertController.Style.alert)
             self.present(alert2, animated: true, completion: {
                 sleep(2)
+                self.loadgreenlight()
                 self.updateUI()
                 alert2.dismiss(animated: true, completion: nil)
             })
@@ -337,6 +338,7 @@ class HomeViewController: UIViewController {
     
     func updateUI(){
         
+        
         dates = WeekString()
         
         let progressValue = getProgress() * 100
@@ -365,6 +367,7 @@ class HomeViewController: UIViewController {
         else if dBNum == 1{
             dinnerButton.tintColor = checkGreen
         }
+        
         
         let now = Date.init()
         let now_string = dateFormatter.string(from: now)
@@ -396,6 +399,30 @@ class HomeViewController: UIViewController {
         
     }
     
+    func loadgreenlight(){
+        let now = Date.init()
+        let now_string = dateFormatter.string(from: now)
+        
+        if let todayInfo = TmpUser.checkMeal[now_string]{
+            if todayInfo[todayInfo.startIndex] == "1"{
+                bfBNum = 1
+            }else if todayInfo[todayInfo.startIndex] == "0"{
+                bfBNum = 0
+            }
+            if todayInfo[todayInfo.index(todayInfo.endIndex, offsetBy: -2)] == "1"{
+                lBNum = 1
+            }else if todayInfo[todayInfo.index(todayInfo.endIndex, offsetBy: -2)] == "0"{
+                lBNum = 0
+            }
+            
+            if todayInfo[todayInfo.index(todayInfo.endIndex, offsetBy: -1)] == "1"{
+                dBNum = 1
+            }else if todayInfo[todayInfo.index(todayInfo.endIndex, offsetBy: -1)] == "0"{
+                dBNum = 0
+            }
+            
+        }
+    }
     
 }
 
