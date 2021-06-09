@@ -37,11 +37,11 @@ class DietDetailViewController: UIViewController {
         navigation.title = selectedData + " 식단"
         getMealInfo()
         
-        breakfastKcal.text = String(dayMeal.breakFast.kcal) + " kcal"
+        breakfastKcal.text = String(dayMeal.breakFast[0].kcal + dayMeal.breakFast[1].kcal) + " kcal"
         breakfastKcal.textColor = .lightGray
-        lunchKcal.text = String(dayMeal.lunch.kcal) + " kcal"
+        lunchKcal.text = String(dayMeal.lunch[0].kcal + dayMeal.lunch[1].kcal) + " kcal"
         lunchKcal.textColor = .lightGray
-        dinnerKcal.text = String(dayMeal.dinner.kcal) + " kcal"
+        dinnerKcal.text = String(dayMeal.dinner[0].kcal + dayMeal.dinner[1].kcal) + " kcal"
         dinnerKcal.textColor = .lightGray
             
         getDayInfo()
@@ -94,9 +94,12 @@ class DietDetailViewController: UIViewController {
     }
         
     func updateUI(){
-        mealNameLabels[0].text = dayMeal.breakFast.name
-        mealNameLabels[2].text = dayMeal.lunch.name
-        mealNameLabels[4].text = dayMeal.dinner.name
+        mealNameLabels[0].text = dayMeal.breakFast[0].name
+        mealNameLabels[1].text = dayMeal.breakFast[1].name
+        mealNameLabels[2].text = dayMeal.lunch[0].name
+        mealNameLabels[3].text = dayMeal.lunch[1].name
+        mealNameLabels[4].text = dayMeal.dinner[0].name
+        mealNameLabels[5].text = dayMeal.dinner[1].name
         
         if bfBNum == 0{
             breakfastButton.tintColor = .lightGray
@@ -121,11 +124,16 @@ class DietDetailViewController: UIViewController {
     }
     
     func getMealInfo(){
-        for tmp in tmpMonthMeal.monthDiet{
+        var dayflag = 0
+        for tmp in monthDiet{
             if selectedData == tmp.date{
                 dayMeal = tmp
+                dayflag = 1
                 break
             }
+        }
+        if dayflag == 0 {
+            dayMeal = defaultMealInfo
         }
     }
 }

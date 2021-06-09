@@ -45,22 +45,33 @@ class HomeViewController: UIViewController {
         let now = Date.init()
         let now_string = dateFormatter.string(from: now)
         
-        for tmp in tmpMonthMeal.monthDiet{
-            if now_string == tmp.date{
+        var dayflag = 0
+        for tmp in monthDiet{
+           if now_string == tmp.date{
                 todayMealInfo = tmp
+                dayflag = 1
                 break
-            }
+           }
         }
         
+        if(dayflag == 0){
+            todayMealInfo = defaultMealInfo
+        }
+        
+
         getUserName()
         
-        mealName[0].text = todayMealInfo.breakFast.name
-        mealName[2].text = todayMealInfo.lunch.name
-        mealName[4].text = todayMealInfo.dinner.name
+        mealName[0].text = todayMealInfo.breakFast[0].name
+        mealName[1].text = todayMealInfo.breakFast[1].name
+        mealName[2].text = todayMealInfo.lunch[0].name
+        mealName[3].text = todayMealInfo.lunch[1].name
+        mealName[4].text = todayMealInfo.dinner[0].name
+        mealName[5].text = todayMealInfo.dinner[1].name
+
         
-        kcalLabels[0].text = String(todayMealInfo.breakFast.kcal)
-        kcalLabels[1].text = String(todayMealInfo.lunch.kcal)
-        kcalLabels[2].text = String(todayMealInfo.dinner.kcal)
+        kcalLabels[0].text = String(todayMealInfo.breakFast[0].kcal+todayMealInfo.breakFast[1].kcal)
+        kcalLabels[1].text = String(todayMealInfo.lunch[0].kcal+todayMealInfo.lunch[1].kcal)
+        kcalLabels[2].text = String(todayMealInfo.dinner[0].kcal+todayMealInfo.dinner[1].kcal)
        
         dates = WeekString()
         //barChartView.noDataText = "데이터가 없습니다."
@@ -147,13 +158,20 @@ class HomeViewController: UIViewController {
     
     func getTotalKcal(date : String)->Double{
         var dayMeal : DayMealInfo!
-        for tmp in tmpMonthMeal.monthDiet{
+        var dayflag = 0
+        
+        for tmp in monthDiet{
             if date == tmp.date{
                 dayMeal = tmp
+                dayflag = 1
                 break
             }
         }
-        return dayMeal.breakFast.kcal+dayMeal.lunch.kcal+dayMeal.dinner.kcal
+        if dayflag == 0 {
+            dayMeal = defaultMealInfo
+        }
+        
+        return dayMeal.breakFast[0].kcal+dayMeal.lunch[0].kcal+dayMeal.dinner[0].kcal + dayMeal.breakFast[1].kcal+dayMeal.lunch[1].kcal+dayMeal.dinner[1].kcal
     }
     
     func setChart(dataPoints: [String], values: [Double]) {
@@ -240,6 +258,33 @@ class HomeViewController: UIViewController {
         else if dBNum == 1{
             dinnerButton.tintColor = checkGreen
         }
+        
+        let now = Date.init()
+        let now_string = dateFormatter.string(from: now)
+        var dayflag = 0
+        for tmp in monthDiet{
+           if now_string == tmp.date{
+                todayMealInfo = tmp
+                dayflag = 1
+                break
+           }
+        }
+        
+        if(dayflag == 0){
+            todayMealInfo = defaultMealInfo
+        }
+        
+        mealName[0].text = todayMealInfo.breakFast[0].name
+        mealName[1].text = todayMealInfo.breakFast[1].name
+        mealName[2].text = todayMealInfo.lunch[0].name
+        mealName[3].text = todayMealInfo.lunch[1].name
+        mealName[4].text = todayMealInfo.dinner[0].name
+        mealName[5].text = todayMealInfo.dinner[1].name
+        
+        kcalLabels[0].text = String(todayMealInfo.breakFast[0].kcal+todayMealInfo.breakFast[1].kcal)
+        kcalLabels[1].text = String(todayMealInfo.lunch[0].kcal+todayMealInfo.lunch[1].kcal)
+        kcalLabels[2].text = String(todayMealInfo.dinner[0].kcal+todayMealInfo.dinner[1].kcal)
+        
     }
 }
 
