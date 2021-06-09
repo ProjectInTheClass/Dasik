@@ -115,7 +115,7 @@ class CreateMenuViewController: UIViewController {
                                   "beef":TmpUser.allergy[15], "ahawng":TmpUser.allergy[16], "peach":TmpUser.allergy[17],
                                   "tomato":TmpUser.allergy[18]]
         
-        guard let url = URL(string:"http://localhost:3000/foods/getMenu".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
+        guard let url = URL(string:"http://222.108.114.91:8080/foods/getMenu".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
             return
         }
         
@@ -139,12 +139,10 @@ class CreateMenuViewController: UIViewController {
             let json = try? JSONSerialization.jsonObject(with: data!, options: []) as! [String:[Any]]
             let foodjsons = json!["diets"] as! [Any]
             
-            print(foodjsons)
             foodjsons.forEach{ item in
-                
                 guard let object = item as? [String : Any] else { return }
                 // 가지고 있는 string key값을 이용하여 값을 가져온다.
-                let date = object["date"] as! String
+                var date = object["date"] as! String
                 let time = object["time"] as! String
                 let food = object["food"] as! Any
                 
@@ -159,11 +157,17 @@ class CreateMenuViewController: UIViewController {
                 let price = foodObject["price"] as! Int
                 let siteurl = foodObject["siteurl"] as! String
                 
+                var dates = date.components(separatedBy: "-")
+                if dates[0].count == 1 {dates[0] = "0" + dates[0]}
+                if dates[1].count == 1 {dates[1] = "0" + dates[1]}
+                date = dates[0] + "-" + dates[1]
                 
                 DietFoods.append(DietFood(date: date, time: time, name: name, type: type, ingredient: ingredient, kcal: kcal, carbo: carbo, protein: protein, fat: fat, price: price, siteurl: siteurl))
             }
-            DietFoods.forEach{
-                print("date : \($0.date), name : \($0.name), type : \($0.type), kcal : \($0.kcal), siteurl: \($0.siteurl)")
+            DietFoods.forEach{ item in
+                //해당 날짜에 해당하는 정보가 있는지 판별
+                
+                print("date : \(item.date), name : \(item.name), type : \(item.type), kcal : \(item.kcal), siteurl: \(item.siteurl)")
             }
         }).resume()
     }

@@ -25,19 +25,17 @@ public struct UserInfo{
     var height : Float
     var weight : Float
     var allergy : [Int] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-    var checkMeal : [ String : String] = ["06-02":"100", "06-03":"101", "06-13":"111","06-14":"000", "06-01":"111"]
+    var checkMeal : [String : String] = ["06-02":"100", "06-03":"101", "06-13":"111","06-14":"000", "06-01":"111"]
 }
 
 public struct DayMealInfo{
     var date : String
     var breakFast : RankFood
-//    var breakFastide : RankFood2
     var lunch : RankFood
-//    var lunchside : RankFood2
     var dinner : RankFood
-//    var dinnerside : RankFood2
 }
 
+//var monthDiet : [DayMealInfo]!
 
 public struct MonthlyDietInfo{
     var monthDiet : [DayMealInfo] = [dayMeal, dayMeal2, dayMeal3,dayMeal4, dayMeal5, dayMeal6,dayMeal7, dayMeal8, dayMeal9,dayMeal10, dayMeal11, dayMeal12,dayMeal13, dayMeal4, dayMeal15,dayMeal16, dayMeal17, dayMeal18,dayMeal19, dayMeal21, dayMeal22,dayMeal24]
