@@ -8,7 +8,7 @@ var userSchema = new Schema({
     height: Number,
     weight: Number,
     allergy: [Number],
-    checkmeal: [CheckMeal.schema],
+    checkMeal: [CheckMeal.schema],
     monthDiet : [DayMealInfo.schema]
 });
 

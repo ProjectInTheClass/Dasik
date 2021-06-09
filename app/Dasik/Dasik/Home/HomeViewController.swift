@@ -53,7 +53,7 @@ class HomeViewController: UIViewController {
         let now_string = dateFormatter.string(from: now)
         
         var dayflag = 0
-        for tmp in monthDiet{
+        for tmp in TmpUser.monthDiet{
            if now_string == tmp.date{
                 todayMealInfo = tmp
                 dayflag = 1
@@ -206,7 +206,7 @@ class HomeViewController: UIViewController {
         var dayMeal : DayMealInfo!
         var dayflag = 0
         
-        for tmp in monthDiet{
+        for tmp in TmpUser.monthDiet{
             if date == tmp.date{
                 dayMeal = tmp
                 dayflag = 1
@@ -334,7 +334,7 @@ class HomeViewController: UIViewController {
         let now = Date.init()
         let now_string = dateFormatter.string(from: now)
         var dayflag = 0
-        for tmp in monthDiet{
+        for tmp in TmpUser.monthDiet{
            if now_string == tmp.date{
                 todayMealInfo = tmp
                 dayflag = 1
@@ -357,6 +357,47 @@ class HomeViewController: UIViewController {
         kcalLabels[1].text = String(todayMealInfo.lunch[0].kcal+todayMealInfo.lunch[1].kcal)
         kcalLabels[2].text = String(todayMealInfo.dinner[0].kcal+todayMealInfo.dinner[1].kcal)
         
+        sendUserInfotoServer()
+        
+    }
+    
+    func sendUserInfotoServer(){
+        print("sendUserInfo Function Start!")
+        
+        
+        guard let url = URL(string:"http://222.108.114.91:8080/users/saveUserInfo".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        
+        do{
+            print("TmpUser-------")
+            print(TmpUser)
+
+            var encoder = JSONEncoder()
+            encoder.outputFormatting = .prettyPrinted
+            let jsonData:Data = try encoder.encode(TmpUser) // data
+
+            request.httpBody = jsonData
+
+        }
+        catch{
+            print(error.localizedDescription)
+        }
+        
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept-Type")
+             
+        let session = URLSession.shared
+        session.dataTask(with: request, completionHandler: { (data, response, error) in
+
+            let json = try? JSONSerialization.jsonObject(with: data!, options: []) as! [String:Any]
+            print("json------------")
+            print(json!)
+
+        }).resume()
     }
 }
 

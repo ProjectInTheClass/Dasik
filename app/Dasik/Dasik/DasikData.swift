@@ -20,7 +20,7 @@ public struct RegularDietFood{
     var foodimage:String        //음식사진
 }
 
-public struct UserInfo{
+public struct UserInfo:Codable{
     var name : String
     var height : Float
     var weight : Float
@@ -29,17 +29,17 @@ public struct UserInfo{
     var monthDiet : [DayMealInfo]
 }
 
-public struct DayMealInfo{
+public struct DayMealInfo:Codable{
     var date : String
     var breakFast : [RankFood]
     var lunch : [RankFood]
     var dinner : [RankFood]
 }
 
-var monthDiet : [DayMealInfo]! = []
+//var monthDiet : [DayMealInfo]! = []
 
-var TmpUser = UserInfo(name: "junkyo", height: 175.0, weight: 75, monthDiet: [])
-var tmp = RankFood(name: "", type:"",ingredient: "", kcal:0.0, carbo: 9.74, protein:18.91, fat:2.6,price:2900,siteurl:"www.naver.com", foodimage: "testimage")
+var TmpUser = UserInfo(name: "lee", height: 175.0, weight: 75, monthDiet: [defaultMealInfo])
+var tmp = RankFood(name: "", type:"",ingredient: "", kcal:0.0, carbo: 0.0, protein:0.0, fat:0.0,price:0,siteurl:"www.naver.com", foodimage: "testimage")
 var tmp1 = RankFood(name: "HI 닭가슴살", type:"닭가슴살",ingredient: "우유", kcal:138, carbo: 9.74, protein:18.91, fat:2.6,price:3100,siteurl:"www.naver.com",foodimage: "testimage")
 var tmp2 = RankFood(name: "Good 닭가슴살", type:"닭가슴살",ingredient: "우유", kcal:138, carbo: 9.74, protein:18.91, fat:2.6,price:3300,siteurl:"www.naver.com",foodimage: "testimage")
 
