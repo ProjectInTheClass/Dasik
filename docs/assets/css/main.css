@@ -3360,6 +3360,8 @@ input, select, textarea {
             #header.alt p {
                 font-size: 2em;
                 font-weight: bold;
+                color: .white;
+                opacity: 1.0;
             }
 
 			#header.alt > * {
