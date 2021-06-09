@@ -9,11 +9,21 @@ import UIKit
 
 class UserInfoSettingViewController: UIViewController {
 
+    @IBOutlet weak var dietScrollView: UIScrollView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var heightTextField: UITextField!
     @IBOutlet weak var weightTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        let singleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(MyTapMethod))
+        singleTapGestureRecognizer.numberOfTapsRequired = 1
+        singleTapGestureRecognizer.isEnabled = true
+        singleTapGestureRecognizer.cancelsTouchesInView = false
+        dietScrollView.addGestureRecognizer(singleTapGestureRecognizer)
+        dietScrollView.addGestureRecognizer(singleTapGestureRecognizer)
         
         // Do any additional setup after loading the view.
         nameTextField.keyboardType = .default
@@ -22,6 +32,7 @@ class UserInfoSettingViewController: UIViewController {
         nameTextField.placeholder = TmpUser.name
         heightTextField.placeholder = String(TmpUser.height)
         weightTextField.placeholder = String(TmpUser.weight)
+        
     }
     
     @IBAction func setUserInfo(_ sender: Any) {
@@ -43,6 +54,9 @@ class UserInfoSettingViewController: UIViewController {
         print(TmpUser.weight)
     }
     
+    @objc func MyTapMethod(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
     /*
     // MARK: - Navigation
 

@@ -32,10 +32,20 @@ class CreateMenuViewController: UIViewController {
     @IBOutlet var peach: UISwitch!
     @IBOutlet var tomato: UISwitch!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
     var allergyNames:[UISwitch]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let singleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(MyTapMethod))
+        singleTapGestureRecognizer.numberOfTapsRequired = 1
+        singleTapGestureRecognizer.isEnabled = true
+        singleTapGestureRecognizer.cancelsTouchesInView = false
+        scrollView.addGestureRecognizer(singleTapGestureRecognizer)
+        scrollView.addGestureRecognizer(singleTapGestureRecognizer)
+        
         UserHeight.keyboardType = .decimalPad
         UserWeight.keyboardType = .decimalPad
         allergyNames = [egg,milk,maemil,mil,daedu,peanut,hodu,bean,fish,shrimp,crab,jogae,squid,fork,chicken,beef,ahwang,peach,tomato]
@@ -51,6 +61,11 @@ class CreateMenuViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
+    
+    @objc func MyTapMethod(sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
+    
     @IBAction func switchChanged(_ sender: UISwitch) {
         let index = sender.tag
         
