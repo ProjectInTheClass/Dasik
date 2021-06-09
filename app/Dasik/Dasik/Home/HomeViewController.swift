@@ -147,6 +147,54 @@ class HomeViewController: UIViewController {
         return dates
     }
     
+    func getProgress()->Float{
+        var sum : Float = 0
+        
+        let now = Date.init()
+        let now_string = dateFormatter.string(from: now)
+        
+        for (key,value) in TmpUser.checkMeal{
+            if key <= now_string{
+                if value[value.startIndex] == "1"{
+                    sum = sum + 1
+                }
+                
+                if value[value.index(value.endIndex, offsetBy: -1)] == "1"{
+                    sum = sum + 1
+                }
+                
+                if value[value.index(value.endIndex, offsetBy: -2)] == "1"{
+                    sum = sum + 1
+                }
+            }
+        }
+        
+        let dayArray = now_string.split(separator: "-")
+        var totalMealCount : Float = 1.0
+        
+        switch dayArray[0]{
+        case "01":
+            totalMealCount = 3 * 31
+        case "02":
+            totalMealCount = 3 * 28
+        case "03":
+            totalMealCount = 3 * 31
+        case "05":
+            totalMealCount = 3 * 31
+        case "07":
+            totalMealCount = 3 * 31
+        case "08":
+            totalMealCount = 3 * 31
+        case "10":
+            totalMealCount = 3 * 31
+        case "12":
+            totalMealCount = 3 * 31
+        default:
+            totalMealCount = 3 * 30
+        }
+        return sum / totalMealCount
+    }
+    
     func getTotalKcal(date : String)->Double{
         var dayMeal : DayMealInfo!
         var dayflag = 0
@@ -177,7 +225,6 @@ class HomeViewController: UIViewController {
             return sum
         }else{
             return 0
-//            return dayMeal.breakFast[0].kcal+dayMeal.lunch[0].kcal+dayMeal.dinner[0].kcal + dayMeal.breakFast[1].kcal+dayMeal.lunch[1].kcal+dayMeal.dinner[1].kcal
         }
     }
     
@@ -246,8 +293,12 @@ class HomeViewController: UIViewController {
     }
     
     func updateUI(){
+        
         dates = WeekString()
+        
+        progressView.progress = getProgress()
         percentLabel.text = String(progressView.progress * 100) + "%"
+        
         setChart(dataPoints: dates, values: kcals)
         nameLabel.text = TmpUser.name
         if bfBNum == 0{
