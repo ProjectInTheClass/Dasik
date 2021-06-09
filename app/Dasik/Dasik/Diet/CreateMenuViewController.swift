@@ -48,6 +48,14 @@ class CreateMenuViewController: UIViewController {
         
         UserHeight.keyboardType = .decimalPad
         UserWeight.keyboardType = .decimalPad
+        
+        if TmpUser.height != 0.0{
+            UserHeight.text = String(TmpUser.height)
+        }
+        if TmpUser.weight != 0.0{
+            UserWeight.text = String(TmpUser.weight)
+        }
+        
         allergyNames = [egg,milk,maemil,mil,daedu,peanut,hodu,bean,fish,shrimp,crab,jogae,squid,fork,chicken,beef,ahwang,peach,tomato]
         // Do any additional setup after loading the view.
         let allergySize = TmpUser.allergy.count
@@ -92,6 +100,7 @@ class CreateMenuViewController: UIViewController {
             TmpUser.height = 0.0
             rejectflag = 1
         }
+        
         if let tmpWeight = Float(UserWeight.text!){
             TmpUser.weight = tmpWeight
         }
