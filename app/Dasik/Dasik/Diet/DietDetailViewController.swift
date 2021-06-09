@@ -25,7 +25,8 @@ class DietDetailViewController: UIViewController {
     @IBOutlet var dinnerButton: UIButton!
     
     @IBOutlet var mealNameLabels: [UILabel]!
-    
+    @IBOutlet var mealKcalLabels: [UILabel]!
+    @IBOutlet var mealDangerLabels: [UILabel]!
     
     var bfBNum: Int = 0
     var lBNum: Int = 0
@@ -100,6 +101,20 @@ class DietDetailViewController: UIViewController {
         mealNameLabels[3].text = dayMeal.lunch[1].name
         mealNameLabels[4].text = dayMeal.dinner[0].name
         mealNameLabels[5].text = dayMeal.dinner[1].name
+        
+        mealKcalLabels[0].text = String(dayMeal.breakFast[0].kcal) + "kcal"
+        mealKcalLabels[1].text = String(dayMeal.breakFast[1].kcal) + "kcal"
+        mealKcalLabels[2].text = String(dayMeal.lunch[0].kcal) + "kcal"
+        mealKcalLabels[3].text = String(dayMeal.lunch[1].kcal) + "kcal"
+        mealKcalLabels[4].text = String(dayMeal.dinner[0].kcal) + "kcal"
+        mealKcalLabels[5].text = String(dayMeal.dinner[1].kcal) + "kcal"
+        
+        mealDangerLabels[0].text = "주의성분 : " + dayMeal.breakFast[0].ingredient
+        mealDangerLabels[1].text = "주의성분 : " + dayMeal.breakFast[1].ingredient
+        mealDangerLabels[2].text = "주의성분 : " + dayMeal.lunch[0].ingredient
+        mealDangerLabels[3].text = "주의성분 : " + dayMeal.lunch[1].ingredient
+        mealDangerLabels[4].text = "주의성분 : " + dayMeal.dinner[0].ingredient
+        mealDangerLabels[5].text = "주의성분 : " + dayMeal.dinner[1].ingredient
         
         if bfBNum == 0{
             breakfastButton.tintColor = .lightGray

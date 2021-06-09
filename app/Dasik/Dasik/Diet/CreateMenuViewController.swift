@@ -51,7 +51,6 @@ class CreateMenuViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
-    
     @IBAction func switchChanged(_ sender: UISwitch) {
         let index = sender.tag
         
@@ -229,5 +228,5 @@ class CreateMenuViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
 }

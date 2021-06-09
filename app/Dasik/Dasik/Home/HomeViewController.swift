@@ -358,6 +358,7 @@ class HomeViewController: UIViewController {
         kcalLabels[2].text = String(todayMealInfo.dinner[0].kcal+todayMealInfo.dinner[1].kcal)
         
     }
+    
 }
 
 

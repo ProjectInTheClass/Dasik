@@ -11,10 +11,19 @@ import FSCalendar
 class DietViewController: UIViewController {
     var selectData : String = ""
     @IBOutlet weak var calendar: FSCalendar!
+    @IBOutlet var todayColor: UIView!
+    @IBOutlet var zeroColor: UIView!
+    @IBOutlet var oneColor: UIView!
+    @IBOutlet var twoColor: UIView!
+    @IBOutlet var threeColor: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
     // Do any additional setup after loading the view.
-        
+        todayColor.backgroundColor = .blue
+        zeroColor.backgroundColor = .white
+        oneColor.backgroundColor =  #colorLiteral(red: 0.9999999404, green: 0.4634621441, blue: 0.4539236426, alpha: 1)
+        twoColor.backgroundColor = #colorLiteral(red: 0.9565297365, green: 0.9999999404, blue: 0.4745624959, alpha: 1)
+        threeColor.backgroundColor = #colorLiteral(red: 0.5128232241, green: 0.9999999404, blue: 0.5238958001, alpha: 1)
         calendar.appearance.headerMinimumDissolvedAlpha = 0.0
         calendar.delegate = self
         calendar.dataSource = self
