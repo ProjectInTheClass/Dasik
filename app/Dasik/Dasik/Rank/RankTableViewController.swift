@@ -75,7 +75,7 @@ class RankTableViewController: UITableViewController {
         print("APITEST Function Start!")
         let dic:Dictionary = ["message":"test"]
         
-        guard let url = URL(string:"http://222.108.114.91:8080/foods/".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
+        guard let url = URL(string:"http://222.108.114.91:8080/foods/a".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
             return
         }
         
@@ -107,7 +107,7 @@ class RankTableViewController: UITableViewController {
 //        }
 
         
-        var products = [RankFood2]()
+        var products = [RankFood]()
         
         let session = URLSession.shared
         session.dataTask(with: request, completionHandler: { (data, response, error) in
@@ -128,16 +128,16 @@ class RankTableViewController: UITableViewController {
                 let fat = object["fat"] as! Double
                 let price = object["price"] as! Int
                 let siteurl = object["siteurl"] as! String
+                let foodimage = object["foodimage"] as! String
                 
-                var newElement = RankFood2(name:name, type: type, ingredient: ingredient, kcal:kcal, carbo: carbo, protein:protein, fat:fat, price:price,siteurl: siteurl)
+                var newElement = RankFood(name:name, type: type, ingredient: ingredient, kcal:kcal, carbo: carbo, protein:protein, fat:fat, price:price,siteurl: siteurl, foodimage: foodimage)
                 if type == "밥"{foodData.ricefoods.append(newElement)}
                 else if type == "면"{foodData.noodlefoods.append(newElement)}
                 else if type == "샐러드"{foodData.saladfoods.append(newElement)}
                 else if type == "닭가슴살"{foodData.chickenfoods.append(newElement)}
                 else if type == "간편식"{foodData.hmrfoods.append(newElement)}
                 else if type == "간식"{foodData.cookiefoods.append(newElement)}
-                
-                //products.append(RankFood2(name:name, type: type, ingredient: ingredient, kcal:kcal, carbo: carbo, protein:protein, fat:fat, price:price,siteurl: siteurl))
+                                
             }
 //            products.forEach{
 //                print("name : \($0.name), type : \($0.type), kcal : \($0.kcal), siteurl: \($0.siteurl)")

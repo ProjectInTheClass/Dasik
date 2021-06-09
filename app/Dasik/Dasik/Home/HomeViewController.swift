@@ -176,7 +176,8 @@ class HomeViewController: UIViewController {
             }
             return sum
         }else{
-            return dayMeal.breakFast[0].kcal+dayMeal.lunch[0].kcal+dayMeal.dinner[0].kcal + dayMeal.breakFast[1].kcal+dayMeal.lunch[1].kcal+dayMeal.dinner[1].kcal
+            return 0
+//            return dayMeal.breakFast[0].kcal+dayMeal.lunch[0].kcal+dayMeal.dinner[0].kcal + dayMeal.breakFast[1].kcal+dayMeal.lunch[1].kcal+dayMeal.dinner[1].kcal
         }
     }
     

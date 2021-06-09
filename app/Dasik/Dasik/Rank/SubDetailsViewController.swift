@@ -18,12 +18,12 @@ class SubDetailsViewController: UIViewController {
     @IBOutlet var foodPrice: UILabel!
     @IBOutlet var foodURL: UILabel!
     
-    var selectedFood: RankFood2!
+    var selectedFood: RankFood!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        foodImage.image = UIImage(named:"testimage")
+        foodImage.image = UIImage(named:selectedFood.foodimage)
         foodName.text = selectedFood.name
         foodType.text = selectedFood.type
         foodIngredient.text = selectedFood.ingredient

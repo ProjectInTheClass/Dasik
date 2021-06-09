@@ -12,7 +12,7 @@ class DetailsRankTableViewController: UITableViewController {
     @IBOutlet weak var detailNameNavigation: UINavigationItem!
     var detailnamestring:String = ""
     var selectedcategory:RankCategory!
-    var selectedfoodArray:[RankFood2]!
+    var selectedfoodArray:[RankFood]!
     
     
     override func viewDidLoad() {
@@ -43,7 +43,7 @@ class DetailsRankTableViewController: UITableViewController {
 
         let item = selectedfoodArray[indexPath.row]
         
-        cell.foodimg.image = UIImage(named: "testimage")
+        cell.foodimg.image = UIImage(named: item.foodimage)
         cell.foodname.text = item.name
         cell.foodprice.text = String(item.price) + "원"
         // Configure the cell...

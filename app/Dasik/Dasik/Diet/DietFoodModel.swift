@@ -19,6 +19,7 @@ struct DietFood : Codable{
     var fat:Double          //지방
     var price:Int           //가격
     var siteurl:String      //사이트url
+    var foodimage:String    //음식사진
 }
 
 var DietFoods = [DietFood]()
