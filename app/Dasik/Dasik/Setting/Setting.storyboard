@@ -504,7 +504,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="프로필 설정" id="wlT-gE-MVk">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="Kfc-fT-RhR" userLabel="저장">
+                        <barButtonItem key="rightBarButtonItem" title="저장" id="Kfc-fT-RhR" userLabel="저장">
                             <connections>
                                 <action selector="setUserInfo:" destination="tm5-5S-5XQ" id="PIj-fy-WkY"/>
                             </connections>
