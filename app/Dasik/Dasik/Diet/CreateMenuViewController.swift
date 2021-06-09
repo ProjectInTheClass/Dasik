@@ -128,36 +128,39 @@ class CreateMenuViewController: UIViewController {
         
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept-Type")
-        
-//        do{
-//            let json:Data = try Data.init(contentsOf: url)
-//            var products = [String :[RankFood2]]()
-//
-//            products = try JSONDecoder().decode([String : [RankFood2]].self, from: json)
-//
-////            products.
-//
-//        }
-//        catch{
-//            print(error.localizedDescription)
-//        }
-
-        
-        
+         
         let session = URLSession.shared
         session.dataTask(with: request, completionHandler: { (data, response, error) in
 
+            
 
             let json = try? JSONSerialization.jsonObject(with: data!, options: []) as! [String:[Any]]
             let foodjsons = json!["diets"] as! [Any]
-                            
+            
+            print(foodjsons)
             foodjsons.forEach{ item in
                 guard let object = item as? [String : Any] else { return }
                 // 가지고 있는 string key값을 이용하여 값을 가져온다.
-                let hi = object["hi"] as! String
-                let bye = object["bye"] as! String
+                let date = object["date"] as! String
+                let time = object["time"] as! String
+                let food = object["food"] as! Any
                 
-                print(hi + " / " + bye)
+                guard let foodObject = food as? [String : Any] else {return}
+                let name = foodObject["name"] as! String
+                let type = foodObject["type"] as! String
+                let ingredient = foodObject["ingredient"] as! String
+                let kcal = foodObject["kcal"] as! Double
+                let carbo = foodObject["carbo"] as! Double
+                let protein = foodObject["protein"] as! Double
+                let fat = foodObject["fat"] as! Double
+                let price = foodObject["price"] as! Int
+                let siteurl = foodObject["siteurl"] as! String
+                
+                
+            
+                
+                
+                
 //                var newElement = RankFood2(name:name, type: type, ingredient: ingredient, kcal:kcal, carbo: carbo, protein:protein, fat:fat, price:price,siteurl: siteurl)
 //                if type == "밥"{foodData.ricefoods.append(newElement)}
 //                else if type == "면"{foodData.noodlefoods.append(newElement)}
