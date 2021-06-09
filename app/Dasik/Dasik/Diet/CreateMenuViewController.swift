@@ -91,11 +91,18 @@ class CreateMenuViewController: UIViewController {
             present(alert, animated: false, completion: nil)
         }
         else{
-            makeMenuAPI()
-            let alert = UIAlertController(title: "성공", message: "식단표가 완성되었습니다. 성공적인 다이어트를 기원합니다.", preferredStyle: UIAlertController.Style.alert)
-            let okAction = UIAlertAction(title: "OK", style: .default)
-            alert.addAction(okAction)
-            present(alert, animated: false, completion: nil)
+            let alert1 = UIAlertController(title: "안내", message: "기존의 작성되어있던 식단표는 사라집니다.", preferredStyle: UIAlertController.Style.alert)
+            let okAction1 = UIAlertAction(title: "OK", style: .default){(ok) in
+                self.makeMenuAPI()
+                let alert = UIAlertController(title: "성공", message: "식단표가 완성되었습니다. 성공적인 다이어트를 기원합니다.", preferredStyle: UIAlertController.Style.alert)
+                let okAction = UIAlertAction(title: "OK", style: .default)
+                alert.addAction(okAction)
+                self.present(alert, animated: false, completion: nil)
+            }
+            let closeAction1 = UIAlertAction(title: "NO", style: .default)
+            alert1.addAction(closeAction1)
+            alert1.addAction(okAction1)
+            present(alert1, animated: false, completion: nil)
         }
         print(TmpUser.name)
         print(TmpUser.height)
