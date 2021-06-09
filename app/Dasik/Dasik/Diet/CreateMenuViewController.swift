@@ -93,6 +93,9 @@ class CreateMenuViewController: UIViewController {
         else{
             let alert1 = UIAlertController(title: "안내", message: "기존의 작성되어있던 식단표는 사라집니다.", preferredStyle: UIAlertController.Style.alert)
             let okAction1 = UIAlertAction(title: "OK", style: .default){(ok) in
+                //reset data
+                monthDiet = []
+                TmpUser.checkMeal = [:]
                 self.makeMenuAPI()
                 let alert = UIAlertController(title: "성공", message: "식단표가 완성되었습니다. 성공적인 다이어트를 기원합니다.", preferredStyle: UIAlertController.Style.alert)
                 let okAction = UIAlertAction(title: "OK", style: .default)
@@ -163,13 +166,14 @@ class CreateMenuViewController: UIViewController {
                 let fat = foodObject["fat"] as! Double
                 let price = foodObject["price"] as! Int
                 let siteurl = foodObject["siteurl"] as! String
+                let foodimage = foodObject["foodimage"] as! String
                 
                 var dates = date.components(separatedBy: "-")
                 if dates[0].count == 1 {dates[0] = "0" + dates[0]}
                 if dates[1].count == 1 {dates[1] = "0" + dates[1]}
                 date = dates[0] + "-" + dates[1]
                 
-                DietFoods.append(DietFood(date: date, time: time, name: name, type: type, ingredient: ingredient, kcal: kcal, carbo: carbo, protein: protein, fat: fat, price: price, siteurl: siteurl))
+                DietFoods.append(DietFood(date: date, time: time, name: name, type: type, ingredient: ingredient, kcal: kcal, carbo: carbo, protein: protein, fat: fat, price: price, siteurl: siteurl, foodimage:foodimage))
             }
             DietFoods.forEach{ item in
                 var dayflag = 0
@@ -177,7 +181,7 @@ class CreateMenuViewController: UIViewController {
                 //있으면 해당 정보에 데이터 추가
                 for i in 0..<monthDiet.count{
                     if monthDiet[i].date == item.date {
-                        var dayFood = RankFood2(name: item.name, type: item.type, ingredient: item.ingredient, kcal: item.kcal, carbo: item.carbo, protein: item.protein, fat: item.fat, price: item.price, siteurl: item.siteurl)
+                        var dayFood = RankFood(name: item.name, type: item.type, ingredient: item.ingredient, kcal: item.kcal, carbo: item.carbo, protein: item.protein, fat: item.fat, price: item.price, siteurl: item.siteurl, foodimage:item.foodimage)
                         if (item.time == "breakfast"){
                             monthDiet[i].breakFast.append(dayFood)
                         }
@@ -192,7 +196,7 @@ class CreateMenuViewController: UIViewController {
                 }
                 if dayflag == 0 {
                     var newDayMeal = DayMealInfo(date: item.date, breakFast: [], lunch: [], dinner: [])
-                    var dayFood = RankFood2(name: item.name, type: item.type, ingredient: item.ingredient, kcal: item.kcal, carbo: item.carbo, protein: item.protein, fat: item.fat, price: item.price, siteurl: item.siteurl)
+                    var dayFood = RankFood(name: item.name, type: item.type, ingredient: item.ingredient, kcal: item.kcal, carbo: item.carbo, protein: item.protein, fat: item.fat, price: item.price, siteurl: item.siteurl,foodimage:item.foodimage)
                     if (item.time == "breakfast"){
                         newDayMeal.breakFast.append(dayFood)
                     }
