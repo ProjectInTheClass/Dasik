@@ -297,6 +297,7 @@ class HomeViewController: UIViewController {
         let now_string = dateFormmater.string(from: now)
         
         TmpUser.checkMeal.updateValue(changedCheckMeal, forKey: now_string)
+        updateUI()
     }
     
     func updateUI(){

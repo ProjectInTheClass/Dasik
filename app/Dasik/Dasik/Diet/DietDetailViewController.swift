@@ -37,11 +37,11 @@ class DietDetailViewController: UIViewController {
         navigation.title = selectedData + " 식단"
         getMealInfo()
         
-        breakfastKcal.text = String(dayMeal.breakFast[0].kcal + dayMeal.breakFast[1].kcal) + " kcal"
+        breakfastKcal.text = String(round((dayMeal.breakFast[0].kcal + dayMeal.breakFast[1].kcal)*100)/100) + " kcal"
         breakfastKcal.textColor = .lightGray
-        lunchKcal.text = String(dayMeal.lunch[0].kcal + dayMeal.lunch[1].kcal) + " kcal"
+        lunchKcal.text = String(round((dayMeal.lunch[0].kcal + dayMeal.lunch[1].kcal)*100)/100) + " kcal"
         lunchKcal.textColor = .lightGray
-        dinnerKcal.text = String(dayMeal.dinner[0].kcal + dayMeal.dinner[1].kcal) + " kcal"
+        dinnerKcal.text = String(round((dayMeal.dinner[0].kcal + dayMeal.dinner[1].kcal)*100)/100) + " kcal"
         dinnerKcal.textColor = .lightGray
             
         getDayInfo()
