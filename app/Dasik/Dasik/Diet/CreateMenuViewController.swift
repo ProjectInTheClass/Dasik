@@ -88,6 +88,7 @@ class CreateMenuViewController: UIViewController {
             }
         }
         print(TmpUser.allergy)
+        changedata.sendUserInfotoServer()
     }
     
     @IBAction func makeMenu(_ sender: Any) {
@@ -119,7 +120,7 @@ class CreateMenuViewController: UIViewController {
             let alert1 = UIAlertController(title: "안내", message: "기존의 작성되어있던 식단표는 사라집니다.", preferredStyle: UIAlertController.Style.alert)
             let okAction1 = UIAlertAction(title: "OK", style: .default){(ok) in
                 //reset data
-                monthDiet = []
+                TmpUser.monthDiet = []
                 TmpUser.checkMeal = [:]
                 self.makeMenuAPI()
                 let alert = UIAlertController(title: "성공", message: "식단표가 완성되었습니다. 성공적인 다이어트를 기원합니다.", preferredStyle: UIAlertController.Style.alert)
@@ -204,17 +205,17 @@ class CreateMenuViewController: UIViewController {
                 var dayflag = 0
                 //해당 날짜에 해당하는 정보가 있는지 판별
                 //있으면 해당 정보에 데이터 추가
-                for i in 0..<monthDiet.count{
-                    if monthDiet[i].date == item.date {
+                for i in 0..<TmpUser.monthDiet.count{
+                    if TmpUser.monthDiet[i].date == item.date {
                         var dayFood = RankFood(name: item.name, type: item.type, ingredient: item.ingredient, kcal: item.kcal, carbo: item.carbo, protein: item.protein, fat: item.fat, price: item.price, siteurl: item.siteurl, foodimage:item.foodimage)
-                        if (item.time == "breakfast"){
-                            monthDiet[i].breakFast.append(dayFood)
+                        if (item.time == "breakFast"){
+                            TmpUser.monthDiet[i].breakFast.append(dayFood)
                         }
                         if (item.time == "lunch"){
-                            monthDiet[i].lunch.append(dayFood)
+                            TmpUser.monthDiet[i].lunch.append(dayFood)
                         }
                         if (item.time == "dinner"){
-                            monthDiet[i].dinner.append(dayFood)
+                            TmpUser.monthDiet[i].dinner.append(dayFood)
                         }
                         dayflag = 1
                     }
@@ -222,7 +223,7 @@ class CreateMenuViewController: UIViewController {
                 if dayflag == 0 {
                     var newDayMeal = DayMealInfo(date: item.date, breakFast: [], lunch: [], dinner: [])
                     var dayFood = RankFood(name: item.name, type: item.type, ingredient: item.ingredient, kcal: item.kcal, carbo: item.carbo, protein: item.protein, fat: item.fat, price: item.price, siteurl: item.siteurl,foodimage:item.foodimage)
-                    if (item.time == "breakfast"){
+                    if (item.time == "breakFast"){
                         newDayMeal.breakFast.append(dayFood)
                     }
                     if (item.time == "lunch"){
@@ -231,15 +232,15 @@ class CreateMenuViewController: UIViewController {
                     if (item.time == "dinner"){
                         newDayMeal.dinner.append(dayFood)
                     }
-                    monthDiet.append(newDayMeal)
+                    TmpUser.monthDiet.append(newDayMeal)
                 }
             }
             
-            monthDiet.forEach{
+            TmpUser.monthDiet.forEach{
                 print("date : \($0.date), name1 : \($0.breakFast[0].name), name2 : \($0.breakFast[1].name), name3 : \($0.lunch[0].name), name4 : \($0.lunch[1].name), name5 : \($0.dinner[0].name), name6 : \($0.dinner[1].name)")
             }
             
-            
+            changedata.sendUserInfotoServer()
         }).resume()
     }
     

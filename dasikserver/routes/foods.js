@@ -2,23 +2,16 @@ var express = require('express');
 var router = express.Router();
 var Food = require('../models/food');
 
+
 /* GET home page. */
 router.get('/', async function(req, res, next) {
-  
-  const foods = await Food.find({},{"_id":false, "foodimage":false});
-
-  res.send({foods:foods})
-
-});
-
-/* GET home page. */
-router.get('/a', async function(req, res, next) {
   
   const foods = await Food.find({},{"_id":false});
 
   res.send({foods:foods})
 
 });
+
 router.get('/inputdummy', function(req,res,next){
 
   var foodDummy = new Food();
@@ -135,7 +128,7 @@ router.post('/getMenu', async function(req,res,next){
     var rand = Math.random() * (mx - mn) + mn
     var firstbre = new Object();
     firstbre.date = today_date;
-    firstbre.time = "breakfast";
+    firstbre.time = "breakFast";
     console.log(parseInt(rand))
     firstbre.food = firstGroup[parseInt(rand)];
     
@@ -143,7 +136,7 @@ router.post('/getMenu', async function(req,res,next){
     rand = Math.random() * (mx - mn) + mn
     var secondbre = new Object();
     secondbre.date = today_date;
-    secondbre.time = "breakfast";
+    secondbre.time = "breakFast";
     secondbre.food = secondGroup[parseInt(rand)];
     //점심
     var mn = 0, mx = firstGroup.length

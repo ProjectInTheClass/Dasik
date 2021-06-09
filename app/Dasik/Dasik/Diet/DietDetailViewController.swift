@@ -68,6 +68,8 @@ class DietDetailViewController: UIViewController {
         updateUI()
         let changedCheckMeal = "" + String(bfBNum) + String(lBNum) + String(dBNum)
         TmpUser.checkMeal.updateValue(changedCheckMeal, forKey: selectedData)
+        changedata.sendUserInfotoServer()
+        
     }
         
     func getDayInfo(){
@@ -140,7 +142,7 @@ class DietDetailViewController: UIViewController {
     
     func getMealInfo(){
         var dayflag = 0
-        for tmp in monthDiet{
+        for tmp in TmpUser.monthDiet{
             if selectedData == tmp.date{
                 dayMeal = tmp
                 dayflag = 1
@@ -151,4 +153,6 @@ class DietDetailViewController: UIViewController {
             dayMeal = defaultMealInfo
         }
     }
+    
+    
 }

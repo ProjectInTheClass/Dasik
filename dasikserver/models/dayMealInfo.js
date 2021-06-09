@@ -4,7 +4,7 @@ var Food = require('./food');
 
 var dayMealInfoSchema = new Schema({
     date : String,
-    breakfast : [Food.schema],
+    breakFast : [Food.schema],
     lunch : [Food.schema],
     dinner : [Food.schema]
 });

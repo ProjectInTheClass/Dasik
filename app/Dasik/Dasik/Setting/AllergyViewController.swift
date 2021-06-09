@@ -62,6 +62,7 @@ class AllergyViewController: UIViewController {
             }
         }
         print(TmpUser.allergy)
+        changedata.sendUserInfotoServer()
     }
     
 

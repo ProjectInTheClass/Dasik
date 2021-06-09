@@ -53,7 +53,7 @@ class HomeViewController: UIViewController {
         let now_string = dateFormatter.string(from: now)
         
         var dayflag = 0
-        for tmp in monthDiet{
+        for tmp in TmpUser.monthDiet{
            if now_string == tmp.date{
                 todayMealInfo = tmp
                 dayflag = 1
@@ -118,11 +118,21 @@ class HomeViewController: UIViewController {
         }
         
         let ok = UIAlertAction(title: "OK", style: .default){(ok) in
+            let alert2 = UIAlertController(title: "로딩중", message: nil, preferredStyle: UIAlertController.Style.alert)
+            self.present(alert2, animated: true, completion: {
+                sleep(2)
+                self.updateUI()
+                alert2.dismiss(animated: true, completion: nil)
+            })
+            
             TmpUser.name = (alert.textFields?[0].text!)!
-            self.updateUI()
+            changedata.getUserInfofromServer()
+                                    
         }
         alert.addAction(ok)
         self.present(alert, animated: true, completion: nil)
+        
+        
     }
     
     func WeekString() -> [String]{
@@ -229,7 +239,7 @@ class HomeViewController: UIViewController {
         var dayMeal : DayMealInfo!
         var dayflag = 0
         
-        for tmp in monthDiet{
+        for tmp in TmpUser.monthDiet{
             if date == tmp.date{
                 dayMeal = tmp
                 dayflag = 1
@@ -322,6 +332,7 @@ class HomeViewController: UIViewController {
         TmpUser.checkMeal.updateValue(changedCheckMeal, forKey: now_string)
         
         updateUI()
+        changedata.sendUserInfotoServer()
     }
     
     func updateUI(){
@@ -358,7 +369,7 @@ class HomeViewController: UIViewController {
         let now = Date.init()
         let now_string = dateFormatter.string(from: now)
         var dayflag = 0
-        for tmp in monthDiet{
+        for tmp in TmpUser.monthDiet{
            if now_string == tmp.date{
                 todayMealInfo = tmp
                 dayflag = 1
@@ -381,7 +392,10 @@ class HomeViewController: UIViewController {
         kcalLabels[1].text = String(todayMealInfo.lunch[0].kcal+todayMealInfo.lunch[1].kcal)
         kcalLabels[2].text = String(todayMealInfo.dinner[0].kcal+todayMealInfo.dinner[1].kcal)
         
+        
+        
     }
+    
     
 }
 

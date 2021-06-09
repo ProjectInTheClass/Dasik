@@ -57,6 +57,11 @@ class UserInfoSettingViewController: UIViewController {
         print(TmpUser.name)
         print(TmpUser.height)
         print(TmpUser.weight)
+        let alert = UIAlertController(title: "저장 완료", message: "", preferredStyle: UIAlertController.Style.alert)
+        let okAction = UIAlertAction(title: "OK", style: .default)
+        alert.addAction(okAction)
+        present(alert, animated: false, completion: nil)
+        changedata.sendUserInfotoServer()
     }
     
     @objc func MyTapMethod(sender: UITapGestureRecognizer) {
