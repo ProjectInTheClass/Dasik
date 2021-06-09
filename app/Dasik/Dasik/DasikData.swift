@@ -26,6 +26,7 @@ public struct UserInfo{
     var weight : Float
     var allergy : [Int] = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     var checkMeal : [String : String] = ["06-01":"100", "06-02":"101", "06-03":"111","06-04":"010", "06-05":"111","06-06":"100", "06-07":"101", "06-08":"111","06-09":"000"]
+    var monthDiet : [DayMealInfo]
 }
 
 public struct DayMealInfo{
@@ -37,7 +38,7 @@ public struct DayMealInfo{
 
 var monthDiet : [DayMealInfo]! = []
 
-var TmpUser = UserInfo(name: "junkyo", height: 175.0, weight: 75)
+var TmpUser = UserInfo(name: "junkyo", height: 175.0, weight: 75, monthDiet: [])
 var tmp = RankFood(name: "", type:"",ingredient: "", kcal:0.0, carbo: 9.74, protein:18.91, fat:2.6,price:2900,siteurl:"www.naver.com", foodimage: "testimage")
 var tmp1 = RankFood(name: "HI 닭가슴살", type:"닭가슴살",ingredient: "우유", kcal:138, carbo: 9.74, protein:18.91, fat:2.6,price:3100,siteurl:"www.naver.com",foodimage: "testimage")
 var tmp2 = RankFood(name: "Good 닭가슴살", type:"닭가슴살",ingredient: "우유", kcal:138, carbo: 9.74, protein:18.91, fat:2.6,price:3300,siteurl:"www.naver.com",foodimage: "testimage")
