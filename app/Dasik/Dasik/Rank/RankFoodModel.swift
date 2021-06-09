@@ -37,12 +37,12 @@ struct RankFood2 : Codable{
 }
 
 var categoryfoods: [RankCategory] = [
-    RankCategory(categoryimage: "testimage", categoryname: "밥"),
-    RankCategory(categoryimage: "testimage", categoryname: "면"),
-    RankCategory(categoryimage: "testimage", categoryname: "샐러드"),
-    RankCategory(categoryimage: "testimage", categoryname: "닭가슴살"),
-    RankCategory(categoryimage: "testimage", categoryname: "간편식"),
-    RankCategory(categoryimage: "testimage", categoryname: "간식")
+    RankCategory(categoryimage: "rice", categoryname: "밥"),
+    RankCategory(categoryimage: "nudle", categoryname: "면"),
+    RankCategory(categoryimage: "salad", categoryname: "샐러드"),
+    RankCategory(categoryimage: "chicken_chest", categoryname: "닭가슴살"),
+    RankCategory(categoryimage: "simple", categoryname: "간편식"),
+    RankCategory(categoryimage: "snack", categoryname: "간식")
 ]
 
 var rankfoods: [RankFood] = [
