@@ -57,7 +57,6 @@ class HomeViewController: UIViewController {
         if(dayflag == 0){
             todayMealInfo = defaultMealInfo
         }
-        
 
         getUserName()
         
@@ -72,14 +71,6 @@ class HomeViewController: UIViewController {
         kcalLabels[0].text = String(todayMealInfo.breakFast[0].kcal+todayMealInfo.breakFast[1].kcal)
         kcalLabels[1].text = String(todayMealInfo.lunch[0].kcal+todayMealInfo.lunch[1].kcal)
         kcalLabels[2].text = String(todayMealInfo.dinner[0].kcal+todayMealInfo.dinner[1].kcal)
-       
-        dates = WeekString()
-        //barChartView.noDataText = "데이터가 없습니다."
-        //barChartView.noDataFont = .systemFont(ofSize: 20)
-        //barChartView.noDataTextColor = .lightGray
-        percentLabel.text = String(progressView.progress * 100) + "%"
-        
-        setChart(dataPoints: dates, values: kcals)
         
         updateUI()
     }
@@ -170,8 +161,23 @@ class HomeViewController: UIViewController {
         if dayflag == 0 {
             dayMeal = defaultMealInfo
         }
-        
-        return dayMeal.breakFast[0].kcal+dayMeal.lunch[0].kcal+dayMeal.dinner[0].kcal + dayMeal.breakFast[1].kcal+dayMeal.lunch[1].kcal+dayMeal.dinner[1].kcal
+        if let buttonInfo = TmpUser.checkMeal[date]{
+            var sum : Double = 0
+            if buttonInfo[buttonInfo.startIndex] == "1"{
+                sum = sum + dayMeal.breakFast[0].kcal + dayMeal.breakFast[1].kcal
+            }
+                
+            if buttonInfo[buttonInfo.index(buttonInfo.endIndex, offsetBy: -2)] == "1"{
+                sum = sum + dayMeal.lunch[0].kcal + dayMeal.lunch[1].kcal
+            }
+                
+            if buttonInfo[buttonInfo.index(buttonInfo.endIndex, offsetBy: -1)] == "1"{
+                sum = sum + dayMeal.dinner[0].kcal + dayMeal.dinner[1].kcal
+            }
+            return sum
+        }else{
+            return dayMeal.breakFast[0].kcal+dayMeal.lunch[0].kcal+dayMeal.dinner[0].kcal + dayMeal.breakFast[1].kcal+dayMeal.lunch[1].kcal+dayMeal.dinner[1].kcal
+        }
     }
     
     func setChart(dataPoints: [String], values: [Double]) {
@@ -239,6 +245,9 @@ class HomeViewController: UIViewController {
     }
     
     func updateUI(){
+        dates = WeekString()
+        percentLabel.text = String(progressView.progress * 100) + "%"
+        setChart(dataPoints: dates, values: kcals)
         nameLabel.text = TmpUser.name
         if bfBNum == 0{
             breakfastButton.tintColor = .lightGray
