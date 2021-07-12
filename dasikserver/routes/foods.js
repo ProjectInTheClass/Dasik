@@ -10,7 +10,7 @@ router.get('/', async function(req, res, next) {
 
   res.send({foods:foods})
 
-});
+});  
 
 router.get('/inputdummy', function(req,res,next){
 

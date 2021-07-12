@@ -75,7 +75,7 @@ class RankTableViewController: UITableViewController {
         print("APITEST Function Start!")
         let dic:Dictionary = ["message":"test"]
         
-        guard let url = URL(string:"http://222.108.114.91:8080/foods".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
+        guard let url = URL(string:"http://3.37.163.248:9000/foods".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
             return
         }
         

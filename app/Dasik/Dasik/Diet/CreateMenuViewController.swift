@@ -152,7 +152,7 @@ class CreateMenuViewController: UIViewController {
                                   "beef":TmpUser.allergy[15], "ahawng":TmpUser.allergy[16], "peach":TmpUser.allergy[17],
                                   "tomato":TmpUser.allergy[18]]
         
-        guard let url = URL(string:"http://222.108.114.91:8080/foods/getMenu".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
+        guard let url = URL(string:"http://3.37.163.248:9000/foods/getMenu".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
             return
         }
         

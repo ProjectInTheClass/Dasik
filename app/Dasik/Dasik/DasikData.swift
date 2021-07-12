@@ -52,7 +52,7 @@ struct changeData {
     public func getUserInfofromServer(){
         print("getUserInfo Function Start!")
 
-        guard let url = URL(string:"http://222.108.114.91:8080/users/findUser".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
+        guard let url = URL(string:"http://3.37.163.248:9000/users/findUser".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
             return
         }
 
@@ -178,7 +178,7 @@ struct changeData {
     public func sendUserInfotoServer(){
         print("sendUserInfo Function Start!")
         
-        guard let url = URL(string:"http://222.108.114.91:8080/users/saveUserInfo".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
+        guard let url = URL(string:"http://3.37.163.248:9000/users/saveUserInfo".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!) else {
             return
         }
         
